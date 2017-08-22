@@ -4,10 +4,7 @@
              xmlns:local="clr-namespace:BloodDonation"
              x:Class="BloodDonation.MainPage">
 
-    <local:BloodDonatio.TimelinePage></local:BloodDonatio.TimelinePage>
-
-    <local:BloodDonatio.TimelinePage2></local:BloodDonatio.TimelinePage2>
-
+ 
     <ScrollView>
         <StackLayout VerticalOptions="Center"
                  Margin="20">
@@ -17,13 +14,11 @@
                Margin="0,20,0,10"/>
 
             <Entry Placeholder="Enter Email / Cell Number" 
-               PlaceholderColor="Gray"
-               BackgroundColor="AliceBlue"/>
+               PlaceholderColor="Gray"/>
 
             <Entry Placeholder="Enter Password"
                IsPassword="True"
-               PlaceholderColor="Gray"
-               BackgroundColor="AliceBlue"/>
+               PlaceholderColor="Gray"/>
 
             <Button x:Name="BtnLogin" 
                 Text="Login"

@@ -14,46 +14,37 @@
                 <Label Text="Full Name :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry BackgroundColor="AliceBlue"/>
+                <Entry/>
 
                 <Label Text="Cell Number :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry Text="03"
-                BackgroundColor="AliceBlue"/>
+                <Entry Text="03"/>
 
                 <Label Text="Enter Province :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry BackgroundColor="AliceBlue"/>
+                <Entry/>
 
                 <Label Text="Enter City :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry BackgroundColor="AliceBlue"/>
+                <Entry/>
 
                 <Label Text="Enter Blood Group :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry BackgroundColor="AliceBlue"/>
+                <Entry/>
 
                 <Label Text="Enter Email :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry BackgroundColor="AliceBlue"/>
+                <Entry/>
 
                 <Label Text="Enter Password :"
                    TextColor="DarkGray"
                    FontSize="Medium"/>
-
-                <Entry IsPassword="True"
-                   BackgroundColor="AliceBlue"/>
+                <Entry IsPassword="True"/>
 
                 <Button Text="Create Account"
                     x:Name="BtnCreateAccount"
