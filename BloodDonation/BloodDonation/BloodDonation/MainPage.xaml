@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BloodDonation"
+             x:Class="BloodDonation.MainPage">
+
+    <local:BloodDonatio.TimelinePage></local:BloodDonatio.TimelinePage>
+
+    <local:BloodDonatio.TimelinePage2></local:BloodDonatio.TimelinePage2>
+
+    <ScrollView>
+        <StackLayout VerticalOptions="Center"
+                 Margin="20">
+
+            <Image Source="logo"
+               VerticalOptions="Center"
+               Margin="0,20,0,10"/>
+
+            <Entry Placeholder="Enter Email / Cell Number" 
+               PlaceholderColor="Gray"
+               BackgroundColor="AliceBlue"/>
+
+            <Entry Placeholder="Enter Password"
+               IsPassword="True"
+               PlaceholderColor="Gray"
+               BackgroundColor="AliceBlue"/>
+
+            <Button x:Name="BtnLogin" 
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="Maroon"
+                FontFamily="Arial Rounded MT Bold"
+                Clicked="BtnLogin_OnClicked"/>
+
+
+            <Label Text="Create a new Account!!"
+               TextColor="DarkGray"
+               Margin="0,10,90,0"/>
+
+            <Button x:Name="BtnSignup" 
+                Text="Signup"
+                TextColor="White"
+                    Margin="0,0,0,100"
+                BackgroundColor="Maroon"
+                FontFamily="Arial Rounded MT Bold"
+                
+                Clicked="BtnSignup_OnClicked"/>
+
+        </StackLayout>
+    </ScrollView>
+
+
+
+
+  
+</ContentPage>

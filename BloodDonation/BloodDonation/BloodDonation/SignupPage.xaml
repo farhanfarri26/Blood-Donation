@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodDonation.SignupPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout VerticalOptions="Center"
+                     Margin="20">
+
+               <Image Source="signuplogo.png"
+                      Margin="0,0,0,10"/>
+
+                <Label Text="Full Name :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry BackgroundColor="AliceBlue"/>
+
+                <Label Text="Cell Number :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry Text="03"
+                BackgroundColor="AliceBlue"/>
+
+                <Label Text="Enter Province :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry BackgroundColor="AliceBlue"/>
+
+                <Label Text="Enter City :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry BackgroundColor="AliceBlue"/>
+
+                <Label Text="Enter Blood Group :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry BackgroundColor="AliceBlue"/>
+
+                <Label Text="Enter Email :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry BackgroundColor="AliceBlue"/>
+
+                <Label Text="Enter Password :"
+                   TextColor="DarkGray"
+                   FontSize="Medium"/>
+
+                <Entry IsPassword="True"
+                   BackgroundColor="AliceBlue"/>
+
+                <Button Text="Create Account"
+                    x:Name="BtnCreateAccount"
+                    TextColor="White"
+                        Margin="0,0,0,100"
+                    BackgroundColor="Maroon"
+                    FontFamily="Arial Rounded MT Bold"
+                    Clicked="BtnCreateAccount_OnClicked"/>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodDonation.Grid2">
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="0.33*"/>
+            <ColumnDefinition Width="0.33*"/>
+
+
+        </Grid.ColumnDefinitions>
+        <BoxView BackgroundColor="Violet" Grid.Row="0" Grid.Column="0"  />
+        <BoxView BackgroundColor="Aqua" Grid.Row="0" Grid.Column="1"/>
+        
+
+
+        <Label Text=" this is a grid layout" FontSize="Medium" Grid.Row="0" Grid.Column="0" />
+        <Label Text="2nd box" FontSize="Medium"  Grid.Row="0" Grid.Column="1"/>
+
+
+    </Grid>
+</ContentPage>
