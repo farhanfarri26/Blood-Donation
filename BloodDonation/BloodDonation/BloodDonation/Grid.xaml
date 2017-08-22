@@ -6,6 +6,9 @@
 
     <StackLayout VerticalOptions="Center"
                  Margin="20">
+
+        
+
         <Grid RowSpacing="0" ColumnSpacing="0" >
 
 
@@ -26,24 +29,41 @@
 
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
-            <BoxView BackgroundColor="PaleGreen"  Grid.Row="0" Grid.Column="0"  />
-            <BoxView BackgroundColor="AliceBlue"  Grid.Row="0" Grid.Column="1"/>
-            <BoxView BackgroundColor="LightPink"  Grid.Row="1" Grid.Column="0"/>
-            <BoxView BackgroundColor="GreenYellow"  Grid.Row="1" Grid.Column="1"/>
-            <BoxView BackgroundColor="LightSkyBlue"  Grid.Row="2" Grid.Column="0"/>
-            <BoxView BackgroundColor="AliceBlue"  Grid.Row="2" Grid.Column="1"/>
+            <BoxView  Grid.Row="0" Grid.Column="0"  />
+            <BoxView  Grid.Row="0" Grid.Column="1"/>
+            <BoxView  Grid.Row="1" Grid.Column="0"/>
+            <BoxView  Grid.Row="1" Grid.Column="1"/>
+            <BoxView  Grid.Row="2" Grid.Column="0"/>
+            <BoxView  Grid.Row="2" Grid.Column="1"/>
 
 
             <Image Source="AddRequest.png" Grid.Row="0" Grid.Column="0"
                VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="add donor" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
-            <Label Text="search donor" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
-            <Label Text="blood bank" FontSize="Medium" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
-            <Label Text="receiver" FontSize="Medium" TextColor="Black" Grid.Row="1" Grid.Column="1" />
-            <Label Text="share contact" FontSize="Medium" TextColor="Black"  Grid.Row="2" Grid.Column="0" />
-            <Label Text="details" FontSize="Medium" TextColor="Black" Grid.Row="2" Grid.Column="1" />
+            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+
+            <Image Source="AddDonor.png" Grid.Row="0" Grid.Column="1"
+                   VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+
+            <Image Source="Search.png" Grid.Row="1" Grid.Column="0"
+                   VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+
+            <Image Source="BloodBank.png" Grid.Row="1" Grid.Column="1"
+                   VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="1" Grid.Column="1" />
+
+            <Image Source="Reminder.png" Grid.Row="2" Grid.Column="0"
+                   VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="Medium" TextColor="Black"  Grid.Row="2" Grid.Column="0" />
+
+            <Image Source="RightSwipe.png" Grid.Row="2" Grid.Column="1"
+                   VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="2" Grid.Column="1" />
 
         </Grid>
+        
+        
 
 
     </StackLayout>
