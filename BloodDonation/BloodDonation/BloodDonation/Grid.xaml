@@ -4,7 +4,8 @@
              x:Class="BloodDonation.Grid">
 
 
-    <StackLayout>
+    <StackLayout VerticalOptions="Center"
+                 Margin="20">
         <Grid RowSpacing="0" ColumnSpacing="0" >
 
 
