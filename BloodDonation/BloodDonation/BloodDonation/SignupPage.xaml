@@ -12,26 +12,33 @@
                 <Label Text="Enter Your Accurate Details Here" HorizontalOptions="Center" TextColor="DarkGray"/>
 
 
-                <Label Text="Full Name" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry/>
+                <Label Text="1:     Full Name" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Enter Your Full Name" FontSize="Small" Margin="20,0,20,0"/>
 
-                <Label Text="Cell Number" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry Text="03"/>
+                <Label Text="2:     Cell Number" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Text="03" Placeholder="   Enter Your Working Phone Number" FontSize="Small" Margin="20,0,20,0"/>
 
-                <Label Text="Province" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry/>
+                <Label Text="3:     Province" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Choose Province" FontSize="Small" Margin="20,0,20,0"/>
 
-                <Label Text="City" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry/>
+                <Label Text="4:     City" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Choose City" FontSize="Small" Margin="20,0,20,0"/>
 
-                <Label Text="Blood Group" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry/>
+                <Label Text="5:     Blood Group" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Choose Blood Group" FontSize="Small" Margin="20,0,20,0"/>
 
-                <Label Text="Email" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry/>
+                <Label Text="6:     Email" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry  Placeholder="   Enter Your Email Address" FontSize="Small" Margin="20,0,20,0"/>
 
-                <Label Text="Password" TextColor="#d21d1d" FontSize="Medium"/>
-                <Entry IsPassword="True"/>
+                <Label Text="7:     Password" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry IsPassword="True" Placeholder="   Enter Your Password" FontSize="Small" Margin="20,0,20,0"/>
 
                 <Button Text="Create Account" x:Name="BtnCreateAccount" TextColor="White"
                         Margin="0,0,0,100" BackgroundColor="#d21d1d" FontFamily="Arial Rounded MT Bold"

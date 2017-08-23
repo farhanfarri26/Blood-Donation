@@ -7,18 +7,19 @@
  
     <ScrollView>
         <StackLayout VerticalOptions="Center"
-                 Margin="20">
+                 Margin="20,10,20,20">
 
             <Image Source="logo"
-               VerticalOptions="Center"
-               Margin="0,20,0,10"/>
+               VerticalOptions="Center"/>
 
-            <Entry Placeholder="Enter Email / Cell Number" 
-               PlaceholderColor="Gray"/>
+            <Label Text="     Email Or Cell Number" TextColor="#d21d1d" FontSize="Medium"
+                   FontAttributes="Bold"/>
+            <Entry Placeholder="   Enter Email Or Cell Number" FontSize="Small" Margin="20,0,20,0"/>
 
-            <Entry Placeholder="Enter Password"
-               IsPassword="True"
-               PlaceholderColor="Gray"/>
+            <Label Text="     Password" TextColor="#d21d1d" FontSize="Medium"
+                   FontAttributes="Bold"/>
+            <Entry  Placeholder="   Enter Your Password" FontSize="Small" Margin="20,0,20,0"
+               IsPassword="True"/>
 
             <Button x:Name="BtnLogin" 
                 Text="Login"
@@ -29,8 +30,8 @@
 
 
             <Label Text="Create a new Account!!"
-               TextColor="DarkGray"
-               Margin="0,10,90,0"/>
+               TextColor="DarkGray" HorizontalOptions="Center"
+               Margin="0,10,0,0"/>
 
             <Button x:Name="BtnSignup" 
                 Text="Signup"
