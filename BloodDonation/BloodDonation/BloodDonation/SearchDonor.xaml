@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodDonation.SearchDonor">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout VerticalOptions="Center"
+                         Margin="30,0,30,10">
+
+                <Image Source="SearchDonor.png" Margin="0,20,0,0"/>
+
+
+                <Label Text="1:     Blood Group" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Choose Blood Group" FontSize="Small" Margin="20,0,20,0"/>
+
+                <Label Text="2:     Province" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Choose Province" FontSize="Small" Margin="20,0,20,0"/>
+
+                <Label Text="3:     City" TextColor="#d21d1d" FontSize="Medium"
+                       FontAttributes="Bold"/>
+                <Entry Placeholder="   Choose City" FontSize="Small" Margin="20,0,20,0"/>
+
+
+                <Button Text="Search" x:Name="BtnSearchDonor" TextColor="White"
+                        Margin="0,0,0,100" BackgroundColor="#d21d1d" FontFamily="Arial Rounded MT Bold"
+                        Clicked="BtnSearchDonor_OnClicked"/>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

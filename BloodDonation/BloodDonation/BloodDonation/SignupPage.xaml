@@ -8,10 +8,8 @@
             <StackLayout VerticalOptions="Center"
                          Margin="30,0,30,10">
 
-                <Image Source="signuplogo.png"/>
-                <Label Text="Enter Your Accurate Details Here" HorizontalOptions="Center" TextColor="DarkGray"/>
-
-
+                <Image Source="signuplogo.png" Margin="0,20,0,0"/>
+               
                 <Label Text="1:     Full Name" TextColor="#d21d1d" FontSize="Medium"
                        FontAttributes="Bold"/>
                 <Entry Placeholder="   Enter Your Full Name" FontSize="Small" Margin="20,0,20,0"/>
