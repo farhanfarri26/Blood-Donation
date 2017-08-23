@@ -15,8 +15,10 @@ namespace BloodDonation
         public SignupPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasBackButton(this, false);
+            NavigationPage.SetHasBackButton(this, true);
         }
+
+        
 
         private void BtnCreateAccount_OnClicked(object sender, EventArgs e)
         {
