@@ -6,52 +6,35 @@
         <ScrollView>
 
             <StackLayout VerticalOptions="Center"
-                     Margin="20">
+                         Margin="30,0,30,10">
 
-               <Image Source="signuplogo.png"
-                      Margin="0,0,0,10"/>
+                <Image Source="signuplogo.png"/>
+                <Label Text="Enter Your Accurate Details Here" HorizontalOptions="Center" TextColor="DarkGray"/>
 
-                <Label Text="Full Name :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+
+                <Label Text="Full Name" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry/>
 
-                <Label Text="Cell Number :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+                <Label Text="Cell Number" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry Text="03"/>
 
-                <Label Text="Enter Province :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+                <Label Text="Province" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry/>
 
-                <Label Text="Enter City :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+                <Label Text="City" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry/>
 
-                <Label Text="Enter Blood Group :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+                <Label Text="Blood Group" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry/>
 
-                <Label Text="Enter Email :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+                <Label Text="Email" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry/>
 
-                <Label Text="Enter Password :"
-                   TextColor="DarkGray"
-                   FontSize="Medium"/>
+                <Label Text="Password" TextColor="#d21d1d" FontSize="Medium"/>
                 <Entry IsPassword="True"/>
 
-                <Button Text="Create Account"
-                    x:Name="BtnCreateAccount"
-                    TextColor="White"
-                        Margin="0,0,0,100"
-                    BackgroundColor="Maroon"
-                    FontFamily="Arial Rounded MT Bold"
+                <Button Text="Create Account" x:Name="BtnCreateAccount" TextColor="White"
+                        Margin="0,0,0,100" BackgroundColor="#d21d1d" FontFamily="Arial Rounded MT Bold"
                     Clicked="BtnCreateAccount_OnClicked"/>
 
 

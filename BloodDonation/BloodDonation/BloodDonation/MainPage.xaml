@@ -23,7 +23,7 @@
             <Button x:Name="BtnLogin" 
                 Text="Login"
                 TextColor="White"
-                BackgroundColor="Maroon"
+                BackgroundColor="#d21d1d"
                 FontFamily="Arial Rounded MT Bold"
                 Clicked="BtnLogin_OnClicked"/>
 
@@ -36,7 +36,7 @@
                 Text="Signup"
                 TextColor="White"
                     Margin="0,0,0,100"
-                BackgroundColor="Maroon"
+                BackgroundColor="#d21d1d"
                 FontFamily="Arial Rounded MT Bold"
                 
                 Clicked="BtnSignup_OnClicked"/>

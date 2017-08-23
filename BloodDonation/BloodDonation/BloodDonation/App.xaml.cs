@@ -13,7 +13,7 @@ namespace BloodDonation
         {
             InitializeComponent();
 
-            MainPage =new NavigationPage(new BloodDonation.MainPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
