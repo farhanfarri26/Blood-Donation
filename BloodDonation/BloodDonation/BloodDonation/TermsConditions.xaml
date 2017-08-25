@@ -45,7 +45,7 @@
     </ContentPage.Resources>
     
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="TermsConditionPage.png"/>
+        <Image Source="TermsConditionsPage.png"/>
 
         <ScrollView>
 
