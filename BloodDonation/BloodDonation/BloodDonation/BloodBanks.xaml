@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodDonation.BloodBanks"
+             BackgroundImage="BG.png">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkGray"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#d21d1d"/>
+                <Setter Property="Margin" Value="30,0,0,0"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="CustomEntryStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="20,0,20,0"/>
+                <Setter Property="Placeholder" Value="20,0,0,0"/>
+            </Style>
+
+            <Style x:Key="CustomButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="#d21d1d"/>
+            </Style>
+
+            <Style x:Key="CustomImagePageStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutOuterStyle" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="30,0,30,10"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <Image Source="BloodBankPage.png"/>
+
+        <ScrollView>
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

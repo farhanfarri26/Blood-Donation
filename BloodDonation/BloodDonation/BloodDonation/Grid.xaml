@@ -1,20 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BloodDonation.Grid">
+             x:Class="BloodDonation.Grid"
+             BackgroundImage="BG.png">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkGray"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#d21d1d"/>
+                <Setter Property="Margin" Value="30,0,0,0"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="CustomEntryStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="20,0,20,0"/>
+                <Setter Property="Placeholder" Value="20,0,0,0"/>
+            </Style>
+
+            <Style x:Key="CustomButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="#d21d1d"/>
+            </Style>
+
+            <Style x:Key="CustomImagePageStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            
+            <Style x:Key="CustomImageGridStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutOuterStyle" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="30,0,30,10"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
 
-    <StackLayout VerticalOptions="Center"
-                 Margin="20">
-
-        
-
-        <Grid RowSpacing="0" ColumnSpacing="0" >
-
-
-
-
-
+    <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+        <Grid RowSpacing="0" ColumnSpacing="10" >
             <Grid.RowDefinitions>
 
                 <RowDefinition Height="0.3*"/>
@@ -26,9 +63,10 @@
             <Grid.ColumnDefinitions>
 
                 <ColumnDefinition Width="0.5*"/>
-
                 <ColumnDefinition Width="0.5*"/>
+
             </Grid.ColumnDefinitions>
+            
             <BoxView  Grid.Row="0" Grid.Column="0"  />
             <BoxView  Grid.Row="0" Grid.Column="1"/>
             <BoxView  Grid.Row="1" Grid.Column="0"/>
@@ -36,37 +74,42 @@
             <BoxView  Grid.Row="2" Grid.Column="0"/>
             <BoxView  Grid.Row="2" Grid.Column="1"/>
 
-
-            <Image Source="AddRequest.png" Grid.Row="0" Grid.Column="0"
-               VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
-
-            <Image Source="AddDonor.png" Grid.Row="0" Grid.Column="1"
-                   VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
-
-            <Image Source="Search.png" Grid.Row="1" Grid.Column="0"
-                   VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
-
-            <Image Source="SearchRequest.png" Grid.Row="1" Grid.Column="1"
-                   VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="1" Grid.Column="1" />
-
-            <Image Source="BloodBank.png" Grid.Row="2" Grid.Column="0"
-                   VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="" FontSize="Medium" TextColor="Black"  Grid.Row="2" Grid.Column="0" />
-
-            <Image Source="Reminder.png" Grid.Row="2" Grid.Column="1"
-                   VerticalOptions="Center" HorizontalOptions="Center"/>
-            <Label Text="" FontSize="Medium" TextColor="Black" Grid.Row="2" Grid.Column="1" />
-
+            <Image Source="AddRequest.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapAddRequest" Tapped="TapAddRequest_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <Image Source="AddDonor.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapAddDonor" Tapped="TapAddDonor_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <Image Source="Search.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapSearchDonor" Tapped="TapSearchDonor_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
+            <Image Source="SearchRequest.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapSearchRequest" Tapped="TapSearchRequest_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+           
+            <Image Source="BloodBank.png" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapBloodBank" Tapped="TapBloodBank_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+          
+            <Image Source="Reminder.png" Grid.Row="2" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapReminder" Tapped="TapReminder_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            
         </Grid>
-        
-        
-
-
     </StackLayout>
-
-
 </ContentPage>

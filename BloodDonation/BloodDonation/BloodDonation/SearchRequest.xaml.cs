@@ -17,9 +17,11 @@ namespace BloodDonation
             InitializeComponent();
         }
 
-        private void BtnSearchRequest_OnClicked(object sender, EventArgs e)
+     
+
+        private void BtnFindWhoNeedy_OnClicked(object sender, EventArgs e)
         {
-            
+          
         }
     }
 }

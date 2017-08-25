@@ -18,16 +18,6 @@ C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodD
 C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
 C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
 C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
@@ -42,6 +32,18 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ReasonToDonate.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Reminder.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache

@@ -2,50 +2,71 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BloodDonation"
-             x:Class="BloodDonation.MainPage">
+             x:Class="BloodDonation.MainPage"
+             BackgroundImage="BG.png">
 
- 
-    <ScrollView>
-        <StackLayout VerticalOptions="Center"
-                 Margin="20,10,20,10">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkGray"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
 
-            <Image Source="logo"
-               VerticalOptions="Center"/>
+            <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#d21d1d"/>
+                <Setter Property="Margin" Value="30,0,0,0"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
 
-            <Label Text="     Email Or Cell Number" TextColor="#d21d1d" FontSize="Medium"
-                   FontAttributes="Bold"/>
-            <Entry Placeholder="   Enter Email Or Cell Number" FontSize="Small" Margin="20,0,20,0"/>
+            <Style x:Key="CustomEntryStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="20,0,20,0"/>
+                <Setter Property="Placeholder" Value="20,0,0,0"/>
+            </Style>
 
-            <Label Text="     Password" TextColor="#d21d1d" FontSize="Medium"
-                   FontAttributes="Bold"/>
-            <Entry  Placeholder="   Enter Your Password" FontSize="Small" Margin="20,0,20,0"
-               IsPassword="True"/>
+            <Style x:Key="CustomButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="#d21d1d"/>
+            </Style>
 
-            <Button x:Name="BtnLogin" 
-                Text="Login"
-                TextColor="White"
-                BackgroundColor="#d21d1d"
-                FontFamily="Arial Rounded MT Bold"
+            <Style x:Key="CustomImagePageStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutOuterStyle" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="30,0,30,10"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <Image Source="logo.png"/>
+
+        <ScrollView>
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+
+                <Label Text="Email Or Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Entry Placeholder="Enter Email Or Cell Number" Style="{StaticResource CustomEntryStyle}"/>
+
+                <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Entry  Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
+
+                <Button x:Name="BtnLogin" 
+                Text="Login"  Style="{StaticResource CustomButtonStyle}"
                 Clicked="BtnLogin_OnClicked"/>
 
+                <Label Text="Create a new Account!!" Style="{StaticResource CustomLabelStyle}"/>
 
-            <Label Text="Create a new Account!!"
-               TextColor="DarkGray" HorizontalOptions="Center"/>
+                <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyle}"
+                        Margin="0,0,0,100" Clicked="BtnSignup_OnClicked"/>
 
-            <Button x:Name="BtnSignup" 
-                Text="Signup"
-                TextColor="White"
-                    Margin="0,0,0,100"
-                BackgroundColor="#d21d1d"
-                FontFamily="Arial Rounded MT Bold"
-                
-                Clicked="BtnSignup_OnClicked"/>
-
-        </StackLayout>
-    </ScrollView>
-
-
-
-
-  
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

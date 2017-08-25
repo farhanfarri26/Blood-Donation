@@ -1,33 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BloodDonation.SearchRequest">
-    <ContentPage.Content>
+             x:Class="BloodDonation.SearchRequest"
+             BackgroundImage="BG.png">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkGray"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#d21d1d"/>
+                <Setter Property="Margin" Value="30,0,0,0"/>
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="CustomEntryStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="20,0,20,0"/>
+                <Setter Property="Placeholder" Value="20,0,0,0"/>
+            </Style>
+
+            <Style x:Key="CustomButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="#d21d1d"/>
+            </Style>
+
+            <Style x:Key="CustomImagePageStyle" TargetType="Image">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutOuterStyle" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical"/>
+            </Style>
+
+            <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="30,0,30,10"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <Image Source="SearchRequestPage.png"/>
+
         <ScrollView>
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-            <StackLayout VerticalOptions="Center"
-                         Margin="30,0,30,10">
+                <Label Text="Province" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Entry Placeholder="Choose Province" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Image Source="signuplogo.png" Margin="0,20,0,0"/>
+                <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Entry Placeholder="Choose City" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Label Text="1:     Province" TextColor="#d21d1d" FontSize="Medium"
-                       FontAttributes="Bold"/>
-                <Entry Placeholder="   Choose Province" FontSize="Small" Margin="20,0,20,0"/>
+                <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Label Text="2:     City" TextColor="#d21d1d" FontSize="Medium"
-                       FontAttributes="Bold"/>
-                <Entry Placeholder="   Choose City" FontSize="Small" Margin="20,0,20,0"/>
-
-                <Label Text="3:     Blood Group" TextColor="#d21d1d" FontSize="Medium"
-                       FontAttributes="Bold"/>
-                <Entry Placeholder="   Choose Blood Group" FontSize="Small" Margin="20,0,20,0"/>
-
-                <Button Text="Search" x:Name="BtnSearchRequest" TextColor="White"
-                        Margin="0,0,0,100" BackgroundColor="#d21d1d" FontFamily="Arial Rounded MT Bold"
-                        Clicked="BtnSearchRequest_OnClicked"/>
+                <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"
+                    Clicked="BtnFindWhoNeedy_OnClicked"/>
 
 
             </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>
