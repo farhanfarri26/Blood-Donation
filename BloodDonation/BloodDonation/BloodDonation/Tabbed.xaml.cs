@@ -17,5 +17,6 @@ namespace BloodDonation
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
     }
 }

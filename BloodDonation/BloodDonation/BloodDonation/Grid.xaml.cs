@@ -19,7 +19,9 @@ namespace BloodDonation
 
         private void TapAddRequest_OnTapped(object sender, EventArgs e)
         {
+           
             Navigation.PushAsync(new AddRequest());
+
         }
 
         private void TapAddDonor_OnTapped(object sender, EventArgs e)

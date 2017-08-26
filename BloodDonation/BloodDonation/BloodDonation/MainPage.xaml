@@ -5,48 +5,12 @@
              x:Class="BloodDonation.MainPage"
              BackgroundImage="BG.png">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style x:Key="CustomLabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="DarkGray"/>
-                <Setter Property="HorizontalOptions" Value="Center"/>
-            </Style>
+  
+       
 
-            <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="#d21d1d"/>
-                <Setter Property="Margin" Value="30,0,0,0"/>
-                <Setter Property="FontSize" Value="Small"/>
-            </Style>
-
-            <Style x:Key="CustomEntryStyle" TargetType="Entry">
-                <Setter Property="Margin" Value="20,0,20,0"/>
-                <Setter Property="Placeholder" Value="20,0,0,0"/>
-            </Style>
-
-            <Style x:Key="CustomButtonStyle" TargetType="Button">
-                <Setter Property="TextColor" Value="White"/>
-                <Setter Property="BackgroundColor" Value="#d21d1d"/>
-            </Style>
-
-            <Style x:Key="CustomImagePageStyle" TargetType="Image">
-                <Setter Property="VerticalOptions" Value="Center"/>
-                <Setter Property="HorizontalOptions" Value="Center"/>
-            </Style>
-
-            <Style x:Key="CustomStackLayoutOuterStyle" TargetType="StackLayout">
-                <Setter Property="Orientation" Value="Vertical"/>
-            </Style>
-
-            <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
-                <Setter Property="VerticalOptions" Value="Center"/>
-                <Setter Property="Margin" Value="30,0,30,10"/>
-            </Style>
-
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
+    
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="logo.png"/>
+        <Image Source="logo.png" Margin="0,20,0,0"/>
 
         <ScrollView>
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
@@ -55,11 +19,17 @@
                 <Entry Placeholder="Enter Email Or Cell Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry  Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry  Placeholder="Enter Your Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button x:Name="BtnLogin" 
                 Text="Login"  Style="{StaticResource CustomButtonStyle}"
                 Clicked="BtnLogin_OnClicked"/>
+
+                <Label Text="Forget Password?" TextColor="Blue" FontSize="15" HorizontalOptions="End">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="BtnLabel" Tapped="BtnLabel_OnTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
 
                 <Label Text="Create a new Account!!" Style="{StaticResource CustomLabelStyle}"/>
 

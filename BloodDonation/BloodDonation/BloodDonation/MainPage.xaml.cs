@@ -19,12 +19,17 @@ namespace BloodDonation
 
         private void BtnLogin_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Tabbed());
+            Navigation.PushModalAsync(new Tabbed());
         }
 
         private void BtnSignup_OnClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new SignupPage());
+        }
+
+        private void BtnLabel_OnTapped(object sender, EventArgs e)
+        {
+           
         }
     }
 }
