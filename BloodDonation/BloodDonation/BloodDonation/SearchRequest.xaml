@@ -20,7 +20,7 @@
                 <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"  Style="{StaticResource CustomButtonStyle}"
-                    Clicked="BtnFindWhoNeedy_OnClicked"/>
+                        Clicked="BtnFindWhoNeedy_OnClicked"/>
 
 
             </StackLayout>

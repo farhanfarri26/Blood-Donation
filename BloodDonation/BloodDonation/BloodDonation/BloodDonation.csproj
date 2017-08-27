@@ -56,6 +56,9 @@
     <Compile Include="Grid2.xaml.cs">
       <DependentUpon>Grid2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HandBurgerPage.xaml.cs">
+      <DependentUpon>HandBurgerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -180,6 +183,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Reminder.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HandBurgerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -5,10 +5,6 @@
              x:Class="BloodDonation.MainPage"
              BackgroundImage="BG.png">
 
-  
-       
-
-    
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <Image Source="logo.png" Margin="0,20,0,0"/>
 
@@ -21,8 +17,7 @@
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry  Placeholder="Enter Your Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button x:Name="BtnLogin" 
-                Text="Login"  Style="{StaticResource CustomButtonStyle}"
+                <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}"
                 Clicked="BtnLogin_OnClicked"/>
 
                 <Label Text="Forget Password?" TextColor="Blue" FontSize="15" HorizontalOptions="End">
