@@ -5,10 +5,10 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="AddDonorPage.png"/>
-
         <ScrollView>
+
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                <Image Source="AddDonorPage.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>

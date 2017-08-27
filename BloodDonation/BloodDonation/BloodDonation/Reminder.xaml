@@ -5,12 +5,16 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="ReminderPage.png"/>
-        
         <ScrollView>
 
-            <Label Text="Posted Soon!!" />
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
+                <Image Source="ReminderPage.png"/>
+
+
+
+                <Label Text="Posted Soon!!" />
+            </StackLayout>
         </ScrollView>
     </StackLayout>
 </ContentPage>

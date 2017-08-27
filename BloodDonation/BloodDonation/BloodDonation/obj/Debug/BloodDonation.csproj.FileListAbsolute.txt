@@ -47,4 +47,4 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.HandBurgerPage.xaml.g.cs
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs

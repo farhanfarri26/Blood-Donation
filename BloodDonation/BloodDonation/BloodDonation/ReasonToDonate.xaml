@@ -4,13 +4,14 @@
              x:Class="BloodDonation.ReasonToDonate"
              BackgroundImage="BG.png">
 
- 
+
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="logo.png"/>
         <ScrollView>
-            
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                <Image Source="WhyYou.png"/>
+
                 <Label Text="Reason Will Be Posted Soon !!" />
-           
+            </StackLayout>
         </ScrollView>
     </StackLayout>
 

@@ -6,11 +6,10 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="logo.png" Margin="0,20,0,0"/>
-
         <ScrollView>
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                <Image Source="logo.png" Margin="0,20,0,0"/>
                 <Label Text="Email Or Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Enter Email Or Cell Number" Style="{StaticResource CustomEntryStyle}"/>
 
@@ -20,7 +19,8 @@
                 <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}"
                 Clicked="BtnLogin_OnClicked"/>
 
-                <Label Text="Forget Password?" TextColor="Blue" FontSize="15" HorizontalOptions="End">
+                <Label Text="Forget Password?" TextColor="Blue" Margin="0,0,30,0"
+                       FontSize="15" HorizontalOptions="End">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer x:Name="BtnLabel" Tapped="BtnLabel_OnTapped"/>
                     </Label.GestureRecognizers>
@@ -28,8 +28,8 @@
 
                 <Label Text="Create a new Account!!" Style="{StaticResource CustomLabelStyle}"/>
 
-                <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyle}"
-                        Margin="0,0,0,100" Clicked="BtnSignup_OnClicked"/>
+                <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyleBottomMargin}"
+                        Clicked="BtnSignup_OnClicked"/>
 
             </StackLayout>
         </ScrollView>

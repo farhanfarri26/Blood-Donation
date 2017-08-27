@@ -19,7 +19,7 @@ namespace BloodDonation
 
         private void BtnLogin_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new HandBurgerPage());
+            Navigation.PushAsync(new Tabbed());
          
         }
 

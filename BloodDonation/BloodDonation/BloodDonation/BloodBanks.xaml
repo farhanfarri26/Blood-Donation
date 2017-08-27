@@ -5,11 +5,12 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="BloodBankPage.png"/>
 
         <ScrollView>
+
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                
+                <Image Source="BloodBankPage.png"/>
+
             </StackLayout>
         </ScrollView>
     </StackLayout>

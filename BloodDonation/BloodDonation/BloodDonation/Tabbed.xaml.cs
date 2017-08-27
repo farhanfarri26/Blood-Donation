@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace BloodDonation
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Tabbed : CarouselPage
+    public partial class Tabbed : TabbedPage
     {
         public Tabbed()
         {

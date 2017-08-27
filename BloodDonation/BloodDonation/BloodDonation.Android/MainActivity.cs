@@ -9,7 +9,12 @@ using Android.OS;
 
 namespace BloodDonation.Droid
 {
-    [Activity(Label = "Blood Donation", Icon = "@drawable/BloodBankLogo", Theme = "@style/splashscreen", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Blood Donation",
+        Icon = "@drawable/BloodBankLogo",
+        Theme = "@style/splashscreen",
+        MainLauncher = true,
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
+        ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)

@@ -5,10 +5,11 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <Image Source="SearchDonor.png"/>
 
         <ScrollView>
+
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                <Image Source="SearchDonor.png"/>
 
                 <Label Text="Province" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Choose Province" Style="{StaticResource CustomEntryStyle}"/>
