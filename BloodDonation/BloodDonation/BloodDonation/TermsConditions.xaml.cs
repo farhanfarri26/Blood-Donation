@@ -15,6 +15,9 @@ namespace BloodDonation
         public TermsConditions()
         {
             InitializeComponent();
+
         }
+
+
     }
 }

@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.Grid2"
-             BackgroundImage="BG.png">
+             Title="Menu">
 
     <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-        
+
         <Grid RowSpacing="0" ColumnSpacing="10" >
             <Grid.RowDefinitions>
 
@@ -54,7 +54,7 @@
             <Image Source="Advertisement.png" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}"/>
 
             <Image Source="Exit.png" Grid.Row="2" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}"/>
-          
+
         </Grid>
 
 

@@ -2,12 +2,15 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BloodDonation"
-             x:Class="BloodDonation.Tabbed">
+             x:Class="BloodDonation.Tabbed"
+             BackgroundImage="BG.png">
 
-    <local:ProfilePage></local:ProfilePage>
-    <local:Grid></local:Grid>
-    <local:Grid2></local:Grid2>
+    <TabbedPage.Children>
 
-
-
+        <local:ProfilePage/>
+        <local:Grid/>
+        <local:Grid2/>
+                
+    </TabbedPage.Children>
 </TabbedPage>
+

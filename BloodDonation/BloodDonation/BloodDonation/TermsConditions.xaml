@@ -2,20 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.TermsConditions"
+             Title="Terms and Conditions"
              BackgroundImage="BG.png">
 
-    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
 
-        <ScrollView>
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="TermsConditionsPage.png"/>
+    <ScrollView>
 
+        <Image Source="DonateIF.png"/>
 
+        <Image Source="CantDonate1.png"/>
 
-                <Label Text="Posted Soon!!" />
-                
-                
-            </StackLayout>
-        </ScrollView>
-    </StackLayout>
+        <Image Source="CantDonate2.png"/>
+
+    </ScrollView>
+
 </ContentPage>

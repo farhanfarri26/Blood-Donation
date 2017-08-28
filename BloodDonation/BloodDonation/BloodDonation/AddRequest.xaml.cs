@@ -15,7 +15,6 @@ namespace BloodDonation
         public AddRequest()
         {
             InitializeComponent();
-            NavigationPage.SetBackButtonTitle(this,"Add Request");
         }
 
         private void BtnAddRequest_OnClicked(object sender, EventArgs e)

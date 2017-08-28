@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.AddDonor"
+             Title="Add Donor"
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <ScrollView>
-
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
                 <Image Source="AddDonorPage.png"/>
 
