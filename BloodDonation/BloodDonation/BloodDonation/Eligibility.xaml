@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodDonation.Eligibility"
+             Title="Is You Eligible?"
+             BackgroundImage="BG.png">
+
+
+    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                <Image Source="Eligibility.png" Margin="0,0,0,100"/>
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

@@ -31,5 +31,10 @@ namespace BloodDonation
         {
             Navigation.PushAsync(new TermsConditions());
         }
+
+        private void TapEligibility_OnTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Eligibility());
+        }
     }
 }

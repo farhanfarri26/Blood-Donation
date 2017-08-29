@@ -33,8 +33,10 @@
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry IsPassword="True" Placeholder="   Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyle}"
-                        Margin="0,0,0,100" Clicked="BtnCreateAccount_OnClicked"/>
+                <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}"
+                        Clicked="BtnCreateAccount_OnClicked"/>
+                
+                
 
             </StackLayout>
         </ScrollView>

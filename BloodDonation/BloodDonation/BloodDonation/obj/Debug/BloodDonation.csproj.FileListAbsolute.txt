@@ -47,3 +47,5 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs

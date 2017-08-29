@@ -21,7 +21,7 @@
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"  Style="{StaticResource CustomButtonStyle}"
+                <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"  Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnFindWhoNeedy_OnClicked"/>
 
 

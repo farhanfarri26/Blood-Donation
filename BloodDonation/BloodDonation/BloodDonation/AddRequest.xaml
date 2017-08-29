@@ -27,8 +27,8 @@
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button Text="Add" x:Name="BtnAddRequest" Style="{StaticResource CustomButtonStyle}"
-                        Margin="0,0,0,100" Clicked="BtnAddRequest_OnClicked"/>
+                <Button Text="Add" x:Name="BtnAddRequest" Style="{StaticResource CustomButtonStyleBottomMargin}"
+                         Clicked="BtnAddRequest_OnClicked"/>
 
             </StackLayout>
         </ScrollView>

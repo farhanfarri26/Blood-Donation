@@ -120,7 +120,6 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\exit.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\searchrequest.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\termsconditions.png
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\advertisement.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\addrequestpage.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\adddonorpage.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-xxhdpi\splash.png
@@ -130,7 +129,6 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\reminderpage.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\whyyou.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\bg.png
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\termsconditionspage.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-xhdpi\logo.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-hdpi\adddonorpage.png
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-hdpi\addrequestpage.png
@@ -171,6 +169,6 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\cantdonate1.png
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\cantdonate2.png
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\donateif.png
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\eligibility.png
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\eligibleicon.png
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\termsconditionspage.png

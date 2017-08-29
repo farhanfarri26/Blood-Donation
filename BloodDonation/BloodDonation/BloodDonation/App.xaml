@@ -17,6 +17,13 @@
                 <Setter Property="Margin" Value="30,0,0,0"/>
                 <Setter Property="FontSize" Value="Small"/>
             </Style>
+            
+            <Style x:Key="CustomLabelTermsConditionStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#7f7f7f"/>
+                <Setter Property="Margin" Value="30,5,30,5"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="VerticalTextAlignment" Value="Start"/>
+            </Style>
 
             <Style x:Key="CustomEntryStyle" TargetType="Entry">
                 <Setter Property="Margin" Value="30,0,30,0"/>

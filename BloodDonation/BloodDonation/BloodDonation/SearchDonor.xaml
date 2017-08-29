@@ -22,7 +22,7 @@
                 <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
 
-                <Button Text="Search" x:Name="BtnSearchDonor" Margin="0,0,0,100" Style="{StaticResource CustomButtonStyle}"
+                <Button Text="Search" x:Name="BtnSearchDonor"  Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnSearchDonor_OnClicked"/>
 
             </StackLayout>

@@ -25,7 +25,7 @@
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button Text="Add" x:Name="BtnAddDonor" Margin="0,0,0,100" Style="{StaticResource CustomButtonStyle}"
+                <Button Text="Add" x:Name="BtnAddDonor" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnAddDonor_OnClicked"/>
 
             </StackLayout>

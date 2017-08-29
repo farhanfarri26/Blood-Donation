@@ -49,9 +49,13 @@
                 </Image.GestureRecognizers>
             </Image>
 
-            <Image Source="Share.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}"/>
+            <Image Source="Eligibleicon.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapEligibility" Tapped="TapEligibility_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
 
-            <Image Source="Advertisement.png" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}"/>
+            <Image Source="Share.png" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}"/>
 
             <Image Source="Exit.png" Grid.Row="2" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}"/>
 
