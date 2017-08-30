@@ -8,9 +8,48 @@
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <ScrollView>
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-                <Image Source="Eligibility.png" Margin="0,0,0,100"/>
+                <Label Text="You Can Donate!!" TextColor="#d21d1d" FontSize="Large" Margin="0,10,0,0" FontAttributes="Bold"
+                       HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="1.  If You are between age group of '18-60 Years'."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="2.  If Your weight is '45 KG' or more."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="3.  If Your 'Hemoglobin' is '12.5 gm%' minimum."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="4.  If Your last blood donation was '3 or more Months' earlier."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="5.  If You are 'Healthy' and have not suffered from 'MALARIA, TYPHOID or other Transmissible' disease in the recent past."/>
+
+                <Label Text="You Can NOT Donate!!" TextColor="#d21d1d" FontSize="Large" Margin="0,20,0,0" FontAttributes="Bold"
+                       HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="1.  If 'Cold / Fever' in the past 1 week."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="2.  If Under treatment with 'Antibiotics' or any other 'Medication'."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="3.  If 'Cardiac Problems', 'Hypertension', 'Epilepsy', 'Diabetes (on Insulin Therapy)', history of 'Cancer', 'Chronic Kidney' or 'Liver Disease', 'Bleeding Tendencies', 'Venereal Disease' etc."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="4.  If Major 'Surgery' in the last 6 months."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="5.  If 'Vaccination' in the last 24 hours."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="6.  If Had a 'Miscarriage' in the last 6 months or have been 'Pregnant' / 'Lactating' in the last one year."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="7.  If Had 'Fainting Attacks' during last donation."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="8.  If Have regularly received treatment with 'Blood Products'."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="9.  If Shared a 'Needle to Inject Drugs' / have history of 'Drug Addiction'."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="10.  If Had 'Sexual Relations' with different partners or with a high risk individual."/>
+                <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
+                       Text="11.  Been tested positive for 'Antibodies to HIV'."/>
+                <Label FontSize="Small" TextColor="Blue" Margin="0,30,0,100" VerticalOptions="Center" HorizontalOptions="Center"
+                       Text="http://www.virtualbloodbank.org/termscondition.html"/>
+
 
             </StackLayout>
         </ScrollView>

@@ -294,9 +294,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\WhyYou.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Eligibility.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\Eligibleicon.png" />
   </ItemGroup>
   <ItemGroup>
