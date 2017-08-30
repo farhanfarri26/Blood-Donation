@@ -7,13 +7,13 @@
 
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ScrollView>
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="WhyYou.png"/>
-
-                <Label Text="Reason Will Be Posted Soon !!" />
+        
+            <StackLayout>
+               
+                <WebView x:Name="Videos" WidthRequest="1000" HeightRequest="1000"/>
+                
             </StackLayout>
-        </ScrollView>
+        
     </StackLayout>
 
 </ContentPage>

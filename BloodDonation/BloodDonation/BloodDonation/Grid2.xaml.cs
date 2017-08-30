@@ -24,7 +24,7 @@ namespace BloodDonation
 
         private void TapReasonDonate_OnTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ReasonToDonate());
+            Navigation.PushAsync(new ReasonToDonate("https://www.youtube.com"));
         }
 
         private void TapTermsCondition_OnTapped(object sender, EventArgs e)

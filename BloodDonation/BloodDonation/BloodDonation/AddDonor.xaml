@@ -22,6 +22,9 @@
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Choose City" Style="{StaticResource CustomEntryStyle}"/>
 
+                <Label Text="Address" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Entry Placeholder="Enter Address that Understandable" Style="{StaticResource CustomEntryStyle}"/>
+
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 

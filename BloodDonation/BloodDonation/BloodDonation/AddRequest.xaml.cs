@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Plugin.Connectivity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,7 +19,14 @@ namespace BloodDonation
 
         private void BtnAddRequest_OnClicked(object sender, EventArgs e)
         {
-           
+            //if (!CrossConnectivity.Current.IsConnected)
+            //{
+            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+            //}
+            //else
+            //{
+
+            //}
         }
     }
 }

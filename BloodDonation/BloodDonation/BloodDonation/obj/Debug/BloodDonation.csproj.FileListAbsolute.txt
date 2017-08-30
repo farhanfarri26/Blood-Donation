@@ -49,3 +49,17 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.xml
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.xml
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.dll
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.xml
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.pdb
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.xml

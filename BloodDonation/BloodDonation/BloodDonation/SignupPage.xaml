@@ -13,25 +13,25 @@
                 <Image Source="signuplogo.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="   Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Text="03" Placeholder="   Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Province" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="   Choose Province" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry Placeholder="Choose Province" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="   Choose City" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry Placeholder="Choose City" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="   Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Email"  Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry  Placeholder="   Enter Your Email Address" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry  Placeholder="Enter Your Email Address" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry IsPassword="True" Placeholder="   Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry IsPassword="True" Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnCreateAccount_OnClicked"/>
