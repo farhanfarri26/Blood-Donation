@@ -3,15 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.ProfilePage"
              Title="Profile">
-    
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <ScrollView>
-                <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                    
-                    
-                    <Label Text="Reason Will Be Posted Soon !!" />
-                    
-                </StackLayout>
-            </ScrollView>
-        </StackLayout> >
+
+    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <ScrollView>
+            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                <ListView x:Name="LvProfilePage" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <!--<ImageCell Text="{Binding Name}" ImageSource="Man.png"/>
+                            <ImageCell Text="{Binding CellNumber}" ImageSource="CallIcon.png"/>
+                            <ImageCell Text="{Binding Email}" ImageSource="Email.png"/>
+                            <ImageCell Text="{Binding BloodGroup}" ImageSource="BloodDropIcon.png"/>
+                            --><!--<ImageCell ImageSource="RequestAdded.png"/>
+                            <ImageCell ImageSource="Setting.png"/>
+                            <ImageCell ImageSource="LogOut.png"/>-->
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout> >
 </ContentPage>

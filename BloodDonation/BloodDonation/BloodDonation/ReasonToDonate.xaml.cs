@@ -18,7 +18,7 @@ namespace BloodDonation
 
             if (!CrossConnectivity.Current.IsConnected)
             {
-               DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+                DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
             }
             else
             {
