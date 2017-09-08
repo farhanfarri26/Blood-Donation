@@ -11,8 +11,8 @@
 namespace BloodDonation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDona" +
-        "tion\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Farhan Farri\\Documents\\GitHub\\Blood-Donation\\BloodDonation\\BloodDonation" +
+        "\\BloodDonation\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

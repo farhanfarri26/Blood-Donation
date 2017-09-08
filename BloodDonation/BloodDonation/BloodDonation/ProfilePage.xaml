@@ -3,24 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.ProfilePage"
              Title="Profile">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Donate Blood, Be a HERO!!" HorizontalOptions="Center"
+               TextColor="#d21d1d" FontSize="Large" FontAttributes="Bold"/>
 
-    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ScrollView>
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <ListView x:Name="LvProfilePage" HasUnevenRows="True">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <!--<ImageCell Text="{Binding Name}" ImageSource="Man.png"/>
-                            <ImageCell Text="{Binding CellNumber}" ImageSource="CallIcon.png"/>
-                            <ImageCell Text="{Binding Email}" ImageSource="Email.png"/>
-                            <ImageCell Text="{Binding BloodGroup}" ImageSource="BloodDropIcon.png"/>
-                            --><!--<ImageCell ImageSource="RequestAdded.png"/>
-                            <ImageCell ImageSource="Setting.png"/>
-                            <ImageCell ImageSource="LogOut.png"/>-->
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackLayout>
-        </ScrollView>
-    </StackLayout> >
+        <Grid RowSpacing="0" ColumnSpacing="0" >
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="0.22*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Image Source="Man.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="0" Grid.Column="0"/>
+            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="0" Grid.Column="1"/>
+
+            <Image Source="BloodDropIcon.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="1" Grid.Column="0"/>
+            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="1" Grid.Column="1"/>
+
+            <Image Source="CallIcon" Style="{StaticResource CustomImageGridStyle}" Grid.Row="2" Grid.Column="0"/>
+            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="2" Grid.Column="1"/>
+
+            <Image Source="Email.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="3" Grid.Column="0"/>
+            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="3" Grid.Column="1"/>
+
+            <Image Source="Setting.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="4" Grid.Column="0"/>
+            <Label Style="{StaticResource CustomLabelProfileStyle}" Text="Change Password" Grid.Row="4" Grid.Column="1"/>
+
+            <Image Source="LogOut.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="5" Grid.Column="0"/>
+            <Label Style="{StaticResource CustomLabelProfileStyle}" Text="Logout" Grid.Row="5" Grid.Column="1"/>
+
+            <Image Grid.Row="6" Grid.Column="0"/>
+            <Label Grid.Row="6" Grid.Column="1"/>
+
+        </Grid>
+    </StackLayout>
 </ContentPage>

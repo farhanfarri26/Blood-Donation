@@ -17,7 +17,13 @@
                 <Setter Property="Margin" Value="30,0,0,0"/>
                 <Setter Property="FontSize" Value="Small"/>
             </Style>
-            
+
+            <Style x:Key="CustomLabelProfileStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#7f7f7f"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Medium"/>
+            </Style>
+
             <Style x:Key="CustomLabelTermsConditionStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="#7f7f7f"/>
                 <Setter Property="Margin" Value="30,5,30,5"/>
@@ -39,9 +45,9 @@
             <Style x:Key="CustomButtonStyleBottomMargin" TargetType="Button">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="BackgroundColor" Value="#d21d1d"/>
-                <Setter Property="Margin" Value="10,0,10,100"/>
+                <Setter Property="Margin" Value="10,0,10,200"/>
             </Style>
-            
+
             <Style x:Key="CustomImagePageStyle" TargetType="Image">
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
@@ -49,6 +55,10 @@
 
             <Style x:Key="CustomImageGridStyle" TargetType="Image">
                 <Setter Property="Margin" Value="10,10,0,10"/>
+            </Style>
+
+            <Style x:Key="CustomImageProfileStyle" TargetType="Image">
+                <Setter Property="Margin" Value="50"/>
             </Style>
 
             <Style x:Key="CustomStackLayoutOuterStyle" TargetType="StackLayout">

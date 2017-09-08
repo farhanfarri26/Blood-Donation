@@ -21,16 +21,8 @@
                 <ColumnDefinition Width="0.5*"/>
 
             </Grid.ColumnDefinitions>
-            <BoxView  Grid.Row="0" Grid.Column="0"/>
-            <BoxView  Grid.Row="0" Grid.Column="1"/>
-
-
-            <BoxView  Grid.Row="1" Grid.Column="0"/>
-            <BoxView  Grid.Row="1" Grid.Column="1"/>
-            <BoxView  Grid.Row="2" Grid.Column="0"/>
-            <BoxView  Grid.Row="2" Grid.Column="1"/>
-
-
+            
+           
             <Image Source="Detail.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer x:Name="TapDetailBlood" Tapped="TapDetailBlood_OnTapped"/>

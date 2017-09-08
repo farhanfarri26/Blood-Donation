@@ -20,13 +20,6 @@
                 <ColumnDefinition Width="0.5*"/>
 
             </Grid.ColumnDefinitions>
-            
-            <BoxView  Grid.Row="0" Grid.Column="0"  />
-            <BoxView  Grid.Row="0" Grid.Column="1"/>
-            <BoxView  Grid.Row="1" Grid.Column="0"/>
-            <BoxView  Grid.Row="1" Grid.Column="1"/>
-            <BoxView  Grid.Row="2" Grid.Column="0"/>
-            <BoxView  Grid.Row="2" Grid.Column="1"/>
 
             <Image Source="AddRequest.png" x:Name="ClickAddRequest"
                    Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
