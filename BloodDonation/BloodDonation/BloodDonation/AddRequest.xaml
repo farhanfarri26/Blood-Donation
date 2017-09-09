@@ -18,17 +18,66 @@
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Label Text="Province" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="Choose Province" Style="{StaticResource CustomEntryStyle}"/>
-
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="Choose City" Style="{StaticResource CustomEntryStyle}"/>
+                <Picker x:Name="PkrAddRequestCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"
+                        SelectedIndexChanged="PkrAddRequestCity_OnSelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>Lahore</x:String>
+                    </Picker.Items>
+                </Picker>
 
-                <Label Text="Address" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="Enter Address that Understandable" Style="{StaticResource CustomEntryStyle}"/>
+                <Label Text="Hospital" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Picker x:Name="PkrAddRequestHospital" Title="Choose Hospital" Style="{StaticResource CustomEntryStyle}"
+                        SelectedIndexChanged="PkrAddRequestHospital_OnSelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>Bajwa Hospital, Shahdara Town</x:String>
+                        <x:String>Bajwa Hospital, Iqbal Town</x:String>
+                        <x:String>Doctors Hospital</x:String>
+                        <x:String>Fatima Memorial Hospital</x:String>
+                        <x:String>Gulab Devi Chest Hospital</x:String>
+                        <x:String>Hameed Latif Hospital</x:String>
+                        <x:String>Ittefaq Hospital</x:String>
+                        <x:String>Janki Devi Hospital</x:String>
+                        <x:String>Jinnah Hospital</x:String>
+                        <x:String>Lady Aitchison Hospital</x:String>
+                        <x:String>Lady Willingdon Hospital</x:String>
+                        <x:String>Lahore General Hospital</x:String>
+                        <x:String>Mayo Hospital</x:String>
+                        <x:String>National Hospital</x:String>
+                        <x:String>Nawaz Sharif Social Security Hospital, Multan Road</x:String>
+                        <x:String>Omar Hospital and Carddiac Center (Jail Road)</x:String>
+                        <x:String>Punjab Institute of Cardiology</x:String>
+                        <x:String>Punjab Institute of Mental Health</x:String>
+                        <x:String>Punjab Social Security Hospital</x:String>
+                        <x:String>Railway Karen Hospital</x:String>
+                        <x:String>Services Hospital</x:String>
+                        <x:String>Shaikh Zayed Hospital</x:String>
+                        <x:String>Shalamar Hospital (Shalamar Institute of Health Sciences)</x:String>
+                        <x:String>Shaukat Khanum Memorial Cancer Hospital and Research Centre</x:String>
+                        <x:String>Sir Ganga Ram Hospital</x:String>
+                        <x:String>The Children's Hospital</x:String>
+                        <x:String>University Dental Hospital - University of Lahore</x:String>
+                        <x:String>University Teaching Hospital - University of Lahore</x:String>
+                        <x:String>Wapda Hospital</x:String>
+                        <x:String>Enter Yours</x:String>
+                    </Picker.Items>
+                </Picker>
 
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="Choose Blood Group" Style="{StaticResource CustomEntryStyle}"/>
+                <Picker x:Name="PkrAddRequestBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}"
+                        SelectedIndexChanged="PkrAddRequestBloodGroup_OnSelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>None</x:String>
+                        <x:String>A+</x:String>
+                        <x:String>A-</x:String>
+                        <x:String>B+</x:String>
+                        <x:String>B-</x:String>
+                        <x:String>AB+</x:String>
+                        <x:String>AB-</x:String>
+                        <x:String>O+</x:String>
+                        <x:String>O-</x:String>
+                    </Picker.Items>
+                </Picker>
 
                 <Button Text="Add" x:Name="BtnAddRequest" Style="{StaticResource CustomButtonStyleBottomMargin}"
                          Clicked="BtnAddRequest_OnClicked"/>

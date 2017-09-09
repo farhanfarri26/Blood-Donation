@@ -28,5 +28,35 @@ namespace BloodDonation
 
             //}
         }
+
+        private void PkrAddDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            var cityPicker = (Picker)sender;
+            int selectedIndex = cityPicker.SelectedIndex;
+            if (selectedIndex != -1)
+            {
+                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+            }
+        }
+
+        private void PkrAddDonorArea_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            var areaPicker = (Picker)sender;
+            int selectedIndex = areaPicker.SelectedIndex;
+            if (selectedIndex != -1)
+            {
+                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+            }
+        }
+
+        private void PkrAddDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            var bloodgroupPicker = (Picker)sender;
+            int selectedIndex = bloodgroupPicker.SelectedIndex;
+            if (selectedIndex != -1)
+            {
+                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+            }
+        }
     }
 }
