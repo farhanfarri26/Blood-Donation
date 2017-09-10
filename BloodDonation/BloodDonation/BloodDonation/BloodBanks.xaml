@@ -10,7 +10,6 @@
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="BloodBankPage.png"/>
 
             </StackLayout>
         </ScrollView>

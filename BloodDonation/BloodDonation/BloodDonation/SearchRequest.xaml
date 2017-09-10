@@ -10,7 +10,6 @@
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="SearchRequestPage.png"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrSearchRequestCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"
@@ -53,7 +52,6 @@
                         <x:String>University Dental Hospital - University of Lahore</x:String>
                         <x:String>University Teaching Hospital - University of Lahore</x:String>
                         <x:String>Wapda Hospital</x:String>
-                        <x:String>Enter Yours</x:String>
                     </Picker.Items>
                 </Picker>
 

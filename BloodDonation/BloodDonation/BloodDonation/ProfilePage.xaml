@@ -50,6 +50,10 @@
 
             <Image Grid.Row="6" Grid.Column="0"/>
             <Label Grid.Row="6" Grid.Column="1"/>
+            
+            <!--<StackLayout Grid.Row="*" Grid.Column="*" Grid.ColumnSpan="6" BackgroundColor="Firebrick">
+                
+            </StackLayout>-->
 
         </Grid>
     </StackLayout>

@@ -10,7 +10,6 @@
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="SearchDonor.png"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrSearchDonorCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"

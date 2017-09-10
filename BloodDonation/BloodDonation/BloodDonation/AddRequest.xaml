@@ -10,7 +10,6 @@
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="AddRequestPage.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
@@ -59,7 +58,6 @@
                         <x:String>University Dental Hospital - University of Lahore</x:String>
                         <x:String>University Teaching Hospital - University of Lahore</x:String>
                         <x:String>Wapda Hospital</x:String>
-                        <x:String>Enter Yours</x:String>
                     </Picker.Items>
                 </Picker>
 

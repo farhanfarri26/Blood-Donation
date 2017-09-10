@@ -70,9 +70,9 @@ namespace BloodDonation
             Navigation.PushAsync(new BloodBanks());
         }
 
-        private void TapReminder_OnTapped(object sender, EventArgs e)
+        private void TapDetailBlood_OnTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Reminder());
+            Navigation.PushAsync(new BloodDetails());
         }
     }
 }

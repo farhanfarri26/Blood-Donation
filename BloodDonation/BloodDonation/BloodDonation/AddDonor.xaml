@@ -8,7 +8,6 @@
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <ScrollView>
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="AddDonorPage.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>

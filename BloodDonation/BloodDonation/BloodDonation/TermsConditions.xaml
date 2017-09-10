@@ -9,6 +9,7 @@
         <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
             <ScrollView>
                 <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                    
                     <Image Source="TermsConditionsPage"/>
                     <Label Style="{StaticResource CustomLabelTermsConditionStyle}"
                            Text="- People registering on this App must understand that the information provided by them on the registration page is available to a person seeking for a particular blood group."/>

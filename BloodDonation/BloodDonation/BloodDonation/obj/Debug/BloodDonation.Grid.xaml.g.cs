@@ -34,7 +34,7 @@ namespace BloodDonation {
         private global::Xamarin.Forms.TapGestureRecognizer TapBloodBank;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.TapGestureRecognizer TapReminder;
+        private global::Xamarin.Forms.TapGestureRecognizer TapDetailBlood;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -45,7 +45,7 @@ namespace BloodDonation {
             TapSearchDonor = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TapGestureRecognizer>(this, "TapSearchDonor");
             TapSearchRequest = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TapGestureRecognizer>(this, "TapSearchRequest");
             TapBloodBank = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TapGestureRecognizer>(this, "TapBloodBank");
-            TapReminder = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TapGestureRecognizer>(this, "TapReminder");
+            TapDetailBlood = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TapGestureRecognizer>(this, "TapDetailBlood");
         }
     }
 }

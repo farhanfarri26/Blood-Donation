@@ -9,7 +9,7 @@
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="logo.png" Margin="0,20,0,0"/>
+                <Image Source="logo.png"/>
                 <Label Text="Email Or Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry Placeholder="Enter Email Or Cell Number" Style="{StaticResource CustomEntryStyle}"/>
 

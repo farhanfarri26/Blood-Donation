@@ -100,10 +100,8 @@ C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDon
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ReasonToDonate.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Reminder.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
 C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
