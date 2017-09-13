@@ -39,7 +39,7 @@
             <Image Source="Share.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}"/>
 
             <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" >
-                
+                <Label Text="Advertisement" HorizontalOptions="Center" VerticalOptions="Center"></Label>
             </StackLayout>
 
         </Grid>

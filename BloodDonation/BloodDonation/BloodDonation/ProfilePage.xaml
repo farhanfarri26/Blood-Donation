@@ -16,11 +16,8 @@
                 <RowDefinition Height="0.2*"/>
                 <RowDefinition Height="0.2*"/>
                 <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.2*"/>
-
+                <RowDefinition Height="*"/>
+                
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -31,16 +28,16 @@
             </Grid.ColumnDefinitions>
 
             <Image Source="Man.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="0" Grid.Column="0"/>
-            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="{Binding }" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="0" Grid.Column="1"/>
 
             <Image Source="BloodDropIcon.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="1" Grid.Column="0"/>
-            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="1" Grid.Column="1"/>
+            <Label Text="{Binding  }" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="1" Grid.Column="1"/>
 
             <Image Source="CallIcon" Style="{StaticResource CustomImageGridStyle}" Grid.Row="2" Grid.Column="0"/>
-            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="{Binding  }" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="2" Grid.Column="1"/>
 
             <Image Source="Email.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="3" Grid.Column="0"/>
-            <Label Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="3" Grid.Column="1"/>
+            <Label Text="{Binding  }" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="3" Grid.Column="1"/>
 
             <Image Source="Setting.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="4" Grid.Column="0"/>
             <Label Style="{StaticResource CustomLabelProfileStyle}" Text="Change Password" Grid.Row="4" Grid.Column="1"/>
@@ -48,12 +45,13 @@
             <Image Source="LogOut.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="5" Grid.Column="0"/>
             <Label Style="{StaticResource CustomLabelProfileStyle}" Text="Logout" Grid.Row="5" Grid.Column="1"/>
 
-            <Image Grid.Row="6" Grid.Column="0"/>
-            <Label Grid.Row="6" Grid.Column="1"/>
+            <!--<Image Grid.Row="6" Grid.Column="0"/>
+            <Label Grid.Row="6" Grid.Column="1"/>-->
             
-            <!--<StackLayout Grid.Row="*" Grid.Column="*" Grid.ColumnSpan="6" BackgroundColor="Firebrick">
-                
-            </StackLayout>-->
+            <StackLayout Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+                <Label Text="Advertisement" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+            </StackLayout>
 
         </Grid>
     </StackLayout>

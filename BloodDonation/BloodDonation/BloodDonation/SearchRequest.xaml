@@ -20,7 +20,7 @@
                 </Picker>
 
                 <Label Text="Hospital" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSearchRequestHospital" Title="Choose Hospital" Style="{StaticResource CustomEntryStyle}"
+                <Picker x:Name="PkrSearchRequestHospital" Title="Choose Nearby Hospital" Style="{StaticResource CustomEntryStyle}"
                         SelectedIndexChanged="PkrSearchRequestHospital_OnSelectedIndexChanged">
                     <Picker.Items>
                         <x:String>Bajwa Hospital, Shahdara Town</x:String>

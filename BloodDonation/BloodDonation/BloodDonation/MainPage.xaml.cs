@@ -18,7 +18,7 @@ namespace BloodDonation
 
 
 
-        private void BtnLogin_OnClicked(object sender, EventArgs e)
+        private async void BtnLogin_OnClicked(object sender, EventArgs e)
         {
             //if (!CrossConnectivity.Current.IsConnected)
             //{
@@ -29,11 +29,11 @@ namespace BloodDonation
             //    Navigation.PushAsync(new Tabbed());
             //}
 
-            Navigation.PushAsync(new Tabbed());
+            await Navigation.PushAsync(new Tabbed());
 
         }
 
-        private void BtnSignup_OnClicked(object sender, EventArgs e)
+        private async void BtnSignup_OnClicked(object sender, EventArgs e)
         {
             //if (!CrossConnectivity.Current.IsConnected)
             //{
@@ -45,7 +45,7 @@ namespace BloodDonation
 
             //}
 
-            Navigation.PushAsync(new SignupPage());
+            await Navigation.PushAsync(new SignupPage());
         }
 
         private void BtnLabel_OnTapped(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace BloodDonation
             //}
             //else
             //{
-
+            
             //}
         }
     }

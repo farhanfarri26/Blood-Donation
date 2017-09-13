@@ -1,0 +1,2 @@
+C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\BloodDonation.UWP.csproj;x86
+C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\BloodDonation.csproj;neutral

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using BloodDonation.Models;
+using Newtonsoft.Json;
 using Plugin.Connectivity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,44 +22,57 @@ namespace BloodDonation
 
         private void BtnAddDonor_OnClicked(object sender, EventArgs e)
         {
-            //if (!CrossConnectivity.Current.IsConnected)
-            //{
-            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-            //}
-            //else
-            //{
 
-            //}
-        }
-
-        private void PkrAddDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var cityPicker = (Picker)sender;
-            int selectedIndex = cityPicker.SelectedIndex;
-            if (selectedIndex != -1)
+            if (!CrossConnectivity.Current.IsConnected)
             {
-                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+                DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+            }
+            else
+            {
+                AddDonorClass addDonorClass = new AddDonorClass()
+                {
+                    FullName = EntFullName.Text,
+                    CellNumber = EntCellNumber.Text,
+                    City = PkrAddDonorCity.Items[PkrAddDonorCity.SelectedIndex],
+                    Area = PkrAddDonorArea.Items[PkrAddDonorArea.SelectedIndex],
+                    BloodGroup = PkrAddDonorBloodGroup.Items[PkrAddDonorBloodGroup.SelectedIndex],
+                };
+
+                var httpClient = new HttpClient();
+                var json = JsonConvert.SerializeObject(addDonorClass);
+                HttpContent httpContent = new StringContent(json);
+                httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+                httpClient.PostAsync("http://demoapp-1.azurewebsites.net/", httpContent);
+
+                DisplayAlert("Dear Donor!!", " Your Request successfully Added", "OK");
+                Navigation.PopAsync();
+
             }
         }
 
-        private void PkrAddDonorArea_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var areaPicker = (Picker)sender;
-            int selectedIndex = areaPicker.SelectedIndex;
-            if (selectedIndex != -1)
-            {
-                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
-            }
-        }
+        //private void PkrAddDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
+        //{
 
-        private void PkrAddDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var bloodgroupPicker = (Picker)sender;
-            int selectedIndex = bloodgroupPicker.SelectedIndex;
-            if (selectedIndex != -1)
-            {
-                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
-            }
-        }
+        //}
+
+        //private void PkrAddDonorArea_OnSelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    var areaPicker = (Picker)sender;
+        //    int selectedIndex = areaPicker.SelectedIndex;
+        //    if (selectedIndex != -1)
+        //    {
+        //        //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+        //    }
+        //}
+
+        //private void PkrAddDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    var bloodgroupPicker = (Picker)sender;
+        //    int selectedIndex = bloodgroupPicker.SelectedIndex;
+        //    if (selectedIndex != -1)
+        //    {
+        //        //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+        //    }
+        //}
     }
 }

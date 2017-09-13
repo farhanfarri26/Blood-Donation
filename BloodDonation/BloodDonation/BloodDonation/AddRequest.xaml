@@ -12,10 +12,10 @@
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntFullName" Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber" Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrAddRequestCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"

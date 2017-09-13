@@ -17,19 +17,19 @@ namespace BloodDonation
             InitializeComponent();
         }
 
-        private void TapAddRequest_OnTapped(object sender, EventArgs e)
+        private async void TapAddRequest_OnTapped(object sender, EventArgs e)
         {
-           
-            Navigation.PushAsync(new AddRequest());
+
+            await Navigation.PushAsync(new AddRequest());
 
         }
 
-        private void TapAddDonor_OnTapped(object sender, EventArgs e)
+        private async void TapAddDonor_OnTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AddDonor());
+            await Navigation.PushAsync(new AddDonor());
         }
 
-        private void TapSearchDonor_OnTapped(object sender, EventArgs e)
+        private async void TapSearchDonor_OnTapped(object sender, EventArgs e)
         {
             //if (!CrossConnectivity.Current.IsConnected)
             //{
@@ -40,10 +40,10 @@ namespace BloodDonation
 
             //}
 
-            Navigation.PushAsync(new SearchDonor());
+            await Navigation.PushAsync(new SearchDonor());
         }
 
-        private void TapSearchRequest_OnTapped(object sender, EventArgs e)
+        private async void TapSearchRequest_OnTapped(object sender, EventArgs e)
         {
             //if (!CrossConnectivity.Current.IsConnected)
             //{
@@ -54,10 +54,10 @@ namespace BloodDonation
 
             //}
 
-            Navigation.PushAsync(new SearchRequest());
+            await Navigation.PushAsync(new SearchRequest());
         }
 
-        private void TapBloodBank_OnTapped(object sender, EventArgs e)
+        private async void TapBloodBank_OnTapped(object sender, EventArgs e)
         {
             //if (!CrossConnectivity.Current.IsConnected)
             //{
@@ -67,12 +67,12 @@ namespace BloodDonation
             //{
 
             //}
-            Navigation.PushAsync(new BloodBanks());
+            await Navigation.PushAsync(new BloodBanks());
         }
 
-        private void TapDetailBlood_OnTapped(object sender, EventArgs e)
+        private async void TapDetailBlood_OnTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new BloodDetails());
+            await Navigation.PushAsync(new BloodDetails());
         }
     }
 }

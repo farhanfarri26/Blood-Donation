@@ -17,14 +17,14 @@ namespace BloodDonation
             InitializeComponent();
         }
 
-        private void TapTermsCondition_OnTapped(object sender, EventArgs e)
+        private async void TapTermsCondition_OnTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TermsConditions());
+            await Navigation.PushAsync(new TermsConditions());
         }
 
-        private void TapEligibility_OnTapped(object sender, EventArgs e)
+        private async void TapEligibility_OnTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Eligibility());
+            await Navigation.PushAsync(new Eligibility());
         }
     }
 }

@@ -9,14 +9,14 @@
 
         <ScrollView>
 
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+            <StackLayout x:Name="StackLayoutSignup" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
                 <Image Source="signuplogo.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntFullName" Text="{Binding FullName}" Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber" Text="{Binding CellNumber}" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrSignupCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"
@@ -95,10 +95,10 @@
                 </Picker>
 
                 <Label Text="Email"  Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry  Placeholder="Enter Your Email Address" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntEmail" Placeholder="Enter Your Email Address" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry IsPassword="True" Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntPassword" IsPassword="True" Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnCreateAccount_OnClicked"/>

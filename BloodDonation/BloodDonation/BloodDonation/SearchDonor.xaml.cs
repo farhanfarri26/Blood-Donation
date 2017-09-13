@@ -40,20 +40,20 @@ namespace BloodDonation
             }
         }
 
-        private void PkrSearchDonorHospital_OnSelectedIndexChanged(object sender, EventArgs e)
+        private void PkrSearchDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            var hospitalPicker = (Picker)sender;
-            int selectedIndex = hospitalPicker.SelectedIndex;
+            var bloodgroupPicker = (Picker)sender;
+            int selectedIndex = bloodgroupPicker.SelectedIndex;
             if (selectedIndex != -1)
             {
                 //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
             }
         }
 
-        private void PkrSearchDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
+        private void PkrSearchArea_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            var bloodgroupPicker = (Picker)sender;
-            int selectedIndex = bloodgroupPicker.SelectedIndex;
+            var areaPicker = (Picker)sender;
+            int selectedIndex = areaPicker.SelectedIndex;
             if (selectedIndex != -1)
             {
                 //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
