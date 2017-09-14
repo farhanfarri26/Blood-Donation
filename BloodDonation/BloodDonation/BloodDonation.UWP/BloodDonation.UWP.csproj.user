@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</Source>
+    <SmallTileSource>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</MediumTileSource>
+    <WideTileSource>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</WideTileSource>
+    <LargeTileSource>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</LargeTileSource>
+    <AppIconSource>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Farhan Farri\Desktop\Blood Donation Raw Files\Grid Icons\AddDonor.png</SplashScreenSource>
+  </PropertyGroup>
+</Project>

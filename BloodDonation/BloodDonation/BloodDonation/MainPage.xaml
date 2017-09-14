@@ -17,7 +17,19 @@
                 <Entry x:Name="EntPassword" Placeholder="Enter Your Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}"
-                Clicked="BtnLogin_OnClicked"/>
+                Clicked="BtnLogin_OnClicked">
+                    <Button.Triggers>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntUserName}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntPassword}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                    </Button.Triggers>
+                </Button>
 
                 <Label Text="Forget Password?" TextColor="Blue" Margin="0,0,30,0"
                        FontSize="15" HorizontalOptions="End">
@@ -29,7 +41,9 @@
                 <Label Text="Create a new Account!!" Style="{StaticResource CustomLabelStyle}"/>
 
                 <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyleBottomMargin}"
-                        Clicked="BtnSignup_OnClicked"/>
+                        Clicked="BtnSignup_OnClicked">
+                    
+                </Button>
 
             </StackLayout>
         </ScrollView>

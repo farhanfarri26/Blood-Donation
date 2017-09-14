@@ -6,12 +6,19 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-
+                <ListView x:Name="LvBloodBanks">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell x:Name="ImageCellBloodBank" Text="{Binding HospitalName}" Detail="{Binding PhoneNumber}"
+                                       ImageSource="CallIcon.png" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
+
         </ScrollView>
     </StackLayout>
 </ContentPage>

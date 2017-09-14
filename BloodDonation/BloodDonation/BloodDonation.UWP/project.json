@@ -1,8 +1,10 @@
 ﻿{
   "dependencies": {
+    "Microsoft.CSharp": "4.4.0",
+    "Microsoft.NETCore.Platforms": "2.0.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
     "Newtonsoft.Json": "10.0.3",
-    "System.Net.Http": "4.1.1",
+    "System.Net.Http": "4.3.2",
     "Xam.Plugin.Connectivity": "3.0.2",
     "Xam.Plugins.Messaging": "4.0.0",
     "Xamarin.Forms": "2.3.4.270"

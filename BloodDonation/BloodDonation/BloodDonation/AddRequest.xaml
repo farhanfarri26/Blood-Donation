@@ -15,19 +15,17 @@
                 <Entry x:Name="EntFullName" Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntCellNumber" Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrAddRequestCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrAddRequestCity_OnSelectedIndexChanged">
+                <Picker x:Name="PkrAddRequestCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>Lahore</x:String>
                     </Picker.Items>
                 </Picker>
 
                 <Label Text="Hospital" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrAddRequestHospital" Title="Choose Hospital" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrAddRequestHospital_OnSelectedIndexChanged">
+                <Picker x:Name="PkrAddRequestHospital" Title="Choose Hospital" Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>Bajwa Hospital, Shahdara Town</x:String>
                         <x:String>Bajwa Hospital, Iqbal Town</x:String>
@@ -62,8 +60,7 @@
                 </Picker>
 
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrAddRequestBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrAddRequestBloodGroup_OnSelectedIndexChanged">
+                <Picker x:Name="PkrAddRequestBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>None</x:String>
                         <x:String>A+</x:String>

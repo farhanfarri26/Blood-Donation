@@ -68,6 +68,7 @@
     <Compile Include="Models\DonateNowClass.cs" />
     <Compile Include="Models\FindDonorClass.cs" />
     <Compile Include="Models\LoginClass.cs" />
+    <Compile Include="Models\ProfilePageClass.cs" />
     <Compile Include="Models\SignupClass.cs" />
     <Compile Include="ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>

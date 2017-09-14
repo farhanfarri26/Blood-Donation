@@ -13,7 +13,7 @@
                 <Entry x:Name="EntFullName"  Placeholder="Enter Your Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntCellNumber" Text="03" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber"  Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrAddDonorCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}">
@@ -89,7 +89,32 @@
                 </Picker>
 
                 <Button Text="Add" x:Name="BtnAddDonor" Style="{StaticResource CustomButtonStyleBottomMargin}"
-                        Clicked="BtnAddDonor_OnClicked"/>
+                        Clicked="BtnAddDonor_OnClicked">
+                    <Button.Triggers>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntFullName}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntCellNumber}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PkrAddDonorCity}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PkrAddDonorArea}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PkrAddDonorBloodGroup}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                    </Button.Triggers>
+                 </Button>
 
             </StackLayout>
         </ScrollView>

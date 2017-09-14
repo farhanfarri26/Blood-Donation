@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>20D039C4E40D33EC728D9A13795485A691272F7FEF1971AEB10943CBCF4083BB</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>001A3004B75F21624D5314F01AB43650171EC6B35659F34106D7F2584D8C83CE</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f304f660-c9e9-488f-a3de-da2373f73a28_1.0.0.0_x86__1g0a8hk97gyz0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f304f660-c9e9-488f-a3de-da2373f73a28_1g0a8hk97gyz0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f304f660-c9e9-488f-a3de-da2373f73a28</RegisteredPackageID>
@@ -31,17 +31,17 @@
     <AppXManifest Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T16:18:37.803</Modified>
+      <Modified>2017-09-14T18:23:46.042</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\BloodDonation.UWP.exe">
       <PackagePath>entrypoint\BloodDonation.UWP.exe</PackagePath>
-      <Modified>2017-09-13T16:18:35.058</Modified>
+      <Modified>2017-09-14T18:23:43.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\Microsoft.CSharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\Microsoft.CSharp\4.4.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
-      <Modified>2016-11-05T11:55:34.000</Modified>
+      <Modified>2017-07-19T17:01:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.2\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -259,9 +259,9 @@
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
       <Modified>2016-11-04T23:55:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\System.Diagnostics.DiagnosticSource\4.0.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\System.Diagnostics.DiagnosticSource\4.3.0\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
-      <Modified>2016-06-12T06:13:28.000</Modified>
+      <Modified>2016-11-04T23:55:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\System.Diagnostics.StackTrace\4.0.2\lib\netstandard1.3\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
@@ -311,9 +311,9 @@
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
       <Modified>2016-06-12T06:13:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\System.Net.Http\4.1.1\runtimes\win\lib\netcore50\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\System.Net.Http\4.3.2\runtimes\win\lib\netcore50\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
-      <Modified>2016-11-09T17:31:28.000</Modified>
+      <Modified>2017-04-19T23:58:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\System.Net.Http.Rtc\4.0.1\runtimes\win\lib\netcore50\System.Net.Http.Rtc.dll">
       <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
@@ -553,7 +553,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll">
       <PackagePath>BloodDonation.dll</PackagePath>
-      <Modified>2017-09-13T15:59:38.311</Modified>
+      <Modified>2017-09-14T18:23:38.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AddDonor.png">
       <PackagePath>Assets\AddDonor.png</PackagePath>
@@ -562,6 +562,81 @@
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AddRequest.png">
       <PackagePath>Assets\AddRequest.png</PackagePath>
       <Modified>2017-09-13T16:18:16.687</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\AppIcon.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.281</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.altform-unplated_targetsize-24.png">
+      <PackagePath>Assets\AppIcon.altform-unplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\AppIcon.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\AppIcon.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.328</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\AppIcon.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.349</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.scale-100.png">
+      <PackagePath>Assets\AppIcon.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.031</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.scale-125.png">
+      <PackagePath>Assets\AppIcon.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.scale-150.png">
+      <PackagePath>Assets\AppIcon.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.074</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.scale-200.png">
+      <PackagePath>Assets\AppIcon.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.095</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.scale-400.png">
+      <PackagePath>Assets\AppIcon.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.119</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.targetsize-16.png">
+      <PackagePath>Assets\AppIcon.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.targetsize-24.png">
+      <PackagePath>Assets\AppIcon.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.targetsize-256.png">
+      <PackagePath>Assets\AppIcon.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.256</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.targetsize-32.png">
+      <PackagePath>Assets\AppIcon.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.189</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AppIcon.targetsize-48.png">
+      <PackagePath>Assets\AppIcon.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\BG.png">
       <PackagePath>Assets\BG.png</PackagePath>
@@ -599,6 +674,31 @@
       <PackagePath>Assets\Email.png</PackagePath>
       <Modified>2017-09-13T16:18:16.757</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:52.006</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
       <Modified>2017-09-13T16:18:16.764</Modified>
@@ -610,6 +710,31 @@
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Man.png">
       <PackagePath>Assets\Man.png</PackagePath>
       <Modified>2017-09-13T16:18:16.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\MediumTile.scale-100.png">
+      <PackagePath>Assets\MediumTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\MediumTile.scale-125.png">
+      <PackagePath>Assets\MediumTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\MediumTile.scale-150.png">
+      <PackagePath>Assets\MediumTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\MediumTile.scale-200.png">
+      <PackagePath>Assets\MediumTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.528</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\MediumTile.scale-400.png">
+      <PackagePath>Assets\MediumTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Reason.png">
       <PackagePath>Assets\Reason.png</PackagePath>
@@ -643,13 +768,83 @@
       <PackagePath>Assets\signuplogo.png</PackagePath>
       <Modified>2017-09-13T16:18:16.837</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.261</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.306</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.358</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.382</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.430</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\splash.png">
       <PackagePath>Assets\splash.png</PackagePath>
       <Modified>2017-09-13T16:18:16.843</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <Modified>2017-09-14T16:31:15.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <Modified>2017-09-14T16:31:15.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <Modified>2017-09-14T16:31:15.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <Modified>2017-09-14T16:31:15.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <Modified>2017-09-14T16:31:15.881</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\TermsConditions.png">
       <PackagePath>Assets\TermsConditions.png</PackagePath>
       <Modified>2017-09-13T16:18:16.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\WideTile.scale-100.png">
+      <PackagePath>Assets\WideTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.597</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\WideTile.scale-125.png">
+      <PackagePath>Assets\WideTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\WideTile.scale-150.png">
+      <PackagePath>Assets\WideTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\WideTile.scale-200.png">
+      <PackagePath>Assets\WideTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.667</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\WideTile.scale-400.png">
+      <PackagePath>Assets\WideTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-09-14T17:39:51.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
@@ -674,102 +869,87 @@
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.108</Modified>
+      <Modified>2017-09-14T17:39:52.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.115</Modified>
+      <Modified>2017-09-14T17:39:52.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.212</Modified>
+      <Modified>2017-09-14T17:39:52.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.220</Modified>
+      <Modified>2017-09-14T17:39:52.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.224</Modified>
+      <Modified>2017-09-14T17:39:52.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.239</Modified>
+      <Modified>2017-09-14T16:31:15.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.253</Modified>
+      <Modified>2017-09-14T16:31:15.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.256</Modified>
+      <Modified>2017-09-14T16:31:15.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.263</Modified>
+      <Modified>2017-09-14T16:31:15.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.267</Modified>
+      <Modified>2017-09-14T16:31:15.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.272</Modified>
+      <Modified>2017-09-14T16:31:15.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.288</Modified>
+      <Modified>2017-09-14T16:31:15.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.292</Modified>
+      <Modified>2017-09-14T16:31:15.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.296</Modified>
+      <Modified>2017-09-14T16:31:15.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.301</Modified>
+      <Modified>2017-09-14T16:31:15.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.306</Modified>
+      <Modified>2017-09-14T16:31:15.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.320</Modified>
+      <Modified>2017-09-14T16:31:15.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.328</Modified>
+      <Modified>2017-09-14T16:31:15.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.332</Modified>
+      <Modified>2017-09-14T16:31:16.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.325</Modified>
+      <Modified>2017-09-14T16:31:16.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
@@ -778,28 +958,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.341</Modified>
+      <Modified>2017-09-14T16:31:15.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.351</Modified>
+      <Modified>2017-09-14T16:31:15.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.356</Modified>
+      <Modified>2017-09-14T16:31:15.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.360</Modified>
+      <Modified>2017-09-14T16:31:15.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T12:47:08.364</Modified>
+      <Modified>2017-09-14T16:31:15.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -824,11 +999,11 @@
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-13T16:18:36.615</Modified>
+      <Modified>2017-09-14T17:40:15.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\Core\BloodDonation.UWP.exe">
       <PackagePath>BloodDonation.UWP.exe</PackagePath>
-      <Modified>2017-09-13T16:18:37.794</Modified>
+      <Modified>2017-09-14T18:23:46.031</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

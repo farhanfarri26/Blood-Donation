@@ -19,16 +19,14 @@
                 <Entry x:Name="EntCellNumber" Text="{Binding CellNumber}" Placeholder="Enter Your Working Phone Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSignupCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrCity_OnSelectedIndexChanged">
+                <Picker x:Name="PkrSignupCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>Lahore</x:String>
                     </Picker.Items>
                 </Picker>
 
                 <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSignupArea" Title="Choose Nearby Area" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrSignupArea_OnSelectedIndexChanged">
+                <Picker x:Name="PkrSignupArea" Title="Choose Nearby Area" Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>Allama Iqbal Town</x:String>
                         <x:String>Awan Town</x:String>
@@ -79,8 +77,7 @@
                 </Picker>
 
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSignupBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrBloodGroup_OnSelectedIndexChanged">
+                <Picker x:Name="PkrSignupBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>None</x:String>
                         <x:String>A+</x:String>
@@ -101,7 +98,39 @@
                 <Entry x:Name="EntPassword" IsPassword="True" Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}"
-                        Clicked="BtnCreateAccount_OnClicked"/>
+                        Clicked="BtnCreateAccount_OnClicked">
+                    <Button.Triggers>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntFullName}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntCellNumber}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PkrSignupCity}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PkrSignupArea}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference PkrSignupBloodGroup}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntEmail}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntPassword}, Path=Text.Length}" Value="0">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
+                    </Button.Triggers>
+                </Button>
 
             </StackLayout>
         </ScrollView>
