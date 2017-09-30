@@ -9,25 +9,22 @@
         <ScrollView>
 
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="logo.png"/>
+                <Image Source="logo.png" Margin="0,10,0,0"/>
                 <Label Text="Email Or Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntUserName" Placeholder="Enter Email Or Cell Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntPassword" Placeholder="Enter Your Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}"
-                Clicked="BtnLogin_OnClicked">
+                <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}" IsEnabled="False" Clicked="BtnLogin_OnClicked">
                     <Button.Triggers>
-
-                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntUserName}, Path=Text.Length}" Value="0">
-                            <Setter Property="IsEnabled" Value="False" />
-                        </DataTrigger>
-
-                        <DataTrigger TargetType="Button" Binding="{Binding Source={x:Reference EntPassword}, Path=Text.Length}" Value="0">
-                            <Setter Property="IsEnabled" Value="False" />
-                        </DataTrigger>
-
+                        <MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <BindingCondition Binding="{Binding Source={x:Reference EntUserName}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
+                                <BindingCondition Binding="{Binding Source={x:Reference EntPassword}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
+                            </MultiTrigger.Conditions>
+                            <Setter Property="IsEnabled" Value="True" />
+                        </MultiTrigger>
                     </Button.Triggers>
                 </Button>
 
@@ -42,10 +39,11 @@
 
                 <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnSignup_OnClicked">
-                    
+
                 </Button>
 
             </StackLayout>
+            
         </ScrollView>
     </StackLayout>
 </ContentPage>

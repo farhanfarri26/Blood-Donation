@@ -8,89 +8,86 @@
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
 
         <ScrollView>
+           
+                <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                    <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Picker x:Name="PkrSearchDonorCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}">
+                        <Picker.Items>
+                            <x:String>Lahore</x:String>
+                        </Picker.Items>
+                    </Picker>
 
-                <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSearchDonorCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged">
-                    <Picker.Items>
-                        <x:String>Lahore</x:String>
-                    </Picker.Items>
-                </Picker>
+                    <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Picker x:Name="PkrSearchArea" Title="Select Nearby Area" Style="{StaticResource CustomEntryStyle}">
+                        <Picker.Items>
+                            <x:String>Allama Iqbal Town</x:String>
+                            <x:String>Awan Town</x:String>
+                            <x:String>Aziz Bhatti Town</x:String>
+                            <x:String>Baghbanpura</x:String>
+                            <x:String>Batapur</x:String>
+                            <x:String>Begum kot</x:String>
+                            <x:String>Chah Miran</x:String>
+                            <x:String>Data Ganj Baksh Town</x:String>
+                            <x:String>Defence Housing Authority (Lahore)</x:String>
+                            <x:String>Diamond Market</x:String>
+                            <x:String>Faisal Town</x:String>
+                            <x:String>Garden Town</x:String>
+                            <x:String>Gawalmandi</x:String>
+                            <x:String>Gosia Park (Band Road)</x:String>
+                            <x:String>Green Town</x:String>
+                            <x:String>Gulberg Town</x:String>
+                            <x:String>Gulshan-e-Ravi</x:String>
+                            <x:String>Harbanspura</x:String>
+                            <x:String>Hassan Town</x:String>
+                            <x:String>Ichhra</x:String>
+                            <x:String>Jallo Mor</x:String>
+                            <x:String>Johar Town</x:String>
+                            <x:String>Krishan Nagar</x:String>
+                            <x:String>Lahore Cantonment</x:String>
+                            <x:String>Laxshmi Chowk</x:String>
+                            <x:String>Model Town</x:String>
+                            <x:String>Mughalpura</x:String>
+                            <x:String>Muhafiz Town</x:String>
+                            <x:String>Mustafa Town</x:String>
+                            <x:String>New Muslim Town</x:String>
+                            <x:String>Nishtar Town</x:String>
+                            <x:String>Pasco Society</x:String>
+                            <x:String>Punjab Cooperative Housing Society</x:String>
+                            <x:String>Qila Gujar Singh</x:String>
+                            <x:String>Ravi Town</x:String>
+                            <x:String>Samanabad Town</x:String>
+                            <x:String>Shad Bagh</x:String>
+                            <x:String>Shadman Town</x:String>
+                            <x:String>Shahdara</x:String>
+                            <x:String>Shalimar Town</x:String>
+                            <x:String>SukhChyan Housing Estate</x:String>
+                            <x:String>Township</x:String>
+                            <x:String>WAPDA Town</x:String>
+                            <x:String>Wagah Town</x:String>
+                            <x:String>Walled City of Lahore</x:String>
+                        </Picker.Items>
+                    </Picker>
 
-                <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSearchArea" Title="Select Nearby Area" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrSearchArea_OnSelectedIndexChanged">
-                    <Picker.Items>
-                        <x:String>Allama Iqbal Town</x:String>
-                        <x:String>Awan Town</x:String>
-                        <x:String>Aziz Bhatti Town</x:String>
-                        <x:String>Baghbanpura</x:String>
-                        <x:String>Batapur</x:String>
-                        <x:String>Begum kot</x:String>
-                        <x:String>Chah Miran</x:String>
-                        <x:String>Data Ganj Baksh Town</x:String>
-                        <x:String>Defence Housing Authority (Lahore)</x:String>
-                        <x:String>Diamond Market</x:String>
-                        <x:String>Faisal Town</x:String>
-                        <x:String>Garden Town</x:String>
-                        <x:String>Gawalmandi</x:String>
-                        <x:String>Gosia Park (Band Road)</x:String>
-                        <x:String>Green Town</x:String>
-                        <x:String>Gulberg Town</x:String>
-                        <x:String>Gulshan-e-Ravi</x:String>
-                        <x:String>Harbanspura</x:String>
-                        <x:String>Hassan Town</x:String>
-                        <x:String>Ichhra</x:String>
-                        <x:String>Jallo Mor</x:String>
-                        <x:String>Johar Town</x:String>
-                        <x:String>Krishan Nagar</x:String>
-                        <x:String>Lahore Cantonment</x:String>
-                        <x:String>Laxshmi Chowk</x:String>
-                        <x:String>Model Town</x:String>
-                        <x:String>Mughalpura</x:String>
-                        <x:String>Muhafiz Town</x:String>
-                        <x:String>Mustafa Town</x:String>
-                        <x:String>New Muslim Town</x:String>
-                        <x:String>Nishtar Town</x:String>
-                        <x:String>Pasco Society</x:String>
-                        <x:String>Punjab Cooperative Housing Society</x:String>
-                        <x:String>Qila Gujar Singh</x:String>
-                        <x:String>Ravi Town</x:String>
-                        <x:String>Samanabad Town</x:String>
-                        <x:String>Shad Bagh</x:String>
-                        <x:String>Shadman Town</x:String>
-                        <x:String>Shahdara</x:String>
-                        <x:String>Shalimar Town</x:String>
-                        <x:String>SukhChyan Housing Estate</x:String>
-                        <x:String>Township</x:String>
-                        <x:String>WAPDA Town</x:String>
-                        <x:String>Wagah Town</x:String>
-                        <x:String>Walled City of Lahore</x:String>
-                    </Picker.Items>
-                </Picker>
+                    <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
+                        <Picker.Items>
+                            <x:String>None</x:String>
+                            <x:String>A+</x:String>
+                            <x:String>A-</x:String>
+                            <x:String>B+</x:String>
+                            <x:String>B-</x:String>
+                            <x:String>AB+</x:String>
+                            <x:String>AB-</x:String>
+                            <x:String>O+</x:String>
+                            <x:String>O-</x:String>
+                        </Picker.Items>
+                    </Picker>
 
-                <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}"
-                        SelectedIndexChanged="PkrSearchDonorBloodGroup_OnSelectedIndexChanged">
-                    <Picker.Items>
-                        <x:String>None</x:String>
-                        <x:String>A+</x:String>
-                        <x:String>A-</x:String>
-                        <x:String>B+</x:String>
-                        <x:String>B-</x:String>
-                        <x:String>AB+</x:String>
-                        <x:String>AB-</x:String>
-                        <x:String>O+</x:String>
-                        <x:String>O-</x:String>
-                    </Picker.Items>
-                </Picker>
-
-                <Button Text="Search" x:Name="BtnSearchDonor"  Style="{StaticResource CustomButtonStyleBottomMargin}"
+                    <Button Text="Search" x:Name="BtnSearchDonor"  Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnSearchDonor_OnClicked"/>
 
-            </StackLayout>
+                </StackLayout>
         </ScrollView>
     </StackLayout>
 </ContentPage>

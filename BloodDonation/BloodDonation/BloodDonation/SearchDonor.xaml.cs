@@ -17,46 +17,15 @@ namespace BloodDonation
             InitializeComponent();
         }
 
-       
         private void BtnSearchDonor_OnClicked(object sender, EventArgs e)
         {
-            //if (!CrossConnectivity.Current.IsConnected)
-            //{
-            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-            //}
-            //else
-            //{
-
-            //}
-        }
-
-        private void PkrSearchDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var cityPicker = (Picker)sender;
-            int selectedIndex = cityPicker.SelectedIndex;
-            if (selectedIndex != -1)
+            if (!CrossConnectivity.Current.IsConnected)
             {
-                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+                DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
             }
-        }
-
-        private void PkrSearchDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var bloodgroupPicker = (Picker)sender;
-            int selectedIndex = bloodgroupPicker.SelectedIndex;
-            if (selectedIndex != -1)
+            else
             {
-                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
-            }
-        }
-
-        private void PkrSearchArea_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            var areaPicker = (Picker)sender;
-            int selectedIndex = areaPicker.SelectedIndex;
-            if (selectedIndex != -1)
-            {
-                //monkeyNameLabel.Text = bloodgrouppicker.Items[selectedIndex];
+                Navigation.PushAsync(new Donors());
             }
         }
     }

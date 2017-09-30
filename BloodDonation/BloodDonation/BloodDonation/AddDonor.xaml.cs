@@ -18,14 +18,27 @@ namespace BloodDonation
         public AddDonor()
         {
             InitializeComponent();
+            //CheckProperties();
         }
 
-        private void BtnAddDonor_OnClicked(object sender, EventArgs e)
+        //private void CheckProperties()
+        //{
+        //    if (string.IsNullOrEmpty(EntFullName.Text) == false)
+        //    {
+        //        BtnAddDonor.IsEnabled = true;
+        //    }
+        //    else
+        //    {
+        //        BtnAddDonor.IsEnabled = false;
+        //    }
+        //}
+
+        private async void BtnAddDonor_OnClicked(object sender, EventArgs e)
         {
 
             if (!CrossConnectivity.Current.IsConnected)
             {
-                DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+                await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
             }
             else
             {
@@ -38,14 +51,34 @@ namespace BloodDonation
                     BloodGroup = PkrAddDonorBloodGroup.Items[PkrAddDonorBloodGroup.SelectedIndex],
                 };
 
-                var httpClient = new HttpClient();
-                var json = JsonConvert.SerializeObject(addDonorClass);
-                HttpContent httpContent = new StringContent(json);
-                httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                httpClient.PostAsync("http://demoapp-1.azurewebsites.net/", httpContent);
+                try
+                {
+                    StackLayoutAddDonor.IsVisible = false;
+                    WaitingLoader.IsRunning = true;
+                    WaitingLoader.IsVisible = true;
 
-                DisplayAlert("Dear Donor!!", " Your Request successfully Added", "OK");
-                Navigation.PopAsync();
+                    var httpClient = new HttpClient();
+                    var json = JsonConvert.SerializeObject(addDonorClass);
+                    HttpContent httpContent = new StringContent(json);
+                    httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+                    await httpClient.PostAsync("http://bloodapp.azurewebsites.net/api/DonorsApi", httpContent);
+
+                    await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
+                    await Navigation.PopAsync();
+                }
+
+                catch
+                {
+                    StackLayoutAddDonor.IsVisible = true;
+                    WaitingLoader.IsVisible = false;
+                    throw;
+                }
+
+                finally
+                {
+                    StackLayoutAddDonor.IsVisible = true;
+                    WaitingLoader.IsVisible = false;
+                }
 
             }
         }

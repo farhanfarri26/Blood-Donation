@@ -1,11 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:BloodDonation.Models;assembly=BloodDonation"
              x:Class="BloodDonation.App">
 
     <Application.Resources>
 
         <ResourceDictionary>
+
+            <models:MultitriggerConverter x:Key="DataHasBeenEntered" />
+
+            <Style x:Key="CustomAbsoluteLayoutStyle" TargetType="AbsoluteLayout">
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CustomActivityIndicator" TargetType="ActivityIndicator">
+                <Setter Property="IsRunning" Value="False"/>
+                <Setter Property="IsVisible" Value="False"/>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="PositionProportional"/>
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0.5,0.5,-1,-1"/>
+            </Style>
 
             <Style x:Key="CustomLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="DarkGray"/>
@@ -45,7 +59,7 @@
             <Style x:Key="CustomButtonStyleBottomMargin" TargetType="Button">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="BackgroundColor" Value="#d21d1d"/>
-                <Setter Property="Margin" Value="10,0,10,200"/>
+                <Setter Property="Margin" Value="10,0,10,100"/>
             </Style>
 
             <Style x:Key="CustomImageGridStyle" TargetType="Image">
@@ -61,8 +75,9 @@
             </Style>
 
             <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
-                <Setter Property="VerticalOptions" Value="Center"/>
-                <Setter Property="Margin" Value="0,10,0,0"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="Margin" Value="0,10,0,10"/>
+                <Setter Property="IsEnabled" Value="True"/>
             </Style>
 
         </ResourceDictionary>

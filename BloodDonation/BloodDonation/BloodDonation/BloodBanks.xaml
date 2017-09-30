@@ -5,20 +5,40 @@
              Title="Blood Banks"
              BackgroundImage="BG.png">
 
+
+
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ScrollView>
+        <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+            <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
 
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <ListView x:Name="LvBloodBanks">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ImageCell x:Name="ImageCellBloodBank" Text="{Binding HospitalName}" Detail="{Binding PhoneNumber}"
-                                       ImageSource="CallIcon.png" />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackLayout>
+            <ListView x:Name="LvBloodBanks" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition  Width="0.2*"/>
+                                        <ColumnDefinition  Width="0.3*"/>
+                                        <ColumnDefinition  Width="*"/>
+                                    </Grid.ColumnDefinitions>
 
-        </ScrollView>
+                                    <Image Source="CallIcon2" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+                                    <Label  Text="Name" Grid.Row="0" Grid.Column="1" />
+                                    <Label Text="{Binding HospitalName}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
+                                    <Label Text="Phone #" Grid.Row="1" Grid.Column="1"/>
+                                    <Label Text="{Binding PhoneNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
+
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </StackLayout>
 </ContentPage>

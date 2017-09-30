@@ -41,7 +41,7 @@ namespace BloodDonation
                 var json = JsonConvert.SerializeObject(addRequestClass);
                 HttpContent httpContent = new StringContent(json);
                 httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                httpClient.PostAsync("http://demoapp-1.azurewebsites.net/", httpContent);
+                httpClient.PostAsync("http://bloodwebapp.azurewebsites.net/api/AddRequestsApi", httpContent);
 
                 DisplayAlert("Dear Donor!!", " Your Request successfully Added", "OK");
                 Navigation.PopAsync();

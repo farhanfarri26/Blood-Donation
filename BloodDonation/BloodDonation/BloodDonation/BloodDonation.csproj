@@ -50,6 +50,9 @@
     <Compile Include="BloodDetails.xaml.cs">
       <DependentUpon>BloodDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Donors.xaml.cs">
+      <DependentUpon>Donors.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Eligibility.xaml.cs">
       <DependentUpon>Eligibility.xaml</DependentUpon>
     </Compile>
@@ -68,6 +71,7 @@
     <Compile Include="Models\DonateNowClass.cs" />
     <Compile Include="Models\FindDonorClass.cs" />
     <Compile Include="Models\LoginClass.cs" />
+    <Compile Include="Models\MultitriggerConverter.cs" />
     <Compile Include="Models\ProfilePageClass.cs" />
     <Compile Include="Models\SignupClass.cs" />
     <Compile Include="ProfilePage.xaml.cs">
@@ -206,6 +210,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Eligibility.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Donors.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

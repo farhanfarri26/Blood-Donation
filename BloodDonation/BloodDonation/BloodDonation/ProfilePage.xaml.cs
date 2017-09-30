@@ -16,27 +16,36 @@ namespace BloodDonation
         public ProfilePage()
         {
             InitializeComponent();
-            GetSignupData();
+            //GetSignupData();
         }
 
-        private void GetSignupData()
+        //private async void GetSignupData()
+        //{
+        //    ProfilePageClass profilePageClass = new ProfilePageClass()
+        //    {
+
+
+        //        FullName = Lb1Fullname.Text,
+        //        BloodGroup = LblBloodGroup.Text,
+        //        CellNumber = LblCellNumber.Text,
+        //        Email = LblEmail.Text,
+        //    };
+
+        //    var Url = "http://bloodwebapp.azurewebsites.net/api/SignupsApi";
+        //    var httpClient = new System.Net.Http.HttpClient();
+        //    httpClient.BaseAddress = new Uri(Url);
+        //    httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        //    var response = await httpClient.GetStringAsync("http://bloodwebapp.azurewebsites.net/api/SignupsApi");
+        //    var name = JsonConvert.DeserializeObject<List<ProfilePageClass>>(response);
+        //    LvProfilePage.ItemsSource = name;
+
+
+
+        //}
+
+        private void LogoutTapGestureRecognizer_OnTapped(object sender, EventArgs e)
         {
-            ProfilePageClass profilePageClass = new ProfilePageClass()
-            {
-                FullName = LblFullName.Text,
-                BloodGroup = LblBloodGroup.Text,
-                CellNumber = LblCellNumber.Text,
-                Email = LblEmail.Text,
-            };
-
-
-            //var httpClient = new System.Net.Http.HttpClient();
-            //var response =  httpClient.GetStringAsync("http://localhost:50698/api/DramaApi");
-            //var name = JsonConvert.DeserializeObject<ProfilePageClass>(response);
-            //var a = name;
-
-
-
+            Navigation.PopToRootAsync();
         }
     }
 }

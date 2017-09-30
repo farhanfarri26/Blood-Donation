@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-14T18:23:46.042</Modified>
+      <Modified>2017-09-19T13:46:23.110</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\BloodDonation.UWP.exe">
       <PackagePath>entrypoint\BloodDonation.UWP.exe</PackagePath>
-      <Modified>2017-09-14T18:23:43.726</Modified>
+      <Modified>2017-09-19T13:46:21.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\.nuget\packages\Microsoft.CSharp\4.4.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -553,7 +553,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll">
       <PackagePath>BloodDonation.dll</PackagePath>
-      <Modified>2017-09-14T18:23:38.436</Modified>
+      <Modified>2017-09-19T13:46:16.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\Assets\AddDonor.png">
       <PackagePath>Assets\AddDonor.png</PackagePath>
@@ -999,11 +999,11 @@
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-14T17:40:15.873</Modified>
+      <Modified>2017-09-16T21:07:56.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.UWP\bin\x86\Debug\Core\BloodDonation.UWP.exe">
       <PackagePath>BloodDonation.UWP.exe</PackagePath>
-      <Modified>2017-09-14T18:23:46.031</Modified>
+      <Modified>2017-09-19T13:46:23.084</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
