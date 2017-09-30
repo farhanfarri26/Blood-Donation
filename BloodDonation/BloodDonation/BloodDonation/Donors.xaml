@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BloodDonation.Donors">
-    <ContentPage.Content>
+             x:Class="BloodDonation.Donors"
+             Title="Donors"
+             BackgroundImage="BG.png">
+ <ContentPage.Content>
 
         <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
@@ -13,8 +15,9 @@
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.View>
-                                    <Grid>
+                                    <Grid Margin="10">
                                         <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
@@ -27,7 +30,7 @@
                                             <ColumnDefinition  Width="*"/>
                                         </Grid.ColumnDefinitions>
 
-                                        <Label Text="Donor Details" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                                        <Label Text="Donor Detail" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" TextColor="White" BackgroundColor="#d21d1d" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
                                         <Label Text="Name " Grid.Row="1" Grid.Column="0" />
                                         <Label Text="{Binding FullName}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="1"/>
                                         <Label Text="Blood Group" Grid.Row="2" Grid.Column="0"/>
@@ -35,9 +38,10 @@
                                         <Label Text="Cell #" Grid.Row="3" Grid.Column="0"/>
                                         <Label Text="{Binding CellNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="3" Grid.Column="1"/>
                                         <Label Text="Area" Grid.Row="4" Grid.Column="0"/>
-                                        <Label Text="{Binding Area}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="4" Grid.Column="1"/>
+                                        <Label Text="{Binding Area}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="4" Grid.Column="1"/>
                                         <Label Text="City" Grid.Row="5" Grid.Column="0"/>
-                                        <Label Text="{Binding City}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
+                                        <Label Text="{Binding City}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
+                                        <Label Text="Please, provide Pick and Drop!!" HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
                                     </Grid>
                                 </ViewCell.View>
                             </ViewCell>

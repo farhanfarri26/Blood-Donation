@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="0.5*"/>
 
             </Grid.ColumnDefinitions>
-            
+
             <Image Source="TermsConditions.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer x:Name="TapTermsCondition" Tapped="TapTermsCondition_OnTapped"/>
@@ -36,7 +36,11 @@
 
             <Image Source="Share.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}"/>
 
-            <Image Source="Share.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}"/>
+            <Image Source="Contactus.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapContactus" Tapped="TapContactus_OnTapped"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" >
                 <Label Text="Advertisement" HorizontalOptions="Center" VerticalOptions="Center"></Label>

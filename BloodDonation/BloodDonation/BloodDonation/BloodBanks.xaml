@@ -5,8 +5,6 @@
              Title="Blood Banks"
              BackgroundImage="BG.png">
 
-
-
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
             <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>

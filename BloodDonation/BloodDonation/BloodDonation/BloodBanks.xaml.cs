@@ -52,9 +52,7 @@ namespace BloodDonation
             }
 
         }
-
-
-
+        
         private void ImageCellBloodBank_OnTapped(object sender, EventArgs e)
         {
 

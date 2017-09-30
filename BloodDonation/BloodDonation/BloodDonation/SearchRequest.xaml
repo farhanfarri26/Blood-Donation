@@ -70,8 +70,6 @@
                     <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"  Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnFindWhoNeedy_OnClicked"/>
 
-                    <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
-
                 </StackLayout>
         </ScrollView>
     </StackLayout>

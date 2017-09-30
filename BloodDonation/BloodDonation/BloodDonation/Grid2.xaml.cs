@@ -26,5 +26,10 @@ namespace BloodDonation
         {
             await Navigation.PushAsync(new Eligibility());
         }
+
+        private async void TapContactus_OnTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Contactus());
+        }
     }
 }
