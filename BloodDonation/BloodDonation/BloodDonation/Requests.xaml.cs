@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BloodDonation.Models;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
+using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -49,6 +50,14 @@ namespace BloodDonation
 	                WaitingLoader.IsVisible = false;
 	            }
 	        }
+        }
+
+	    private void LvRequests_OnItemTapped(object sender, ItemTappedEventArgs e)
+	    {
+	        string phonenumber = ((AddRequestClass)LvRequests.SelectedItem).CellNumber;
+	        var phoneDialer = CrossMessaging.Current.PhoneDialer;
+	        if (phoneDialer.CanMakePhoneCall)
+	            phoneDialer.MakePhoneCall(phonenumber);
         }
 	}
 }

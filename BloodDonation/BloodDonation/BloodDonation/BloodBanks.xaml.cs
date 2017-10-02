@@ -52,13 +52,13 @@ namespace BloodDonation
             }
 
         }
-        
-        private void ImageCellBloodBank_OnTapped(object sender, EventArgs e)
+       
+        private void LvBloodBanks_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            string phonenumber = ((BloodBankClass)LvBloodBanks.SelectedItem).PhoneNumber;
             var phoneDialer = CrossMessaging.Current.PhoneDialer;
             if (phoneDialer.CanMakePhoneCall)
-                phoneDialer.MakePhoneCall("PhoneNumber");
+                phoneDialer.MakePhoneCall(phonenumber);
         }
     }
 }

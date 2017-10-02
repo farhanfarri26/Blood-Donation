@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BloodDonation.Models;
 using Newtonsoft.Json;
 using Plugin.Connectivity;
+using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -36,7 +37,7 @@ namespace BloodDonation
                     var httpClient = new System.Net.Http.HttpClient();
                     var response = await httpClient.GetStringAsync("http://bloodapp.azurewebsites.net/api/ContactusApi");
                     var name = JsonConvert.DeserializeObject<List<Models.Contactus>>(response);
-                    LvBloodBanks.ItemsSource = name;
+                    LvContactus.ItemsSource = name;
                 }
                 catch
                 {
@@ -49,6 +50,14 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = false;
                 }
             }
+        }
+
+        private void LvContactus_OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            string phonenumber = ((Models.Contactus)LvContactus.SelectedItem).CellNumber;
+            var phoneDialer = CrossMessaging.Current.PhoneDialer;
+            if (phoneDialer.CanMakePhoneCall)
+                phoneDialer.MakePhoneCall(phonenumber);
         }
     }
 }

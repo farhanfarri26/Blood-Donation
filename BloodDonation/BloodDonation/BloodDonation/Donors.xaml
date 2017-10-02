@@ -10,7 +10,7 @@
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
                 <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
 
-                <ListView x:Name="LvDonors" HasUnevenRows="True">
+                <ListView x:Name="LvDonors" HasUnevenRows="True" ItemTapped="LvDonors_OnItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

@@ -378,3 +378,5 @@ C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodD
 C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Farhan Farri\documents\visual studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\contactus.png
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\callicon2.png
+C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\contactus.png
