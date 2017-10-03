@@ -38,9 +38,7 @@
                 <Label Text="Create a new Account!!" Style="{StaticResource CustomLabelStyle}"/>
 
                 <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyleBottomMargin}"
-                        Clicked="BtnSignup_OnClicked">
-
-                </Button>
+                        Clicked="BtnSignup_OnClicked"/>
 
             </StackLayout>
             

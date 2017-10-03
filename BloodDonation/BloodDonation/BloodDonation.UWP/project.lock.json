@@ -26644,12 +26644,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\BloodDonation.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\BloodDonation.UWP.csproj",
       "projectName": "BloodDonation.UWP",
-      "projectPath": "C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\BloodDonation.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\project.json",
+      "projectPath": "C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\BloodDonation.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\project.json",
       "packagesPath": "C:\\Users\\Farhan Farri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\obj\\",
+      "outputPath": "C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDonation\\BloodDonation.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\Farhan Farri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26662,8 +26662,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDonation\\BloodDonation.csproj": {
-              "projectPath": "C:\\Users\\Farhan Farri\\Documents\\AppWorkshop\\BloodDonation\\BloodDonation\\BloodDonation\\BloodDonation.csproj"
+            "C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDonation\\BloodDonation\\BloodDonation.csproj": {
+              "projectPath": "C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDonation\\BloodDonation\\BloodDonation.csproj"
             }
           }
         }

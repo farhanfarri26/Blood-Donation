@@ -10,15 +10,9 @@
 
             <models:MultitriggerConverter x:Key="DataHasBeenEntered" />
 
-            <Style x:Key="CustomAbsoluteLayoutStyle" TargetType="AbsoluteLayout">
-                <Setter Property="VerticalOptions" Value="Center"/>
-            </Style>
-
             <Style x:Key="CustomActivityIndicator" TargetType="ActivityIndicator">
                 <Setter Property="IsRunning" Value="False"/>
                 <Setter Property="IsVisible" Value="False"/>
-                <Setter Property="AbsoluteLayout.LayoutFlags" Value="PositionProportional"/>
-                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0.5,0.5,-1,-1"/>
             </Style>
 
             <Style x:Key="CustomLabelStyle" TargetType="Label">
@@ -26,6 +20,14 @@
                 <Setter Property="HorizontalOptions" Value="Center"/>
             </Style>
 
+            <Style x:Key="CustomUnderLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#d21d1d"/>
+                <Setter Property="Margin" Value="0,0,40,0"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="IsVisible" Value="False"/>
+            </Style>
+            
             <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="#d21d1d"/>
                 <Setter Property="Margin" Value="30,0,0,0"/>
@@ -47,6 +49,7 @@
 
             <Style x:Key="CustomEntryStyle" TargetType="Entry">
                 <Setter Property="Margin" Value="30,0,30,0"/>
+                <!--<Setter Property="WidthRequest" Value="Fill"/>-->
                 <Setter Property="Placeholder" Value="20,0,0,0"/>
             </Style>
 
@@ -76,6 +79,7 @@
 
             <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
                 <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
                 <Setter Property="Margin" Value="0,10,0,10"/>
             </Style>
 
