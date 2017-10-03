@@ -24,7 +24,7 @@ namespace BloodDonation
         private async void BtnAddDonor_OnClicked(object sender, EventArgs e)
         {
             String phone = EntCellNumber.Text;
-            String phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
+            String phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
 
             if (Regex.IsMatch(phone, phonepattern))
             {

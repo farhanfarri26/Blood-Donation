@@ -30,7 +30,7 @@ namespace BloodDonation
             String phone = EntCellNumber.Text;
             var email = EntEmail.Text;
             var emailpattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-            String phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
+            String phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
 
             if (Regex.IsMatch(email, emailpattern) && Regex.IsMatch(phone, phonepattern))
             {
