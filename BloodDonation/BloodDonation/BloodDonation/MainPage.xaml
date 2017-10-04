@@ -16,17 +16,8 @@
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntPassword" Placeholder="Enter Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}" IsEnabled="False" Clicked="BtnLogin_OnClicked">
-                    <Button.Triggers>
-                        <MultiTrigger TargetType="Button">
-                            <MultiTrigger.Conditions>
-                                <BindingCondition Binding="{Binding Source={x:Reference EntUserName}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <BindingCondition Binding="{Binding Source={x:Reference EntPassword}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                            </MultiTrigger.Conditions>
-                            <Setter Property="IsEnabled" Value="True" />
-                        </MultiTrigger>
-                    </Button.Triggers>
-                </Button>
+                <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}" Clicked="BtnLogin_OnClicked"/>
+                   
 
                 <Label Text="Forget Password?" TextColor="Blue" Margin="0,0,30,0"
                        FontSize="15" HorizontalOptions="End">

@@ -8,8 +8,6 @@
 
         <ResourceDictionary>
 
-            <models:MultitriggerConverter x:Key="DataHasBeenEntered" />
-
             <Style x:Key="CustomActivityIndicator" TargetType="ActivityIndicator">
                 <Setter Property="IsRunning" Value="False"/>
                 <Setter Property="IsVisible" Value="False"/>
@@ -27,7 +25,7 @@
                 <Setter Property="FontSize" Value="Small"/>
                 <Setter Property="IsVisible" Value="False"/>
             </Style>
-            
+
             <Style x:Key="CustomLabelEntryStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="#d21d1d"/>
                 <Setter Property="Margin" Value="30,0,0,0"/>

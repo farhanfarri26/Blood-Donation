@@ -72,7 +72,6 @@
     <Compile Include="Models\AddRequestClass.cs" />
     <Compile Include="Models\BloodBankClass.cs" />
     <Compile Include="Models\Contactus.cs" />
-    <Compile Include="Models\MultitriggerConverter.cs" />
     <Compile Include="Models\SignupClass.cs" />
     <Compile Include="ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>

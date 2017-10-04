@@ -35,7 +35,6 @@ C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodD
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Collections.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Text.RegularExpressions.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
@@ -45,6 +44,7 @@ C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodD
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Numerics.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Xml.XmlDocument.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Xml.XDocument.dll
+C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll

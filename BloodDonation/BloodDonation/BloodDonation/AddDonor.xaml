@@ -20,15 +20,21 @@
                 <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
 
+                
+                
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrAddDonorCity" Title="Choose City" SelectedIndex="0" Style="{StaticResource CustomEntryStyle}">
+                <Picker x:Name="PkrAddDonorCity" Title="Choose City" SelectedIndexChanged="PkrAddDonorCity_OnSelectedIndexChanged" 
+                        Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>Lahore</x:String>
                     </Picker.Items>
                 </Picker>
 
+                
+                
                 <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrAddDonorArea" Title="Choose Area" Style="{StaticResource CustomEntryStyle}">
+                <Picker x:Name="PkrAddDonorArea" Title="Choose Area" SelectedIndexChanged="PkrAddDonorArea_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>Allama Iqbal Town</x:String>
                         <x:String>Awan Town</x:String>
@@ -78,8 +84,11 @@
                     </Picker.Items>
                 </Picker>
 
+                
+                
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrAddDonorBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
+                <Picker x:Name="PkrAddDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrAddDonorBloodGroup_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>None</x:String>
                         <x:String>A+</x:String>
@@ -93,21 +102,11 @@
                     </Picker.Items>
                 </Picker>
 
-                <Button Text="Add" x:Name="BtnAddDonor" IsEnabled="False" Style="{StaticResource CustomButtonStyleBottomMargin}"
-                        Clicked="BtnAddDonor_OnClicked">
-                    <Button.Triggers>
-                        <MultiTrigger TargetType="Button">
-                            <MultiTrigger.Conditions>
-                                <BindingCondition Binding="{Binding Source={x:Reference EntFullName}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <BindingCondition Binding="{Binding Source={x:Reference EntCellNumber}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <!--<BindingCondition Binding="{Binding Source={x:Reference PkrAddDonorCity}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                    <BindingCondition Binding="{Binding Source={x:Reference PkrAddDonorArea}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                    <BindingCondition Binding="{Binding Source={x:Reference PkrAddDonorBloodGroup}, Path=Text.Length, Converter={StaticResource DataHasBeenEntered}}" Value="true" />-->
-                            </MultiTrigger.Conditions>
-                            <Setter Property="IsEnabled" Value="True" />
-                        </MultiTrigger>
-                    </Button.Triggers>
-                </Button>
+                
+                
+                <Button Text="Add" x:Name="BtnAddDonor" Style="{StaticResource CustomButtonStyleBottomMargin}"
+                        Clicked="BtnAddDonor_OnClicked"/>
+                    
             </StackLayout>
 
         </ScrollView>

@@ -16,6 +16,10 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddDonor : ContentPage
     {
+        private string CityValue;
+        private string AreaValue;
+        private string BloodGroupValue;
+
         public AddDonor()
         {
             InitializeComponent();
@@ -26,61 +30,81 @@ namespace BloodDonation
             String phone = EntCellNumber.Text;
             String phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
 
-            if (Regex.IsMatch(phone, phonepattern))
+            if (string.IsNullOrWhiteSpace(EntFullName.Text) || string.IsNullOrWhiteSpace(EntCellNumber.Text)
+                || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
+                || string.IsNullOrWhiteSpace(BloodGroupValue))
             {
-                LblCellNumber.IsVisible = false;
-
-                if (!CrossConnectivity.Current.IsConnected)
-                {
-                    await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-                }
-                else
-                {
-                    AddDonorClass addDonorClass = new AddDonorClass()
-                    {
-                        FullName = EntFullName.Text,
-                        CellNumber = EntCellNumber.Text,
-                        City = PkrAddDonorCity.Items[PkrAddDonorCity.SelectedIndex],
-                        Area = PkrAddDonorArea.Items[PkrAddDonorArea.SelectedIndex],
-                        BloodGroup = PkrAddDonorBloodGroup.Items[PkrAddDonorBloodGroup.SelectedIndex],
-                    };
-
-                    try
-                    {
-                        StackLayoutAddDonor.IsVisible = false;
-                        WaitingLoader.IsRunning = true;
-                        WaitingLoader.IsVisible = true;
-
-                        var httpClient = new HttpClient();
-                        var json = JsonConvert.SerializeObject(addDonorClass);
-                        HttpContent httpContent = new StringContent(json);
-                        httpContent.Headers.ContentType =
-                            new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                        await httpClient.PostAsync("http://bloodapp.azurewebsites.net/api/DonorsApi", httpContent);
-
-                        await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
-                        await Navigation.PopAsync();
-                    }
-
-                    catch
-                    {
-                        StackLayoutAddDonor.IsVisible = true;
-                        WaitingLoader.IsVisible = false;
-                        throw;
-                    }
-
-                    finally
-                    {
-                        StackLayoutAddDonor.IsVisible = true;
-                        WaitingLoader.IsVisible = false;
-                    }
-
-                }
+                await DisplayAlert("Empty", "Dear Donor!! \n Please Fill all Entries.", "Cancel");
             }
             else
             {
-                LblCellNumber.IsVisible = true;
+                if (Regex.IsMatch(phone, phonepattern))
+                {
+                    LblCellNumber.IsVisible = false;
+
+                    if (!CrossConnectivity.Current.IsConnected)
+                    {
+                        await DisplayAlert("Network Connection Alert !!",
+                            "No Connection Available!! Turn On Data Connection", "Ok");
+                    }
+                    else
+                    {
+                        AddDonorClass addDonorClass = new AddDonorClass()
+                        {
+                            FullName = EntFullName.Text,
+                            CellNumber = EntCellNumber.Text,
+                            City = CityValue,
+                            Area = AreaValue,
+                            BloodGroup = BloodGroupValue,
+                        };
+                        try
+                        {
+                            StackLayoutAddDonor.IsVisible = false;
+                            WaitingLoader.IsRunning = true;
+                            WaitingLoader.IsVisible = true;
+
+                            var httpClient = new HttpClient();
+                            var json = JsonConvert.SerializeObject(addDonorClass);
+                            HttpContent httpContent = new StringContent(json);
+                            httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+                            await httpClient.PostAsync("http://bloodapp.azurewebsites.net/api/DonorsApi", httpContent);
+
+                            await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
+                            await Navigation.PopAsync();
+                        }
+                        catch
+                        {
+                            StackLayoutAddDonor.IsVisible = true;
+                            WaitingLoader.IsVisible = false;
+                            throw;
+                        }
+                        finally
+                        {
+                            StackLayoutAddDonor.IsVisible = true;
+                            WaitingLoader.IsVisible = false;
+                        }
+                    }
+                }
+                else
+                {
+                    LblCellNumber.IsVisible = true;
+                }
             }
+        }
+
+        private void PkrAddDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            CityValue = PkrAddDonorCity.Items[PkrAddDonorCity.SelectedIndex];
+        }
+
+        private void PkrAddDonorArea_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            AreaValue = PkrAddDonorArea.Items[PkrAddDonorArea.SelectedIndex];
+        }
+
+        private void PkrAddDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            BloodGroupValue = PkrAddDonorBloodGroup.Items[PkrAddDonorBloodGroup.SelectedIndex];
         }
     }
 }

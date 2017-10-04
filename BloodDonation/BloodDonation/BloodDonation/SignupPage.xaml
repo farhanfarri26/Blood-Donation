@@ -21,17 +21,17 @@
                 <Entry x:Name="EntCellNumber" Keyboard="Telephone" Text="{Binding CellNumber}" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSignupCity" Title="Choose City" SelectedIndex="0" Style="{StaticResource CustomEntryStyle}">
+                <Picker x:Name="PkrSignupCity" Title="Choose City" SelectedIndexChanged="PkrSignupCity_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
-                        <x:String>None</x:String>
                         <x:String>Lahore</x:String>
                     </Picker.Items>
                 </Picker>
 
                 <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSignupArea" Title="Choose Nearby Area" Style="{StaticResource CustomEntryStyle}">
+                <Picker x:Name="PkrSignupArea" Title="Choose Nearby Area" SelectedIndexChanged="PkrSignupArea_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
-                        <x:String>None</x:String>
                         <x:String>Allama Iqbal Town</x:String>
                         <x:String>Awan Town</x:String>
                         <x:String>Aziz Bhatti Town</x:String>
@@ -81,9 +81,9 @@
                 </Picker>
 
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSignupBloodGroup" SelectedIndex="0" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
+                <Picker x:Name="PkrSignupBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSignupBloodGroup_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
-                        <x:String>None</x:String>
                         <x:String>A+</x:String>
                         <x:String>A-</x:String>
                         <x:String>B+</x:String>
@@ -101,29 +101,8 @@
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntPassword" IsPassword="True" Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
 
-                <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}" IsEnabled="False" Clicked="BtnCreateAccount_OnClicked">
-                    <Button.Triggers>
-                        <MultiTrigger TargetType="Button">
-                            <MultiTrigger.Conditions>
-                                <BindingCondition Binding="{Binding Source={x:Reference EntFullName}, Path=Text.Length,
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <BindingCondition Binding="{Binding Source={x:Reference EntCellNumber}, Path=Text.Length, 
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <!--<BindingCondition Binding="{Binding Source={x:Reference PkrSignupCity}, Path=[Picker.SelectedIndex].Lenght, 
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <BindingCondition Binding="{Binding Source={x:Reference PkrSignupArea}, Path=Text.Length,
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <BindingCondition Binding="{Binding Source={x:Reference PkrSignupBloodGroup}, Path=Text.Length,
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />-->
-                                <BindingCondition Binding="{Binding Source={x:Reference EntEmail}, Path=Text.Length,
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                                <BindingCondition Binding="{Binding Source={x:Reference EntPassword}, Path=Text.Length, 
-                                    Converter={StaticResource DataHasBeenEntered}}" Value="true" />
-                            </MultiTrigger.Conditions>
-                            <Setter Property="IsEnabled" Value="True" />
-                        </MultiTrigger>
-                    </Button.Triggers>
-                </Button>
+                <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}" 
+                        Clicked="BtnCreateAccount_OnClicked"/>
 
             </StackLayout>
         </ScrollView>
