@@ -8,6 +8,7 @@
 
         <ResourceDictionary>
 
+
             <Style x:Key="CustomActivityIndicator" TargetType="ActivityIndicator">
                 <Setter Property="IsRunning" Value="False"/>
                 <Setter Property="IsVisible" Value="False"/>

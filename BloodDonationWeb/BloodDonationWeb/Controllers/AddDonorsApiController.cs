@@ -6,8 +6,10 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Cryptography;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.UI.WebControls;
 using BloodDonationWeb.Models;
 
 namespace BloodDonationWeb.Controllers
@@ -19,7 +21,7 @@ namespace BloodDonationWeb.Controllers
         // GET: api/AddDonorsApi
         public IQueryable<AddDonor> GetAddDonors()
         {
-            return db.AddDonors;
+            return db.AddDonors.OrderByDescending(m=>m.Id);
         }
 
         // GET: api/AddDonorsApi/5

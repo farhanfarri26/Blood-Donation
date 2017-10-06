@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.ProfilePage"
              Title="Profile">
+    
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="Donate Blood, Be a HERO!!" HorizontalOptions="Center"
                TextColor="#d21d1d" FontSize="Large" FontAttributes="Bold"/>

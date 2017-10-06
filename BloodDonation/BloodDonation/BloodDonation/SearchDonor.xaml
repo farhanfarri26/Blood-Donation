@@ -6,20 +6,22 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
 
         <ScrollView>
-           
-                <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+           <StackLayout x:Name="StackLayoutSearchDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                     <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchDonorCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}">
+                    <Picker x:Name="PkrSearchDonorCity" Title="Choose City" SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged"
+                            Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
                             <x:String>Lahore</x:String>
                         </Picker.Items>
                     </Picker>
 
                     <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchArea" Title="Select Nearby Area" Style="{StaticResource CustomEntryStyle}">
+                    <Picker x:Name="PkrSearchArea" Title="Select Nearby Area" SelectedIndexChanged="PkrSearchArea_OnSelectedIndexChanged"
+                            Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
                             <x:String>Allama Iqbal Town</x:String>
                             <x:String>Awan Town</x:String>
@@ -70,7 +72,8 @@
                     </Picker>
 
                     <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
+                    <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSearchDonorBloodGroup_OnSelectedIndexChanged"
+                            Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
                             <x:String>None</x:String>
                             <x:String>A+</x:String>

@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.UI.WebControls;
 using BloodDonationWebApi.Models;
 
 namespace BloodDonationWebApi.Controllers
@@ -19,8 +20,14 @@ namespace BloodDonationWebApi.Controllers
         // GET: api/DonorsApi
         public IQueryable<Donors> GetDonors()
         {
-            return db.Donors;
+            return db.Donors.OrderByDescending(m=>m.Id);
         }
+
+        //public IQueryable<Donors> GetDonors(string city, string area, string bloodgroup)
+        //{
+        //    var a = db.Donors.Where(x => x.City == city && x.Area == area && x.BloodGroup == bloodgroup);
+        //    return a;
+        //}
 
 
 

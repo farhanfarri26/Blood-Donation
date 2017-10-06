@@ -84,6 +84,7 @@
                 <Picker x:Name="PkrSignupBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSignupBloodGroup_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
+                        <x:String>None</x:String>
                         <x:String>A+</x:String>
                         <x:String>A-</x:String>
                         <x:String>B+</x:String>
@@ -96,10 +97,10 @@
                 </Picker>
 
                 <Label Text="Email"  Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntEmail" Keyboard="Email" Placeholder="Enter Your Email Address" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntEmail" Keyboard="Email" Placeholder="Enter Email Address" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntPassword" IsPassword="True" Placeholder="Enter Your Password" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntPassword" IsPassword="True" Placeholder="Enter Password" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}" 
                         Clicked="BtnCreateAccount_OnClicked"/>
