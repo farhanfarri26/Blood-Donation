@@ -19,7 +19,7 @@ namespace BloodDonationWebApi.Controllers
         // GET: api/RequestsApi
         public IQueryable<Requests> GetRequests()
         {
-            return db.Requests;
+            return db.Requests.OrderByDescending(m=>m.Id);
         }
 
         // GET: api/RequestsApi/5
