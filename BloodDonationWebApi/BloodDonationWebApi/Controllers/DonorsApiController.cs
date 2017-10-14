@@ -10,6 +10,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using System.Web.UI.WebControls;
 using BloodDonationWebApi.Models;
+using Microsoft.AspNet.Identity;
 
 namespace BloodDonationWebApi.Controllers
 {
@@ -17,18 +18,23 @@ namespace BloodDonationWebApi.Controllers
     {
         private DonorsDBContext db = new DonorsDBContext();
 
-        // GET: api/DonorsApi
-        public IQueryable<Donors> GetDonors()
+        //GET: api/AddDonorsApi
+        public IQueryable<Donors> GetAddDonors()
         {
-            return db.Donors.OrderByDescending(m=>m.Id);
+            return db.Donors.OrderByDescending(m => m.Id);
         }
 
-        //public IQueryable<Donors> GetDonors(string city, string area, string bloodgroup)
-        //{
-        //    var a = db.Donors.Where(x => x.City == city && x.Area == area && x.BloodGroup == bloodgroup);
-        //    return a;
-        //}
+        //GET: api/DonorsApi?donor=
+        [ResponseType(typeof(Donors))]
+        public IHttpActionResult GetDonors(string donor)
+        {
+            if (String.IsNullOrEmpty(donor))
+            {
+                return NotFound();
+            }
 
+            return Ok(db.Donors.Where(x => x.BloodGroup == donor).OrderByDescending(m => m.Id));
+        }
 
 
         // GET: api/DonorsApi/5
@@ -81,12 +87,16 @@ namespace BloodDonationWebApi.Controllers
 
         // POST: api/DonorsApi
         [ResponseType(typeof(Donors))]
+        //[Authorize]
         public IHttpActionResult PostDonors(Donors donors)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
+            //string userId = User.Identity.GetUserId();
+            //donors.UserId = userId;
 
             db.Donors.Add(donors);
             db.SaveChanges();

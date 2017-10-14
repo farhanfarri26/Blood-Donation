@@ -20,6 +20,12 @@ namespace BloodDonationWebApi
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+          config.Routes.MapHttpRoute(
+              name: "TestRoutee",
+              routeTemplate: "api/{controller}/{GetDonors}/{blood}",
+              defaults: new { controller = "GrtDonorsApi", action = "GetDonors", blood = "O+" }
+          );
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

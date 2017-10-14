@@ -35,11 +35,31 @@ namespace BloodDonationWebApi.Models
     public class RegisterBindingModel
     {
         [Required]
+        [Display(Name = "FullName")]
+        public string FullName { get; set; }
+
+        [Required]
+        [Display(Name = "CellNumber")]
+        public string CellNumber { get; set; }
+
+        [Required]
+        [Display(Name = "City")]
+        public string City { get; set; }
+
+        [Required]
+        [Display(Name = "Area")]
+        public string Area { get; set; }
+
+        [Required]
+        [Display(Name = "BloodGroup")]
+        public string BloodGroup { get; set; }
+
+        [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 3)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
@@ -71,7 +91,7 @@ namespace BloodDonationWebApi.Models
     public class SetPasswordBindingModel
     {
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 3)]
         [DataType(DataType.Password)]
         [Display(Name = "New password")]
         public string NewPassword { get; set; }

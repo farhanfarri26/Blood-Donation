@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text.RegularExpressions;
 using BloodDonation.Models;
 using Newtonsoft.Json;
@@ -52,6 +54,8 @@ namespace BloodDonation
                         "Accept", "Deny");
                     if (ans == true)
                     {
+                        DateTime dateValue = DateTime.Now;
+
                         SignupClass signupClass = new SignupClass()
                         {
                             FullName = EntFullName.Text,
@@ -61,6 +65,7 @@ namespace BloodDonation
                             BloodGroup = BloodGroupValue,
                             Email = EntEmail.Text,
                             Password = EntPassword.Text,
+                            TodayDate = dateValue.ToString(),
                         };
 
                         try
@@ -72,12 +77,14 @@ namespace BloodDonation
                             var httpClient = new HttpClient();
                             var json = JsonConvert.SerializeObject(signupClass);
                             HttpContent httpContent = new StringContent(json);
-                            httpContent.Headers.ContentType =
-                                new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://bloodwebapp.azurewebsites.net/api/SignupsApi",
-                                httpContent);
+                            httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                            await httpClient.PostAsync("http://donationlahore.azurewebsites.net/api/SignupSystemApi", httpContent);
 
-                            await DisplayAlert("Dear User!!", " Your Signup Request is Successfully Done!! ", "OK");
+                            //if (result.StatusCode == HttpStatusCode.Created)
+                            //{
+                            //    await DisplayAlert("Dear User!!", " Your Signup Request is Successfully Done!! ",
+                            //        "OK");
+                            //}
 
                             await Navigation.PushAsync(new Tabbed());
 
@@ -95,6 +102,8 @@ namespace BloodDonation
                             StackLayoutSignup.IsVisible = true;
                             WaitingLoader.IsVisible = false;
                         }
+
+
                     }
                     else
                     {

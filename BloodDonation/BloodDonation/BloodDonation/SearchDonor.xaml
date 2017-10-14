@@ -6,12 +6,10 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
-
-        <ScrollView>
-           <StackLayout x:Name="StackLayoutSearchDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-
-                    <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+       
+        <StackLayout x:Name="StackLayoutSearchDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+          
+            <!--<Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Picker x:Name="PkrSearchDonorCity" Title="Choose City" SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged"
                             Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
@@ -69,28 +67,32 @@
                             <x:String>Wagah Town</x:String>
                             <x:String>Walled City of Lahore</x:String>
                         </Picker.Items>
-                    </Picker>
+                    </Picker>-->
 
-                    <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSearchDonorBloodGroup_OnSelectedIndexChanged"
+            <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
+            <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSearchDonorBloodGroup_OnSelectedIndexChanged"
                             Style="{StaticResource CustomEntryStyle}">
-                        <Picker.Items>
-                            <x:String>None</x:String>
-                            <x:String>A+</x:String>
-                            <x:String>A-</x:String>
-                            <x:String>B+</x:String>
-                            <x:String>B-</x:String>
-                            <x:String>AB+</x:String>
-                            <x:String>AB-</x:String>
-                            <x:String>O+</x:String>
-                            <x:String>O-</x:String>
-                        </Picker.Items>
-                    </Picker>
+                <Picker.Items>
+                    <x:String>None</x:String>
+                    <x:String>A positive</x:String>
+                    <x:String>A negative</x:String>
+                    <x:String>B positive</x:String>
+                    <x:String>B negative</x:String>
+                    <x:String>AB positive</x:String>
+                    <x:String>AB negative</x:String>
+                    <x:String>O positive</x:String>
+                    <x:String>O negative</x:String>
+                </Picker.Items>
+            </Picker>
 
-                    <Button Text="Search" x:Name="BtnSearchDonor"  Style="{StaticResource CustomButtonStyleBottomMargin}"
+            <Button Text="Search" x:Name="BtnSearchDonor" Style="{StaticResource CustomButtonStyle}"
                         Clicked="BtnSearchDonor_OnClicked"/>
+            
+            <Label Text="Get All Donors here" HorizontalOptions="Center" Margin="0,30,0,5" TextColor="DarkGray"/>
+            <Button Text="All Donors" x:Name="BtnAllDonors" Style="{StaticResource CustomButtonStyleBottomMargin}" 
+                    Clicked="BtnAllDonors_Clicked"/>
+                          
+        </StackLayout>
 
-                </StackLayout>
-        </ScrollView>
     </StackLayout>
 </ContentPage>

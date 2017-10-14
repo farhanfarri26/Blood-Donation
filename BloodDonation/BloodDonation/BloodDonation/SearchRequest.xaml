@@ -8,69 +8,75 @@
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
 
         <ScrollView>
-                <StackLayout x:Name="StackLayoutSearchRequest" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+            <StackLayout x:Name="StackLayoutSearchRequest" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-                    <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchRequestCity" Title="Choose City" Style="{StaticResource CustomEntryStyle}">
-                        <Picker.Items>
-                            <x:String>Lahore</x:String>
-                        </Picker.Items>
-                    </Picker>
+                <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Picker x:Name="PkrSearchRequestCity" Title="Choose City" SelectedIndexChanged="PkrSearchRequestCity_SelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
+                    <Picker.Items>
+                        <x:String>Lahore</x:String>
+                    </Picker.Items>
+                </Picker>
 
-                    <Label Text="Hospital" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchRequestHospital" Title="Choose Nearby Hospital" Style="{StaticResource CustomEntryStyle}">
-                        <Picker.Items>
-                            <x:String>Bajwa Hospital, Shahdara Town</x:String>
-                            <x:String>Bajwa Hospital, Iqbal Town</x:String>
-                            <x:String>Doctors Hospital</x:String>
-                            <x:String>Fatima Memorial Hospital</x:String>
-                            <x:String>Gulab Devi Chest Hospital</x:String>
-                            <x:String>Hameed Latif Hospital</x:String>
-                            <x:String>Ittefaq Hospital</x:String>
-                            <x:String>Janki Devi Hospital</x:String>
-                            <x:String>Jinnah Hospital</x:String>
-                            <x:String>Lady Aitchison Hospital</x:String>
-                            <x:String>Lady Willingdon Hospital</x:String>
-                            <x:String>Lahore General Hospital</x:String>
-                            <x:String>Mayo Hospital</x:String>
-                            <x:String>National Hospital</x:String>
-                            <x:String>Nawaz Sharif Social Security Hospital, Multan Road</x:String>
-                            <x:String>Omar Hospital and Carddiac Center (Jail Road)</x:String>
-                            <x:String>Punjab Institute of Cardiology</x:String>
-                            <x:String>Punjab Institute of Mental Health</x:String>
-                            <x:String>Punjab Social Security Hospital</x:String>
-                            <x:String>Railway Karen Hospital</x:String>
-                            <x:String>Services Hospital</x:String>
-                            <x:String>Shaikh Zayed Hospital</x:String>
-                            <x:String>Shalamar Hospital (Shalamar Institute of Health Sciences)</x:String>
-                            <x:String>Shaukat Khanum Memorial Cancer Hospital and Research Centre</x:String>
-                            <x:String>Sir Ganga Ram Hospital</x:String>
-                            <x:String>The Children's Hospital</x:String>
-                            <x:String>University Dental Hospital - University of Lahore</x:String>
-                            <x:String>University Teaching Hospital - University of Lahore</x:String>
-                            <x:String>Wapda Hospital</x:String>
-                        </Picker.Items>
-                    </Picker>
+                <Label Text="Hospital" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Picker x:Name="PkrSearchRequestHospital" Title="Choose Nearby Hospital" SelectedIndexChanged="PkrSearchRequestHospital_SelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
+                    <Picker.Items>
+                        <x:String>Bajwa Hospital, Shahdara Town</x:String>
+                        <x:String>Bajwa Hospital, Iqbal Town</x:String>
+                        <x:String>Doctors Hospital</x:String>
+                        <x:String>Fatima Memorial Hospital</x:String>
+                        <x:String>Gulab Devi Chest Hospital</x:String>
+                        <x:String>Hameed Latif Hospital</x:String>
+                        <x:String>Ittefaq Hospital</x:String>
+                        <x:String>Janki Devi Hospital</x:String>
+                        <x:String>Jinnah Hospital</x:String>
+                        <x:String>Lady Aitchison Hospital</x:String>
+                        <x:String>Lady Willingdon Hospital</x:String>
+                        <x:String>Lahore General Hospital</x:String>
+                        <x:String>Mayo Hospital</x:String>
+                        <x:String>National Hospital</x:String>
+                        <x:String>Nawaz Sharif Social Security Hospital, Multan Road</x:String>
+                        <x:String>Omar Hospital and Carddiac Center (Jail Road)</x:String>
+                        <x:String>Punjab Institute of Cardiology</x:String>
+                        <x:String>Punjab Institute of Mental Health</x:String>
+                        <x:String>Punjab Social Security Hospital</x:String>
+                        <x:String>Railway Karen Hospital</x:String>
+                        <x:String>Services Hospital</x:String>
+                        <x:String>Shaikh Zayed Hospital</x:String>
+                        <x:String>Shalamar Hospital (Shalamar Institute of Health Sciences)</x:String>
+                        <x:String>Shaukat Khanum Memorial Cancer Hospital and Research Centre</x:String>
+                        <x:String>Sir Ganga Ram Hospital</x:String>
+                        <x:String>The Children's Hospital</x:String>
+                        <x:String>University Dental Hospital - University of Lahore</x:String>
+                        <x:String>University Teaching Hospital - University of Lahore</x:String>
+                        <x:String>Wapda Hospital</x:String>
+                    </Picker.Items>
+                </Picker>
 
-                    <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchRequestBloodGroup" Title="Your Blood Group" Style="{StaticResource CustomEntryStyle}">
-                        <Picker.Items>
-                            <x:String>None</x:String>
-                            <x:String>A+</x:String>
-                            <x:String>A-</x:String>
-                            <x:String>B+</x:String>
-                            <x:String>B-</x:String>
-                            <x:String>AB+</x:String>
-                            <x:String>AB-</x:String>
-                            <x:String>O+</x:String>
-                            <x:String>O-</x:String>
-                        </Picker.Items>
-                    </Picker>
+                <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Picker x:Name="PkrSearchRequestBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSearchRequestBloodGroup_SelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
+                    <Picker.Items>
+                        <x:String>None</x:String>
+                        <x:String>A positive</x:String>
+                        <x:String>A negative</x:String>
+                        <x:String>B positive</x:String>
+                        <x:String>B negative</x:String>
+                        <x:String>AB positive</x:String>
+                        <x:String>AB negative</x:String>
+                        <x:String>O positive</x:String>
+                        <x:String>O negative</x:String>
+                    </Picker.Items>
+                </Picker>
 
-                    <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"  Style="{StaticResource CustomButtonStyleBottomMargin}"
+                <Button Text="Find Who Needy" x:Name="BtnFindWhoNeedy"  Style="{StaticResource CustomButtonStyle}"
                         Clicked="BtnFindWhoNeedy_OnClicked"/>
 
-                </StackLayout>
+                <Label Text="Get All Requests here" HorizontalOptions="Center" Margin="0,30,0,5" TextColor="DarkGray"/>
+                <Button Text="All Requests" x:Name="BtnAllRequests" Style="{StaticResource CustomButtonStyleBottomMargin}" 
+                    Clicked="BtnAllRequests_Clicked"/>
+            </StackLayout>
         </ScrollView>
     </StackLayout>
 </ContentPage>

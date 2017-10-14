@@ -49,6 +49,8 @@ namespace BloodDonation
                     }
                     else
                     {
+                        DateTime dateValue = DateTime.Now;
+
                         AddRequestClass addRequestClass = new AddRequestClass()
                         {
                             FullName = EntFullName.Text,
@@ -56,6 +58,7 @@ namespace BloodDonation
                             City = CityValue,
                             Hospitals = HospitalValue,
                             BloodGroup = BloodGroupValue,
+                            TodayDate = dateValue.ToString(),
                         };
                         try
                         {
@@ -67,7 +70,7 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(addRequestClass);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://bloodapp.azurewebsites.net/api/RequestsApi", httpContent);
+                            await httpClient.PostAsync("http://donationlahore.azurewebsites.net/api/RequestsApi", httpContent);
 
                             await DisplayAlert("Dear!!", " Your Request is successfully Added", "OK");
                             await Navigation.PopAsync();

@@ -12,6 +12,11 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Tabbed : TabbedPage
     {
+        private Entry entFullName;
+        private Entry entCellNumber;
+        private string bloodGroupValue;
+        private Entry entEmail;
+
         public Tabbed()
         {
             InitializeComponent();
@@ -19,5 +24,12 @@ namespace BloodDonation
             CurrentPage = Children[1];
         }
 
+        public Tabbed(Entry entFullName, Entry entCellNumber, string bloodGroupValue, Entry entEmail)
+        {
+            this.entFullName = entFullName;
+            this.entCellNumber = entCellNumber;
+            this.bloodGroupValue = bloodGroupValue;
+            this.entEmail = entEmail;
+        }
     }
 }

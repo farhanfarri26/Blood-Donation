@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BloodDonation.Models
 {
-    class ProfilePageClass
+    public class ProfilePageClass
     {
         public string FullName { get; set; }
         public string CellNumber { get; set; }

@@ -35,7 +35,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://bloodapp.azurewebsites.net/api/ContactusApi");
+                    var response = await httpClient.GetStringAsync("http://blooddonationmvcapi.azurewebsites.net/api/ContactusApi");
                     var name = JsonConvert.DeserializeObject<List<Models.Contactus>>(response);
                     LvContactus.ItemsSource = name;
                 }

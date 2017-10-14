@@ -10,14 +10,13 @@
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
                 <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
 
-                <ListView x:Name="LvDonors" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemTapped="LvDonors_OnItemTapped">
+                <ListView x:Name="LvDonors" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemTapped="LvDonors_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.View>
                                     <Grid Margin="10">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
@@ -42,7 +41,8 @@
                                         <Label Text="{Binding Area}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="4" Grid.Column="1"/>
                                         <Label Text="City" Grid.Row="5" Grid.Column="0"/>
                                         <Label Text="{Binding City}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
-                                        <Label Text="Please, provide Pick and Drop!!" HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+                                        <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+
                                     </Grid>
                                 </ViewCell.View>
                             </ViewCell>

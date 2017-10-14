@@ -9,15 +9,16 @@ using Newtonsoft.Json;
 using Plugin.Connectivity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.Messaging;
 
 namespace BloodDonation
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SearchDonor : ContentPage
     {
-        private string CityValue;
-        private string AreaValue;
-        private string BloodGroupValue;
+        //private string CityValue;
+        //private string AreaValue;
+        public string BloodGroupValue;
 
         public SearchDonor()
         {
@@ -26,10 +27,9 @@ namespace BloodDonation
 
         private async void BtnSearchDonor_OnClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
-                || string.IsNullOrWhiteSpace(BloodGroupValue))
+            if (string.IsNullOrWhiteSpace(BloodGroupValue))
             {
-                await DisplayAlert("Empty", "Dear User!! \n Please Fill all Entries.", "Cancel");
+                await DisplayAlert("Empty", "Dear User!! \n Please Fill Entry.", "Cancel");
             }
             else
             {
@@ -42,49 +42,37 @@ namespace BloodDonation
                 {
                     SearchDonorClass searchDonorClass = new SearchDonorClass()
                     {
-                        City = CityValue,
-                        Area = AreaValue,
+                        //City = CityValue,
+                        //Area = AreaValue,
                         BloodGroup = BloodGroupValue
                     };
-                    try
-                    {
-                        StackLayoutSearchDonor.IsVisible = false;
-                        WaitingLoader.IsRunning = true;
-                        WaitingLoader.IsVisible = true;
-
-                        //var httpClient = new HttpClient();
-                        //var json = JsonConvert.SerializeObject(searchDonorClass);
-                        //HttpContent httpContent = new StringContent(json);
-                        //httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                        //await httpClient.PostAsync("http://bloodapp.azurewebsites.net/api/DonorsApi", httpContent);
-
-                        await Navigation.PushAsync(new Donors());
-                    }
-                    catch
-                    {
-                        StackLayoutSearchDonor.IsVisible = true;
-                        WaitingLoader.IsVisible = false;
-                        throw;
-                    }
-                    finally
-                    {
-                        StackLayoutSearchDonor.IsVisible = true;
-                        WaitingLoader.IsVisible = false;
-                    }
+                    await Navigation.PushAsync(new Donors(BloodGroupValue));
                 }
             }
-
         }
 
-        private void PkrSearchDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
+        private async void BtnAllDonors_Clicked(object sender, EventArgs e)
         {
-            CityValue = PkrSearchDonorCity.Items[PkrSearchDonorCity.SelectedIndex];
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+            }
+            else
+            {
+                await Navigation.PushAsync(new Donors());
+            }
         }
 
-        private void PkrSearchArea_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            AreaValue = PkrSearchArea.Items[PkrSearchArea.SelectedIndex];
-        }
+
+        //private void PkrSearchDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    CityValue = PkrSearchDonorCity.Items[PkrSearchDonorCity.SelectedIndex];
+        //}
+
+        //private void PkrSearchArea_OnSelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    AreaValue = PkrSearchArea.Items[PkrSearchArea.SelectedIndex];
+        //}
 
         private void PkrSearchDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
         {

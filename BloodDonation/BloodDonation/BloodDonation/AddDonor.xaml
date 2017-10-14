@@ -7,7 +7,7 @@
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
 
-        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
+        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,250" Style="{StaticResource CustomActivityIndicator}"/>
 
         <ScrollView>
 
@@ -91,14 +91,15 @@
                         Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
                         <x:String>None</x:String>
-                        <x:String>A+</x:String>
-                        <x:String>A-</x:String>
-                        <x:String>B+</x:String>
-                        <x:String>B-</x:String>
-                        <x:String>AB+</x:String>
-                        <x:String>AB-</x:String>
-                        <x:String>O+</x:String>
-                        <x:String>O-</x:String>
+                        <x:String>A positive</x:String>
+                        <x:String>A negative</x:String>
+                        <x:String>B positive</x:String>
+                        <x:String>B negative</x:String>
+                        <x:String>AB positive</x:String>
+                        <x:String>AB negative</x:String>
+                        <x:String>O positive</x:String>
+                        <x:String>O negative</x:String>
+
                     </Picker.Items>
                 </Picker>
 

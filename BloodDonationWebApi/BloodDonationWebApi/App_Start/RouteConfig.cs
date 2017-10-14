@@ -14,6 +14,12 @@ namespace BloodDonationWebApi
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                        "TestRoute",
+                         "GrtDonorsApi/GetDonors/{blood}",
+                         new { controller = "GrtDonorsApi", action = "GetDonors", blood ="O+"}
+);
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

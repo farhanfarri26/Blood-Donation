@@ -11,8 +11,8 @@
 namespace BloodDonation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Farhan Farri\\Documents\\Visual Studio 2017\\Projects\\BloodDonation\\BloodDo" +
-        "nation\\BloodDonation\\SearchRequest.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Farhan Farri\\Desktop\\BloodDonation\\BloodDonation\\BloodDonation\\SearchReq" +
+        "uest.xaml")]
     public partial class SearchRequest : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -31,6 +31,9 @@ namespace BloodDonation {
         private global::Xamarin.Forms.Button BtnFindWhoNeedy;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button BtnAllRequests;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SearchRequest));
             StackLayoutSearchRequest = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "StackLayoutSearchRequest");
@@ -38,6 +41,7 @@ namespace BloodDonation {
             PkrSearchRequestHospital = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "PkrSearchRequestHospital");
             PkrSearchRequestBloodGroup = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "PkrSearchRequestBloodGroup");
             BtnFindWhoNeedy = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "BtnFindWhoNeedy");
+            BtnAllRequests = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "BtnAllRequests");
         }
     }
 }

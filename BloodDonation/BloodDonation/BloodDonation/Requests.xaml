@@ -23,6 +23,7 @@
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition  Width="0.3*"/>
@@ -40,6 +41,8 @@
                                         <Label Text="{Binding Hospitals}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="4" Grid.Column="1"/>
                                         <Label Text="City" Grid.Row="5" Grid.Column="0"/>
                                         <Label Text="{Binding City}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
+                                        <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+
                                     </Grid>
                                 </ViewCell.View>
                             </ViewCell>

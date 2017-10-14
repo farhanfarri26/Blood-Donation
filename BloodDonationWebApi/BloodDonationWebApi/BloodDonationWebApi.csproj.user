@@ -17,7 +17,7 @@
     <WebStackScaffolding_DbContextTypeFullName>BloodDonationWebApi.Models.ContactusDBContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
-    <NameOfLastUsedPublishProfile>BloodApp - Web Deploy</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>BloodDonationApi - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

@@ -16,23 +16,23 @@ namespace BloodDonationWebApi.Controllers
     {
         private RequestsDBContext db = new RequestsDBContext();
 
-        // GET: api/RequestsApi
-        public IQueryable<Requests> GetRequests()
+        // GET: api/AddRequestsApi
+        public IQueryable<Requests> GetAddRequests()
         {
-            return db.Requests.OrderByDescending(m=>m.Id);
+            return db.Requests.OrderByDescending(m => m.Id);
         }
 
-        // GET: api/RequestsApi/5
+
+        //GET: api/RequestsApi?blood=
         [ResponseType(typeof(Requests))]
-        public IHttpActionResult GetRequests(int id)
+        public IHttpActionResult GetAddRequest(string city, string hospitals, string blood)
         {
-            Requests requests = db.Requests.Find(id);
-            if (requests == null)
+            if (String.IsNullOrEmpty(blood) || string.IsNullOrEmpty(city) || string.IsNullOrEmpty(hospitals))
             {
                 return NotFound();
             }
 
-            return Ok(requests);
+            return Ok(db.Requests.Where(x => x.City == city && x.Hospitals == hospitals && x.BloodGroup == blood).OrderByDescending(m => m.Id));
         }
 
         // PUT: api/RequestsApi/5

@@ -48,7 +48,6 @@
 
             <Style x:Key="CustomEntryStyle" TargetType="Entry">
                 <Setter Property="Margin" Value="30,0,30,0"/>
-                <!--<Setter Property="WidthRequest" Value="Fill"/>-->
                 <Setter Property="Placeholder" Value="20,0,0,0"/>
             </Style>
 

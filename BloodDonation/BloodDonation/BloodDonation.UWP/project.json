@@ -3,6 +3,7 @@
     "Microsoft.CSharp": "4.4.0",
     "Microsoft.NETCore.Platforms": "2.0.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
+    "NETStandard.Library": "2.0.0",
     "Newtonsoft.Json": "10.0.3",
     "System.Net.Http": "4.3.2",
     "Xam.Plugin.Connectivity": "3.0.2",

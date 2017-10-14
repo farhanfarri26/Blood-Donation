@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -24,6 +25,8 @@ namespace BloodDonation
         {
             InitializeComponent();
         }
+
+
 
         private async void BtnAddDonor_OnClicked(object sender, EventArgs e)
         {
@@ -49,6 +52,9 @@ namespace BloodDonation
                     }
                     else
                     {
+
+                        DateTime dateValue = DateTime.Now;
+
                         AddDonorClass addDonorClass = new AddDonorClass()
                         {
                             FullName = EntFullName.Text,
@@ -56,6 +62,7 @@ namespace BloodDonation
                             City = CityValue,
                             Area = AreaValue,
                             BloodGroup = BloodGroupValue,
+                            TodayDate = dateValue.ToString(),
                         };
                         try
                         {
@@ -67,10 +74,20 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(addDonorClass);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://bloodapp.azurewebsites.net/api/DonorsApi", httpContent);
+                            await httpClient.PostAsync("http://donationlahore.azurewebsites.net/api/DonorsApi", httpContent);
 
                             await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
                             await Navigation.PopAsync();
+
+                            //if (test.StatusCode == HttpStatusCode.Created)
+                            //{
+                            //    await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
+                            //    await Navigation.PopAsync();
+                            //}
+                            //else
+                            //{
+                            //    await DisplayAlert("Error!!", " Your Request is not Posted", "Try");
+                            //}
                         }
                         catch
                         {

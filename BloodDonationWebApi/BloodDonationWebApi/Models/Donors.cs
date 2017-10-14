@@ -13,5 +13,7 @@ namespace BloodDonationWebApi.Models
         public string City { get; set; }
         public string Area { get; set; }
         public string BloodGroup { get; set; }
+        public string Date { get; set; }
+
     }
 }

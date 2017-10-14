@@ -21,8 +21,9 @@ namespace BloodDonationWeb.Controllers
         // GET: api/AddDonorsApi
         public IQueryable<AddDonor> GetAddDonors()
         {
-            return db.AddDonors.OrderByDescending(m=>m.Id);
+            return db.AddDonors.OrderByDescending(m => m.Id);
         }
+
 
         // GET: api/AddDonorsApi/5
         [ResponseType(typeof(AddDonor))]

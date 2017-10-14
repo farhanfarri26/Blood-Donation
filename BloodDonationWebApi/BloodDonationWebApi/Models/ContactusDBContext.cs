@@ -20,5 +20,7 @@ namespace BloodDonationWebApi.Models
         }
 
         public System.Data.Entity.DbSet<BloodDonationWebApi.Models.Contactus> Contactus { get; set; }
+
+        public System.Data.Entity.DbSet<BloodDonationWebApi.Models.Donors> Donors { get; set; }
     }
 }
