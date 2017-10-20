@@ -3,47 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.ProfilePage"
              Title="Profile">
-    
+
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="Donate Blood, Be a HERO!!" HorizontalOptions="Center"
-               TextColor="#d21d1d" FontSize="Large" FontAttributes="Bold"/>
+        
+        <!--<Label Text="Donate Blood, Be a HERO!!" HorizontalOptions="Center"
+               TextColor="#d21d1d" FontSize="Large" FontAttributes="Bold"/>-->
 
-
-        <ListView x:Name="LvProfilePage">
+        <ListView x:Name="LvProfilePage" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Grid RowSpacing="0" ColumnSpacing="0" >
                             <Grid.RowDefinitions>
-
-                                <RowDefinition Height="0.2*"/>
-                                <RowDefinition Height="0.2*"/>
-                                <RowDefinition Height="0.2*"/>
-                                <RowDefinition Height="0.2*"/>
-                                <RowDefinition Height="0.2*"/>
-                                <RowDefinition Height="0.2*"/>
                                 <RowDefinition Height="*"/>
-
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
 
                             <Grid.ColumnDefinitions>
-
                                 <ColumnDefinition Width="0.22*"/>
                                 <ColumnDefinition Width="*"/>
-
                             </Grid.ColumnDefinitions>
 
                             <Image Source="Man.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="0" Grid.Column="0"/>
-                            <Label x:Name="LblFullName" Text="{Binding FullName}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="0" Grid.Column="1"/>
+                            <Label Text="{Binding FullName}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="0" Grid.Column="1"/>
 
                             <Image Source="BloodDropIcon.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="1" Grid.Column="0"/>
-                            <Label x:Name="LblBloodGroup" Text="{Binding BloodGroup}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="1" Grid.Column="1"/>
+                            <Label Text="{Binding BloodGroup}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="1" Grid.Column="1"/>
 
                             <Image Source="CallIcon" Style="{StaticResource CustomImageGridStyle}" Grid.Row="2" Grid.Column="0"/>
-                            <Label x:Name="LblCellNumber" Text="{Binding CellNumber}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="2" Grid.Column="1"/>
+                            <Label Text="{Binding CellNumber}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="2" Grid.Column="1"/>
 
                             <Image Source="Email.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="3" Grid.Column="0"/>
-                            <Label x:Name="LblEmail" Text="{Binding Email}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="3" Grid.Column="1"/>
+                            <Label Text="{Binding Email}" Style="{StaticResource CustomLabelProfileStyle}" Grid.Row="3" Grid.Column="1"/>
 
                             <Image Source="Setting.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="4" Grid.Column="0"/>
                             <Label Style="{StaticResource CustomLabelProfileStyle}" Text="Change Password" Grid.Row="4" Grid.Column="1"/>
@@ -51,13 +47,12 @@
                             <Image Source="LogOut.png" Style="{StaticResource CustomImageGridStyle}" Grid.Row="5" Grid.Column="0"/>
                             <Label Style="{StaticResource CustomLabelProfileStyle}" Text="Logout" Grid.Row="5" Grid.Column="1">
                                 <Label.GestureRecognizers>
-                                    <TapGestureRecognizer x:Name="LogoutTapGestureRecognizer" Tapped="LogoutTapGestureRecognizer_OnTapped"/>
+                                    <TapGestureRecognizer x:Name="LogoutTapGestureRecognizer" />
                                 </Label.GestureRecognizers>
                             </Label>
 
                             <StackLayout Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
                                 <Label Text="Advertisement" HorizontalOptions="Center" VerticalOptions="Center"></Label>
-
                             </StackLayout>
 
                         </Grid>

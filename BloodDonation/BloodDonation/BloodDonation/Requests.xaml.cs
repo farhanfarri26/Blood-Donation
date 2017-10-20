@@ -16,9 +16,9 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Requests : ContentPage
     {
-        public string cityValue;
-        public string hospitalValue;
-        public string bloodGroupValue;
+        private string cityValue;
+        private string hospitalValue;
+        private string bloodGroupValue;
 
         public Requests()
         {
@@ -56,7 +56,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://donationlahore.azurewebsites.net/api/RequestsApi?city=" + cityValue + "&&hospitals=" + hospitalValue + "&&blood=" + bloodGroupValue);
+                    var response = await httpClient.GetStringAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi?city=" + cityValue + "&&hospitals=" + hospitalValue + "&&blood=" + bloodGroupValue);
 
                     //if (response.StatusCode == HttpStatusCode.NoContent)
                     //{
@@ -95,7 +95,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://donationlahore.azurewebsites.net/api/RequestsApi");
+                    var response = await httpClient.GetStringAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi");
                     var name = JsonConvert.DeserializeObject<List<AddRequestClass>>(response);
                     LvRequests.ItemsSource = name;
                 }

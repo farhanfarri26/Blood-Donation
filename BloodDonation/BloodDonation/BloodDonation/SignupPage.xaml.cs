@@ -21,6 +21,9 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignupPage : ContentPage
     {
+        //private string _fullName;
+        //private string _cellNumber;
+        //private string _email;
         private string CityValue;
         private string AreaValue;
         private string BloodGroupValue;
@@ -78,15 +81,18 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(signupClass);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://donationlahore.azurewebsites.net/api/SignupSystemApi", httpContent);
+                            var response = await httpClient.PostAsync("http://blooddonationlahore.azurewebsites.net/api/BloodUsersApi", httpContent);
 
-                            //if (result.StatusCode == HttpStatusCode.Created)
-                            //{
-                            //    await DisplayAlert("Dear User!!", " Your Signup Request is Successfully Done!! ",
-                            //        "OK");
-                            //}
-
-                            await Navigation.PushAsync(new Tabbed());
+                            if (response.StatusCode == HttpStatusCode.InternalServerError)
+                            {
+                                await DisplayAlert("Dear User!!", " Your CellNumber Already Exist!! ",
+                                    "OK");
+                            }
+                            else
+                            {
+                                await DisplayAlert("Hello New Member", " Your Account is Successfully Created!! ", "Login");
+                                await Navigation.PushAsync(new MainPage());
+                            }
 
                         }
 

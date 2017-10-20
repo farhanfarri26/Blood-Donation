@@ -11,8 +11,8 @@
 namespace BloodDonation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Farhan Farri\\documents\\visual studio 2017\\Projects\\BloodDonation\\BloodDo" +
-        "nation\\BloodDonation\\ProfilePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Farhan Farri\\Desktop\\BloodDonation\\BloodDonation\\BloodDonation\\ProfilePa" +
+        "ge.xaml")]
     public partial class ProfilePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -53,7 +53,7 @@ namespace BloodDonation
                     else
                     {
 
-                        DateTime dateValue = DateTime.Now;
+                        DateTime dateValue = DateTime.Now.ToLocalTime();
 
                         AddDonorClass addDonorClass = new AddDonorClass()
                         {
@@ -74,7 +74,7 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(addDonorClass);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://donationlahore.azurewebsites.net/api/DonorsApi", httpContent);
+                            await httpClient.PostAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi", httpContent);
 
                             await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
                             await Navigation.PopAsync();

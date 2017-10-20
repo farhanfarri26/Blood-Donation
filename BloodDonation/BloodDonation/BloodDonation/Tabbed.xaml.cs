@@ -12,10 +12,11 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Tabbed : TabbedPage
     {
-        private Entry entFullName;
-        private Entry entCellNumber;
-        private string bloodGroupValue;
-        private Entry entEmail;
+        //private Entry entFullName;
+        //private Entry entCellNumber;
+        //private string bloodGroupValue;
+        //private Entry entEmail;
+        //private ProfilePage profilePage;
 
         public Tabbed()
         {
@@ -24,12 +25,17 @@ namespace BloodDonation
             CurrentPage = Children[1];
         }
 
-        public Tabbed(Entry entFullName, Entry entCellNumber, string bloodGroupValue, Entry entEmail)
-        {
-            this.entFullName = entFullName;
-            this.entCellNumber = entCellNumber;
-            this.bloodGroupValue = bloodGroupValue;
-            this.entEmail = entEmail;
-        }
+        //public Tabbed(ProfilePage profilePage)
+        //{
+        //    this.profilePage = profilePage;
+        //}
+
+        //public Tabbed(Entry entFullName, Entry entCellNumber, string bloodGroupValue, Entry entEmail)
+        //{
+        //    this.entFullName = entFullName;
+        //    this.entCellNumber = entCellNumber;
+        //    this.bloodGroupValue = bloodGroupValue;
+        //    this.entEmail = entEmail;
+        //}
     }
 }

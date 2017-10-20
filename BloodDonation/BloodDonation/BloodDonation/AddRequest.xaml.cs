@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -70,10 +71,14 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(addRequestClass);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://donationlahore.azurewebsites.net/api/RequestsApi", httpContent);
+                            var response = await httpClient.PostAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi", httpContent);
 
-                            await DisplayAlert("Dear!!", " Your Request is successfully Added", "OK");
-                            await Navigation.PopAsync();
+                            if (response.StatusCode == HttpStatusCode.Created)
+                            {
+                                await DisplayAlert("Dear!!", " Your Request is successfully Added", "OK");
+                                await Navigation.PopAsync();
+                            }
+
                         }
                         catch
                         {

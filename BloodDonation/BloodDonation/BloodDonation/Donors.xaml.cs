@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using BloodDonation.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Plugin.Connectivity;
 using Plugin.Messaging;
 using Xamarin.Forms;
@@ -17,7 +15,7 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Donors : ContentPage
     {
-        public string bloodGroup;
+        private string bloodGroup;
 
         public Donors()
         {
@@ -46,9 +44,28 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var response = await httpClient.GetStringAsync("http://donationlahore.azurewebsites.net/api/DonorsApi?donor=" + bloodGroup);
-                    var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(response);
-                    LvDonors.ItemsSource = name;
+                    var response = await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi?blood=" + bloodGroup);
+
+                    //if (!response.IsSuccessStatusCode)
+                    //{
+                    //    await DisplayAlert("No Record!!", "No Record Found!! \n try another", "Cancel");
+
+                    //}
+                    if (response.Content.ReadAsStringAsync().Result == null)
+                    {
+                        await DisplayAlert("No Record!!", "No Record Found!! Try another", "OK");
+
+                        //Device.BeginInvokeOnMainThread(async () =>
+                        //{
+                        //    await DisplayAlert("No Record!!", "No Record Found!! Try another", "OK");
+                        //});
+                    }
+                    else
+                    {
+                        var result = response.Content.ReadAsStringAsync().Result;
+                        var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(result);
+                        LvDonors.ItemsSource = name;
+                    }
                 }
                 catch
                 {
@@ -77,7 +94,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://donationlahore.azurewebsites.net/api/DonorsApi");
+                    var response = await httpClient.GetStringAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi");
                     var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(response);
                     LvDonors.ItemsSource = name;
                 }
