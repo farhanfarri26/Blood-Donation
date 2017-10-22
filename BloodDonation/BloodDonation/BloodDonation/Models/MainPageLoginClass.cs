@@ -8,7 +8,7 @@ namespace BloodDonation.Models
 {
     public class MainPageLoginClass
     {
-        //public string Email { get; set; }
+        public int Id_ { get; set; }
         public string Password { get; set; }
         public string CellNumber { get; set; }
 

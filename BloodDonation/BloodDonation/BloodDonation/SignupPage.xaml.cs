@@ -83,17 +83,16 @@ namespace BloodDonation
                             httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                             var response = await httpClient.PostAsync("http://blooddonationlahore.azurewebsites.net/api/BloodUsersApi", httpContent);
 
+
                             if (response.StatusCode == HttpStatusCode.InternalServerError)
                             {
-                                await DisplayAlert("Dear User!!", " Your CellNumber Already Exist!! ",
-                                    "OK");
+                                await DisplayAlert("Dear User!!", " Your CellNumber Already Exist!! ", "OK");
                             }
                             else
                             {
                                 await DisplayAlert("Hello New Member", " Your Account is Successfully Created!! ", "Login");
                                 await Navigation.PushAsync(new MainPage());
                             }
-
                         }
 
                         catch
@@ -102,14 +101,11 @@ namespace BloodDonation
                             WaitingLoader.IsVisible = false;
                             throw;
                         }
-
                         finally
                         {
                             StackLayoutSignup.IsVisible = true;
                             WaitingLoader.IsVisible = false;
                         }
-
-
                     }
                     else
                     {
@@ -118,7 +114,7 @@ namespace BloodDonation
                 }
                 else
                 {
-                    await DisplayAlert("Invalid", "Dear User!! \n Your Email or Cell Number is Invalid", "Try Again");
+                    await DisplayAlert("Invalid", "Dear User! Your Email or Cell Number is Invalid", "Try Again");
                 }
             }
         }

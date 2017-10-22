@@ -46,25 +46,23 @@ namespace BloodDonation
                     var httpClient = new HttpClient();
                     var response = await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi?blood=" + bloodGroup);
 
-                    //if (!response.IsSuccessStatusCode)
-                    //{
-                    //    await DisplayAlert("No Record!!", "No Record Found!! \n try another", "Cancel");
-
-                    //}
-                    if (response.Content.ReadAsStringAsync().Result == null)
+                    if (response.StatusCode == HttpStatusCode.OK)
                     {
-                        await DisplayAlert("No Record!!", "No Record Found!! Try another", "OK");
-
-                        //Device.BeginInvokeOnMainThread(async () =>
-                        //{
-                        //    await DisplayAlert("No Record!!", "No Record Found!! Try another", "OK");
-                        //});
+                        var result = response.Content.ReadAsStringAsync().Result;
+                        if (result == "[]")
+                        {
+                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await Navigation.PopAsync(SendBackButtonPressed());
+                        }
+                        else
+                        {
+                            var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(result);
+                            LvDonors.ItemsSource = name;
+                        }
                     }
                     else
                     {
-                        var result = response.Content.ReadAsStringAsync().Result;
-                        var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(result);
-                        LvDonors.ItemsSource = name;
+                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
                     }
                 }
                 catch
@@ -93,10 +91,27 @@ namespace BloodDonation
                     WaitingLoader.IsRunning = true;
                     WaitingLoader.IsVisible = true;
 
-                    var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi");
-                    var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(response);
-                    LvDonors.ItemsSource = name;
+                    var httpClient = new HttpClient();
+                    var response =
+                        await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi");
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        var result = response.Content.ReadAsStringAsync().Result;
+                        if (result == "[]")
+                        {
+                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await Navigation.PopAsync(SendBackButtonPressed());
+                        }
+                        else
+                        {
+                            var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(result);
+                            LvDonors.ItemsSource = name;
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
+                    }
                 }
                 catch
                 {

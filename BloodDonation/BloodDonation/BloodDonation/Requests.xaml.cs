@@ -56,17 +56,28 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi?city=" + cityValue + "&&hospitals=" + hospitalValue + "&&blood=" + bloodGroupValue);
+                    var response = await httpClient.GetAsync(
+                        "http://blooddonationlahore.azurewebsites.net/api/RequestApi?city=" + cityValue +
+                        "&&hospitals=" + hospitalValue + "&&blood=" + bloodGroupValue);
 
-                    //if (response.StatusCode == HttpStatusCode.NoContent)
-                    //{
-                    //    await DisplayAlert("Not Found", "No Record Found!! Try another Hospital or Blood Group.", "Ok");
-                    //}
-
-                    var name = JsonConvert.DeserializeObject<List<AddRequestClass>>(response);
-                    
-                    LvRequests.ItemsSource = name;
-
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        var result = response.Content.ReadAsStringAsync().Result;
+                        if (result == "[]")
+                        {
+                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await Navigation.PopAsync(SendBackButtonPressed());
+                        }
+                        else
+                        {
+                            var name = JsonConvert.DeserializeObject<List<AddRequestClass>>(result);
+                            LvRequests.ItemsSource = name;
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
+                    }
                 }
                 catch
                 {
@@ -95,9 +106,26 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi");
-                    var name = JsonConvert.DeserializeObject<List<AddRequestClass>>(response);
-                    LvRequests.ItemsSource = name;
+                    var response =
+                        await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi");
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        var result = response.Content.ReadAsStringAsync().Result;
+                        if (result == "[]")
+                        {
+                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await Navigation.PopAsync(SendBackButtonPressed());
+                        }
+                        else
+                        {
+                            var name = JsonConvert.DeserializeObject<List<AddRequestClass>>(result);
+                            LvRequests.ItemsSource = name;
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
+                    }
                 }
                 catch
                 {
