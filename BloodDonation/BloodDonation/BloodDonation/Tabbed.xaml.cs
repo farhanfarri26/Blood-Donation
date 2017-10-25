@@ -12,8 +12,6 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Tabbed : TabbedPage
     {
-        private string _id;
-
         public Tabbed()
         {
             InitializeComponent();
@@ -21,20 +19,5 @@ namespace BloodDonation
             CurrentPage = Children[1];
         }
 
-        public Tabbed(string id)
-        {
-            InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
-            CurrentPage = Children[1];
-            _id = id;
-            PassValue();
-        }
-
-        ProfilePageClass profile = new ProfilePageClass();
-
-        private void PassValue()
-        {
-            profile.Id_ = _id;
-        }
     }
 }

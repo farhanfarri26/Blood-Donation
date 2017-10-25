@@ -6,18 +6,18 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-       
-        <StackLayout x:Name="StackLayoutSearchDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-          
-            <!--<Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSearchDonorCity" Title="Choose City" SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged"
-                            Style="{StaticResource CustomEntryStyle}">
-                        <Picker.Items>
-                            <x:String>Lahore</x:String>
-                        </Picker.Items>
-                    </Picker>
 
-                    <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
+        <StackLayout x:Name="StackLayoutSearchDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+
+            <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+            <Picker x:Name="PkrSearchDonorCity" Title="Choose City" SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged"
+                            Style="{StaticResource CustomEntryStyle}">
+                <Picker.Items>
+                    <x:String>Lahore</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!--<Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Picker x:Name="PkrSearchArea" Title="Select Nearby Area" SelectedIndexChanged="PkrSearchArea_OnSelectedIndexChanged"
                             Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
@@ -87,11 +87,11 @@
 
             <Button Text="Search" x:Name="BtnSearchDonor" Style="{StaticResource CustomButtonStyle}"
                         Clicked="BtnSearchDonor_OnClicked"/>
-            
+
             <Label Text="Get All Donors here" HorizontalOptions="Center" Margin="0,30,0,5" TextColor="DarkGray"/>
             <Button Text="All Donors" x:Name="BtnAllDonors" Style="{StaticResource CustomButtonStyleBottomMargin}" 
                     Clicked="BtnAllDonors_Clicked"/>
-                          
+
         </StackLayout>
 
     </StackLayout>

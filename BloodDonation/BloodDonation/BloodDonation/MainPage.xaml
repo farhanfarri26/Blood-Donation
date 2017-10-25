@@ -13,7 +13,7 @@
             <StackLayout x:Name="LayoutMainPage" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
                 <Image Source="logo.png" Margin="0,10,0,0"/>
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntCellName" Keyboard="Email" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellName" Keyboard="Telephone" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Password"  Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntPassword" Placeholder="Enter Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>

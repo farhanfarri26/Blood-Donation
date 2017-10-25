@@ -13,6 +13,7 @@ namespace WebApi.Models
         public string City { get; set; }
         public string Hospitals { get; set; }
         public string BloodGroup { get; set; }
+        public string AddedBy { get; set; }
         public string TodayDate { get; set; }
     }
 }

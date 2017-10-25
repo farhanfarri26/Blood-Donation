@@ -4,6 +4,7 @@ using Plugin.Connectivity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,15 +15,15 @@ using Xamarin.Forms.Xaml;
 namespace BloodDonation
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class UserInfo : ContentPage
+    public partial class ManageDonors : ContentPage
     {
-        public UserInfo()
+        public ManageDonors()
         {
             InitializeComponent();
-            GetInfo();
+            GetAdded();
         }
 
-        private async void GetInfo()
+        private async void GetAdded()
         {
             if (!CrossConnectivity.Current.IsConnected)
             {
@@ -36,11 +37,26 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/?cellnumber="
-                        + CellNumber.Number);
-                    var result = JsonConvert.DeserializeObject<List<SignupClass>>(response);
-                    LvUserInfo.ItemsSource = result;
+                    var responsedonors = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi?cellnumber=" + CellNumber.Number);
+                    if (responsedonors.StatusCode == HttpStatusCode.OK)
+                    {
+                        var resultdonors = responsedonors.Content.ReadAsStringAsync().Result;
 
+                        if (resultdonors == "[]")
+                        {
+                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await Navigation.PopAsync(SendBackButtonPressed());
+                        }
+                        else
+                        {
+                            var namedonors = JsonConvert.DeserializeObject<List<AddDonorClass>>(resultdonors);
+                            LvDonors.ItemsSource = namedonors;
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
+                    }
                 }
                 catch
                 {

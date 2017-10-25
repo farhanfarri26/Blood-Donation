@@ -24,9 +24,10 @@
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="0.22*"/>
+                                            <ColumnDefinition Width="0.3*"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
                                         
@@ -40,8 +41,10 @@
                                         <Label Text="{Binding Area}" TextColor="#d21d1d" FontSize="Small" Grid.Row="3" Grid.Column="1"/>
                                         <Label Text="City" Grid.Row="4" Grid.Column="0"/>
                                         <Label Text="{Binding City}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="4" Grid.Column="1"/>
-                                        <Label Text="City" Grid.Row="5" Grid.Column="0"/>
-                                        <Label Text="{Binding Email}" TextColor="#d21d1d" FontSize="Small" Grid.Row="5" Grid.Column="1"/>
+                                        <Label Text="Email" Grid.Row="5" Grid.Column="0"/>
+                                        <Label Text="{Binding Email}" FontSize="Small" Grid.Row="5" Grid.Column="1"/>
+                                        <Label Text="Joinig Date" Grid.Row="6" Grid.Column="0"/>
+                                        <Label Text="{Binding TodayDate}" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
 
                                     </Grid>
                                 </ViewCell.View>

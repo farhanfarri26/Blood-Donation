@@ -57,6 +57,43 @@ namespace WebApi.Controllers.Api
             return Ok(bloodUsers);
         }
 
+        // PUT: api/BloodUsersApi?password=Value
+        [ResponseType(typeof(void))]
+        public IHttpActionResult PutBloodUsers(string password, BloodUsers bloodUsers)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (password != bloodUsers.Password)
+            {
+                return BadRequest();
+            }
+
+            db.Entry(bloodUsers).State = EntityState.Modified;
+
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (password != bloodUsers.Password)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return StatusCode(HttpStatusCode.NoContent);
+        }
+
+
+
         // PUT: api/BloodUsersApi/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutBloodUsers(int id, BloodUsers bloodUsers)

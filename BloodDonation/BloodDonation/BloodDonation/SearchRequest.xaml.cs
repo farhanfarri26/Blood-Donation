@@ -39,12 +39,6 @@ namespace BloodDonation
                 }
                 else
                 {
-                    SearchRequestClass searchRequestClass = new SearchRequestClass
-                    {
-                        City = CityValue,
-                        Hospitals = HospitalValue,
-                        BloodGroup = BloodGroupValue
-                    };
 
                     await Navigation.PushAsync(new Requests(CityValue, HospitalValue, BloodGroupValue));
                 }

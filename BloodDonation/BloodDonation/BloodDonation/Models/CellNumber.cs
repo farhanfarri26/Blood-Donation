@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BloodDonation.Models
 {
-    public class SearchDonorClass
+    class CellNumber
     {
-        public string City { get; set; }
-        //public string Area { get; set; }
-        public string BloodGroup { get; set; }
+        public static int ID { get; set; }
+        public static string Number { get; set; }
+        public static string Password { get; set; }
     }
 }

@@ -35,7 +35,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationmvcapi.azurewebsites.net/api/BloodBanksApi");
+                    var response = await httpClient.GetStringAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodBanksApi");
                     var name = JsonConvert.DeserializeObject<List<BloodBankClass>>(response);
                     LvBloodBanks.ItemsSource = name;
                 }

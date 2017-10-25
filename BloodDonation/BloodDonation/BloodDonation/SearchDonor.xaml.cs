@@ -16,7 +16,7 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SearchDonor : ContentPage
     {
-        //private string CityValue;
+        private string CityValue;
         //private string AreaValue;
         public string BloodGroupValue;
 
@@ -40,13 +40,7 @@ namespace BloodDonation
                 }
                 else
                 {
-                    SearchDonorClass searchDonorClass = new SearchDonorClass()
-                    {
-                        //City = CityValue,
-                        //Area = AreaValue,
-                        BloodGroup = BloodGroupValue
-                    };
-                    await Navigation.PushAsync(new Donors(BloodGroupValue));
+                    await Navigation.PushAsync(new Donors(BloodGroupValue, CityValue));
                 }
             }
         }
@@ -64,10 +58,10 @@ namespace BloodDonation
         }
 
 
-        //private void PkrSearchDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    CityValue = PkrSearchDonorCity.Items[PkrSearchDonorCity.SelectedIndex];
-        //}
+        private void PkrSearchDonorCity_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            CityValue = PkrSearchDonorCity.Items[PkrSearchDonorCity.SelectedIndex];
+        }
 
         //private void PkrSearchArea_OnSelectedIndexChanged(object sender, EventArgs e)
         //{

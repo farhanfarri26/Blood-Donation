@@ -9,26 +9,41 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Net.Http;
 using System.Net;
+using Plugin.Connectivity;
 
 namespace BloodDonation
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProfilePage : ContentPage
     {
-        //private int _Id_;
-
         public ProfilePage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-           
         }
 
-       
-
-        private async void TapInfo_Tapped(object sender, EventArgs e)
+        private void TapProfile_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UserInfo());
+            Navigation.PushAsync(new UserInfo());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
+
+        private void BtnChangePasswordClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ChangePassword());
+        }
+
+        private void Button_Clicked_Donors(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ManageDonors());
+        }
+        private void Button_Clicked_Requests(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ManageRequests());
         }
     }
 }

@@ -13,4 +13,6 @@ namespace BloodDonation.Models
         public string CellNumber { get; set; }
 
     }
+
+
 }

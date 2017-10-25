@@ -15,6 +15,7 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Donors : ContentPage
     {
+        private string city;
         private string bloodGroup;
 
         public Donors()
@@ -23,9 +24,10 @@ namespace BloodDonation
             GetAllDonors();
         }
 
-        public Donors(string bloodGroup)
+        public Donors(string bloodGroup, string city)
         {
             InitializeComponent();
+            this.city = city;
             this.bloodGroup = bloodGroup;
             GetDonors();
         }
@@ -44,7 +46,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var response = await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi?blood=" + bloodGroup);
+                    var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi?blood=" + bloodGroup + "&&city=" + city);
 
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
@@ -93,7 +95,7 @@ namespace BloodDonation
 
                     var httpClient = new HttpClient();
                     var response =
-                        await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi");
+                        await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi");
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
                         var result = response.Content.ReadAsStringAsync().Result;

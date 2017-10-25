@@ -57,7 +57,7 @@ namespace BloodDonation
 
                     var httpClient = new System.Net.Http.HttpClient();
                     var response = await httpClient.GetAsync(
-                        "http://blooddonationlahore.azurewebsites.net/api/RequestApi?city=" + cityValue +
+                        "http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi?city=" + cityValue +
                         "&&hospitals=" + hospitalValue + "&&blood=" + bloodGroupValue);
 
                     if (response.StatusCode == HttpStatusCode.OK)
@@ -107,7 +107,7 @@ namespace BloodDonation
 
                     var httpClient = new System.Net.Http.HttpClient();
                     var response =
-                        await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/RequestApi");
+                        await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi");
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
                         var result = response.Content.ReadAsStringAsync().Result;

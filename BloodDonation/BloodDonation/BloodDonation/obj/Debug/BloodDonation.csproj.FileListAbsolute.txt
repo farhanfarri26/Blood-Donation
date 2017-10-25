@@ -281,3 +281,6 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debu
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UserInfo.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ChangePassword.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ManageDonors.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ManageRequests.xaml.g.cs

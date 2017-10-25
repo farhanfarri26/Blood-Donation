@@ -62,6 +62,7 @@ namespace BloodDonation
                             City = CityValue,
                             Area = AreaValue,
                             BloodGroup = BloodGroupValue,
+                            AddedBy = CellNumber.Number,
                             TodayDate = dateValue.ToString(),
                         };
                         try
@@ -74,7 +75,7 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(addDonorClass);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            await httpClient.PostAsync("http://blooddonationlahore.azurewebsites.net/api/DonorsApi", httpContent);
+                            await httpClient.PostAsync("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi", httpContent);
 
                             await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
                             await Navigation.PopAsync();

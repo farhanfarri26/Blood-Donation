@@ -18,7 +18,6 @@ namespace BloodDonation
     {
         private string cellnumber;
         private string password;
-        //private int _id;
 
         public MainPage()
         {
@@ -28,7 +27,6 @@ namespace BloodDonation
 
         private async void BtnLogin_OnClicked(object sender, EventArgs e)
         {
-            string phone = EntCellName.Text;
             string phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
 
             //if (string.IsNullOrEmpty(EntCellName.Text) || string.IsNullOrEmpty(EntPassword.Text))
@@ -48,11 +46,6 @@ namespace BloodDonation
                 cellnumber = EntCellName.Text;
                 password = EntPassword.Text;
 
-                SignupClass value = new SignupClass()
-                {
-                    CellNumber = cellnumber,
-                    Password = password,
-                };
 
                 try
                 {
@@ -61,13 +54,11 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var response = await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/BloodUsersApi?cellnumber=" + cellnumber + "&&password=" + password);
+                    var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi?cellnumber=" + cellnumber + "&&password=" + password);
 
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
                         var result = response.Content.ReadAsStringAsync().Result;
-
-
                         if (result == "[]")
                         {
                             await DisplayAlert("Invalid", "Your Cell Number or Password Did not Match to any account", "Try Again");
@@ -75,9 +66,14 @@ namespace BloodDonation
                         else
                         {
                             var values = JsonConvert.DeserializeObject<List<SignupClass>>(result);
-                            var _id = values[0].CellNumber;
+                            var _cellNumber = values[0].CellNumber;
+                            var _password = values[0].Password;
+                            var _id = values[0].Id;
+                            CellNumber.Number = _cellNumber;
+                            CellNumber.Password = _password;
+                            CellNumber.ID = _id;
                             await DisplayAlert("Welcome", "Dear User!  Please use our services in positive way. \n\n Regards: \n Blood Donation Team", "Get Started");
-                            await Navigation.PushAsync(new Tabbed(_id));
+                            await Navigation.PushAsync(new Tabbed());
                         }
                     }
                     else
@@ -126,7 +122,7 @@ namespace BloodDonation
             //            //WaitingLoader.IsVisible = true;
 
             //            //var httpClient = new HttpClient();
-            //            //var response = await httpClient.GetAsync("http://blooddonationlahore.azurewebsites.net/api/BloodUsersApi?cellnumber=" + cellnumber + "&&password=" + password);
+            //            //var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi?cellnumber=" + cellnumber + "&&password=" + password);
 
             //            //if (response.StatusCode == HttpStatusCode.NoContent)
             //            //{
