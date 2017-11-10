@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodDonation.UpdateUserInfo"
+             Title="Update Info"
+             BackgroundImage="BG.png">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+
+            <ScrollView>
+                <StackLayout x:Name="StackLayoutSignup" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+
+                    <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Entry x:Name="EntFullName" Text="{Binding FullName}" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
+
+                    <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
+                    <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
+
+                    <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Picker x:Name="PkrSignupCity" Title="Choose City" SelectedIndexChanged="PkrSignupCity_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
+                        <Picker.Items>
+                            <x:String>Lahore</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Picker x:Name="PkrSignupArea" Title="Choose Nearby Area" SelectedIndexChanged="PkrSignupArea_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
+                        <Picker.Items>
+                            <x:String>Allama Iqbal Town</x:String>
+                            <x:String>Awan Town</x:String>
+                            <x:String>Aziz Bhatti Town</x:String>
+                            <x:String>Baghbanpura</x:String>
+                            <x:String>Batapur</x:String>
+                            <x:String>Begum kot</x:String>
+                            <x:String>Chah Miran</x:String>
+                            <x:String>Data Ganj Baksh Town</x:String>
+                            <x:String>Defence Housing Authority (Lahore)</x:String>
+                            <x:String>Diamond Market</x:String>
+                            <x:String>Faisal Town</x:String>
+                            <x:String>Garden Town</x:String>
+                            <x:String>Gawalmandi</x:String>
+                            <x:String>Gosia Park (Band Road)</x:String>
+                            <x:String>Green Town</x:String>
+                            <x:String>Gulberg Town</x:String>
+                            <x:String>Gulshan-e-Ravi</x:String>
+                            <x:String>Harbanspura</x:String>
+                            <x:String>Hassan Town</x:String>
+                            <x:String>Ichhra</x:String>
+                            <x:String>Jallo Mor</x:String>
+                            <x:String>Johar Town</x:String>
+                            <x:String>Krishan Nagar</x:String>
+                            <x:String>Lahore Cantonment</x:String>
+                            <x:String>Laxshmi Chowk</x:String>
+                            <x:String>Model Town</x:String>
+                            <x:String>Mughalpura</x:String>
+                            <x:String>Muhafiz Town</x:String>
+                            <x:String>Mustafa Town</x:String>
+                            <x:String>New Muslim Town</x:String>
+                            <x:String>Nishtar Town</x:String>
+                            <x:String>Pasco Society</x:String>
+                            <x:String>Punjab Cooperative Housing Society</x:String>
+                            <x:String>Qila Gujar Singh</x:String>
+                            <x:String>Ravi Town</x:String>
+                            <x:String>Samanabad Town</x:String>
+                            <x:String>Shad Bagh</x:String>
+                            <x:String>Shadman Town</x:String>
+                            <x:String>Shahdara</x:String>
+                            <x:String>Shalimar Town</x:String>
+                            <x:String>SukhChyan Housing Estate</x:String>
+                            <x:String>Township</x:String>
+                            <x:String>WAPDA Town</x:String>
+                            <x:String>Wagah Town</x:String>
+                            <x:String>Walled City of Lahore</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Picker x:Name="PkrSignupBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSignupBloodGroup_OnSelectedIndexChanged"
+                        Style="{StaticResource CustomEntryStyle}">
+                        <Picker.Items>
+                            <x:String>None</x:String>
+                            <x:String>A positive</x:String>
+                            <x:String>A negative</x:String>
+                            <x:String>B positive</x:String>
+                            <x:String>B negative</x:String>
+                            <x:String>AB positive</x:String>
+                            <x:String>AB negative</x:String>
+                            <x:String>O positive</x:String>
+                            <x:String>O negative</x:String>
+
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Email"  Style="{StaticResource CustomLabelEntryStyle}"/>
+                    <Entry x:Name="EntEmail" Keyboard="Email" Placeholder="Enter Email Address" Style="{StaticResource CustomEntryStyle}"/>
+                    <Label x:Name="LblEmail" Text="Invalid Email" Style="{StaticResource CustomUnderLabelStyle}"/>
+
+                    <Button Text="Update Info" x:Name="BtnUpdateInfo" Style="{StaticResource CustomButtonStyleBottomMargin}" 
+                        Clicked="BtnUpdateInfo_Clicked"/>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

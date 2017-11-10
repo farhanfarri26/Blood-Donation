@@ -7,8 +7,7 @@
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
 
-        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,250" Style="{StaticResource CustomActivityIndicator}"/>
-
+        <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
         <ScrollView>
 
             <StackLayout x:Name="StackLayoutAddDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
@@ -17,11 +16,9 @@
                 <Entry x:Name="EntFullName" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
 
-                
-                
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrAddDonorCity" Title="Choose City" SelectedIndexChanged="PkrAddDonorCity_OnSelectedIndexChanged" 
                         Style="{StaticResource CustomEntryStyle}">
@@ -30,8 +27,6 @@
                     </Picker.Items>
                 </Picker>
 
-                
-                
                 <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrAddDonorArea" Title="Choose Area" SelectedIndexChanged="PkrAddDonorArea_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
@@ -84,8 +79,6 @@
                     </Picker.Items>
                 </Picker>
 
-                
-                
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrAddDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrAddDonorBloodGroup_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
@@ -103,11 +96,9 @@
                     </Picker.Items>
                 </Picker>
 
-                
-                
                 <Button Text="Add" x:Name="BtnAddDonor" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnAddDonor_OnClicked"/>
-                    
+
             </StackLayout>
 
         </ScrollView>

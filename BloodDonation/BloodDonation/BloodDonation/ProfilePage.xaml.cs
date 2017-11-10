@@ -29,6 +29,9 @@ namespace BloodDonation
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            LocalDB localDB = new LocalDB();
+            HandleDB dB = new HandleDB();
+            dB.DeleteDB(localDB);
             Navigation.PopToRootAsync();
         }
 

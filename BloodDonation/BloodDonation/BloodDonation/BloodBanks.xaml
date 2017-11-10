@@ -7,15 +7,16 @@
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-            <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
+            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
-            <ListView x:Name="LvBloodBanks" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemTapped="LvBloodBanks_OnItemTapped">
+            <ListView x:Name="LvBloodBanks" HasUnevenRows="True" ItemTapped="LvBloodBanks_OnItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
                                 <Grid>
                                     <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
                                         <RowDefinition Height="*"/>
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
@@ -27,9 +28,10 @@
 
                                     <Image Source="CallIcon2" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
                                     <Label  Text="Name" Grid.Row="0" Grid.Column="1" />
-                                    <Label Text="{Binding HospitalName}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
+                                    <Label Text="{Binding HospitalName}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="0" Grid.Column="2" />
                                     <Label Text="Phone #" Grid.Row="1" Grid.Column="1"/>
                                     <Label Text="{Binding PhoneNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
+                                    <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"/>
 
                                 </Grid>
                             </ViewCell.View>

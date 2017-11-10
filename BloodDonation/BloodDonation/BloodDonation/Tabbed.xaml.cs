@@ -19,5 +19,13 @@ namespace BloodDonation
             CurrentPage = Children[1];
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            if (Device.OS == TargetPlatform.Android)
+            {
+                DependencyService.Get<IAndroidMethods>().CloseApp();
+            }
+            return base.OnBackButtonPressed();
+        }
     }
 }

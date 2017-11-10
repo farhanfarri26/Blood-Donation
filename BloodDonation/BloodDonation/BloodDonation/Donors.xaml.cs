@@ -9,6 +9,7 @@ using Plugin.Connectivity;
 using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System;
 
 namespace BloodDonation
 {
@@ -46,7 +47,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi?blood=" + bloodGroup + "&&city=" + city);
+                    var response = await httpClient.GetAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi?city={0}&&blood={1}", city, bloodGroup));
 
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
@@ -67,10 +68,14 @@ namespace BloodDonation
                         await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
                     WaitingLoader.IsRunning = false;
                     WaitingLoader.IsVisible = false;
+                    string msg = ex.ToString();
+                    msg = "Request Timeout";
+                    await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                 }
                 finally
                 {

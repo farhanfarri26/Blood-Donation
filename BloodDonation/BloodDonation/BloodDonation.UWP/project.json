@@ -1,10 +1,13 @@
 ﻿{
   "dependencies": {
+    "Microsoft.Azure.Mobile.Analytics": "0.17.1",
+    "Microsoft.Azure.Mobile.Crashes": "0.17.1",
     "Microsoft.CSharp": "4.4.0",
     "Microsoft.NETCore.Platforms": "2.0.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
     "NETStandard.Library": "2.0.0",
     "Newtonsoft.Json": "10.0.3",
+    "SQLite.Net-PCL": "3.1.1",
     "System.Net.Http": "4.3.2",
     "Xam.Plugin.Connectivity": "3.0.2",
     "Xam.Plugins.Messaging": "4.0.0",

@@ -8,17 +8,18 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
+        <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
         <ScrollView>
             <StackLayout x:Name="StackLayoutSignup" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
                 <Image Source="signuplogo.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntFullName" Text="{Binding FullName}" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntFullName" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntCellNumber" Keyboard="Telephone" Text="{Binding CellNumber}" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
+                <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrSignupCity" Title="Choose City" SelectedIndexChanged="PkrSignupCity_OnSelectedIndexChanged"
@@ -99,9 +100,11 @@
 
                 <Label Text="Email"  Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntEmail" Keyboard="Email" Placeholder="Enter Email Address" Style="{StaticResource CustomEntryStyle}"/>
+                <Label x:Name="LblEmail" Text="Invalid Email" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Label Text="Password" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntPassword" IsPassword="True" Placeholder="Enter Password" Style="{StaticResource CustomEntryStyle}"/>
+                <Label x:Name="LblPassword" Text="Password should be Numeric and Alpabatic" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Button Text="Create Account" x:Name="BtnCreateAccount" Style="{StaticResource CustomButtonStyleBottomMargin}" 
                         Clicked="BtnCreateAccount_OnClicked"/>

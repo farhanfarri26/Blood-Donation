@@ -39,7 +39,6 @@ namespace BloodDonation
                 }
                 else
                 {
-
                     await Navigation.PushAsync(new Requests(CityValue, HospitalValue, BloodGroupValue));
                 }
             }

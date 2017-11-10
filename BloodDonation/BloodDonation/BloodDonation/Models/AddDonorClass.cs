@@ -8,6 +8,7 @@ namespace BloodDonation.Models
 {
     public class AddDonorClass
     {
+        public int ID { get; set; }
         public string FullName { get; set; }
         public string CellNumber { get; set; }
         public string City { get; set; }

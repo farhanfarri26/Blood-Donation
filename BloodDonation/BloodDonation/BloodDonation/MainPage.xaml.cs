@@ -27,139 +27,94 @@ namespace BloodDonation
 
         private async void BtnLogin_OnClicked(object sender, EventArgs e)
         {
-            string phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
+            string phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
 
-            //if (string.IsNullOrEmpty(EntCellName.Text) || string.IsNullOrEmpty(EntPassword.Text))
-            //{
-            //    await DisplayAlert("Empty", "Dear User! Please Fill all Entries.", "OK");
-            //}
-            //else
-            //{
-
-            if (!CrossConnectivity.Current.IsConnected)
+            if (string.IsNullOrEmpty(EntCellName.Text) || string.IsNullOrEmpty(EntPassword.Text))
             {
-                await DisplayAlert("Network Connection Alert !!",
-                    "No Connection Available!! Turn On Data Connection", "Ok");
+                LblEmpty.IsVisible = true;
             }
             else
             {
-                cellnumber = EntCellName.Text;
-                password = EntPassword.Text;
-
-
-                try
+                if (!Regex.IsMatch(EntCellName.Text, phonepattern))
                 {
-                    LayoutMainPage.IsVisible = false;
-                    WaitingLoader.IsRunning = true;
-                    WaitingLoader.IsVisible = true;
-
-                    var httpClient = new HttpClient();
-                    var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi?cellnumber=" + cellnumber + "&&password=" + password);
-
-                    if (response.StatusCode == HttpStatusCode.OK)
+                    LblCellNumber.IsVisible = true;
+                }
+                else
+                {
+                    if (!CrossConnectivity.Current.IsConnected)
                     {
-                        var result = response.Content.ReadAsStringAsync().Result;
-                        if (result == "[]")
-                        {
-                            await DisplayAlert("Invalid", "Your Cell Number or Password Did not Match to any account", "Try Again");
-                        }
-                        else
-                        {
-                            var values = JsonConvert.DeserializeObject<List<SignupClass>>(result);
-                            var _cellNumber = values[0].CellNumber;
-                            var _password = values[0].Password;
-                            var _id = values[0].Id;
-                            CellNumber.Number = _cellNumber;
-                            CellNumber.Password = _password;
-                            CellNumber.ID = _id;
-                            await DisplayAlert("Welcome", "Dear User!  Please use our services in positive way. \n\n Regards: \n Blood Donation Team", "Get Started");
-                            await Navigation.PushAsync(new Tabbed());
-                        }
+                        await DisplayAlert("Network Connection Alert !!",
+                            "No Connection Available!! Turn On Data Connection", "Ok");
                     }
                     else
                     {
-                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
+                        cellnumber = EntCellName.Text;
+                        password = EntPassword.Text.GetHashCode().ToString();
+
+                        try
+                        {
+                            LayoutMainPage.IsVisible = false;
+                            WaitingLoader.IsRunning = true;
+                            WaitingLoader.IsVisible = true;
+
+                            var httpClient = new HttpClient();
+                            var response = await httpClient.GetAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi?cellnumber={0}&&password={1}", cellnumber, password));
+
+                            if (response.StatusCode == HttpStatusCode.OK || response.StatusCode == HttpStatusCode.RequestTimeout)
+                            {
+                                var result = response.Content.ReadAsStringAsync().Result;
+                                if (result == "[]")
+                                {
+                                    await DisplayAlert("Invalid", "Your Cell Number or Password Did not Match to any account", "Try Again");
+                                }
+                                else
+                                {
+                                    var values = JsonConvert.DeserializeObject<List<SignupClass>>(result);
+
+                                    LocalDB localDB = new LocalDB()
+                                    {
+                                        _ID = values[0].Id,
+                                        FullName = values[0].FullName,
+                                        CellNumber = values[0].CellNumber,
+                                        City = values[0].City,
+                                        Area = values[0].Area,
+                                        BloodGroup = values[0].BloodGroup,
+                                        Email = values[0].Email,
+                                        Password = values[0].Password,
+                                        TodayDate = values[0].TodayDate,
+                                    };
+
+                                    //insert in localDB
+                                    HandleDB dB = new HandleDB();
+                                    dB.AddDB(localDB);
+
+                                    await DisplayAlert("Welcome", "Dear User!  Please use our services in positive way. \n\n Regards: \n Blood Donation Team", "Get Started");
+                                    await Navigation.PushAsync(new Tabbed());
+                                }
+                            }
+                            else
+                            {
+                                await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            WaitingLoader.IsRunning = false;
+                            WaitingLoader.IsVisible = false;
+                            string msg = ex.ToString();
+                            msg = "Request Timeout";
+                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                        }
+                        finally
+                        {
+                            LayoutMainPage.IsVisible = true;
+                            WaitingLoader.IsRunning = false;
+                            WaitingLoader.IsVisible = false;
+                        }
                     }
-                    //await Navigation.PushAsync(new Tabbed());
-                }
-                catch
-                {
-                    WaitingLoader.IsRunning = false;
-                    WaitingLoader.IsVisible = false;
-                    throw;
-                }
-                finally
-                {
-                    LayoutMainPage.IsVisible = true;
-                    WaitingLoader.IsRunning = false;
-                    WaitingLoader.IsVisible = false;
                 }
             }
-
-            #region OriganlCode
-            //if (Regex.IsMatch(phone, phonepattern))
-            //{
-            //    if (!CrossConnectivity.Current.IsConnected)
-            //    {
-            //        await DisplayAlert("Network Connection Alert !!",
-            //            "No Connection Available!! Turn On Data Connection", "Ok");
-            //    }
-            //    else
-            //    {
-            //        cellnumber = EntCellName.Text;
-            //        password = EntPassword.Text;
-
-            //        MainPageLoginClass mainPageLoginClass = new MainPageLoginClass()
-            //        {
-            //            CellNumber = cellnumber,
-            //            Password = password,
-            //        };
-
-            //        try
-            //        {
-            //            //LayoutMainPage.IsVisible = false;
-            //            //WaitingLoader.IsRunning = true;
-            //            //WaitingLoader.IsVisible = true;
-
-            //            //var httpClient = new HttpClient();
-            //            //var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi?cellnumber=" + cellnumber + "&&password=" + password);
-
-            //            //if (response.StatusCode == HttpStatusCode.NoContent)
-            //            //{
-            //            //    await DisplayAlert("Invalid", "Cell Number or Password you Entered is Invalid ", "Try Again");
-            //            //}
-            //            //else
-            //            //{
-            //            //    var result = response.Content.ReadAsStringAsync().Result;
-            //            //    var name = JsonConvert.DeserializeObject<List<SignupClass>>(result);
-            //            //    //LvDonors.ItemsSource = name;
-            //            //    await DisplayAlert("Welcome", "Dear User!! \n Please use our services in positive way. \n Regards: \n Blood Donation Team", "Get Started");
-            //            //    await Navigation.PushAsync(new Tabbed());
-            //            //}
-            //            await Navigation.PushAsync(new Tabbed());
-
-            //        }
-            //        catch
-            //        {
-            //            WaitingLoader.IsRunning = false;
-            //            WaitingLoader.IsVisible = false;
-            //            throw;
-            //        }
-            //        finally
-            //        {
-            //            LayoutMainPage.IsVisible = true;
-            //            WaitingLoader.IsRunning = false;
-            //            WaitingLoader.IsVisible = false;
-            //        }
-            //    }
-            //}
-            //else
-            //{
-            //    await DisplayAlert("Invalid", "Dear User! Your Cell Number is Invalid", "Try Again");
-            //}
-            #endregion
         }
-
 
         private async void BtnSignup_OnClicked(object sender, EventArgs e)
         {

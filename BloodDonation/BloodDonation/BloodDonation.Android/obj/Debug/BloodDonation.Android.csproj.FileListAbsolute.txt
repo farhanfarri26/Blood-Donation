@@ -474,3 +474,15 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\area.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\city.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\profileinfo.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\profileheader.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Microsoft.Azure.Mobile.Analytics.Android.Bindings.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Microsoft.Azure.Mobile.Analytics.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Microsoft.Azure.Mobile.Android.Bindings.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Microsoft.Azure.Mobile.Crashes.Android.Bindings.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Microsoft.Azure.Mobile.Crashes.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Microsoft.Azure.Mobile.dll

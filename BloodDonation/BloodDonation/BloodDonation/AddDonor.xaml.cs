@@ -26,12 +26,10 @@ namespace BloodDonation
             InitializeComponent();
         }
 
-
-
         private async void BtnAddDonor_OnClicked(object sender, EventArgs e)
         {
             String phone = EntCellNumber.Text;
-            String phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
+            String phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
 
             if (string.IsNullOrWhiteSpace(EntFullName.Text) || string.IsNullOrWhiteSpace(EntCellNumber.Text)
                 || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
@@ -41,10 +39,12 @@ namespace BloodDonation
             }
             else
             {
-                if (Regex.IsMatch(phone, phonepattern))
+                if (!Regex.IsMatch(phone, phonepattern))
                 {
-                    LblCellNumber.IsVisible = false;
-
+                    LblCellNumber.IsVisible = true;
+                }
+                else
+                {
                     if (!CrossConnectivity.Current.IsConnected)
                     {
                         await DisplayAlert("Network Connection Alert !!",
@@ -52,6 +52,8 @@ namespace BloodDonation
                     }
                     else
                     {
+                        HandleDB dB = new HandleDB();
+                        var data = dB.GetDB().ToList();
 
                         DateTime dateValue = DateTime.Now.ToLocalTime();
 
@@ -62,7 +64,7 @@ namespace BloodDonation
                             City = CityValue,
                             Area = AreaValue,
                             BloodGroup = BloodGroupValue,
-                            AddedBy = CellNumber.Number,
+                            AddedBy = data[0].CellNumber,
                             TodayDate = dateValue.ToString(),
                         };
                         try
@@ -79,22 +81,15 @@ namespace BloodDonation
 
                             await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
                             await Navigation.PopAsync();
-
-                            //if (test.StatusCode == HttpStatusCode.Created)
-                            //{
-                            //    await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
-                            //    await Navigation.PopAsync();
-                            //}
-                            //else
-                            //{
-                            //    await DisplayAlert("Error!!", " Your Request is not Posted", "Try");
-                            //}
                         }
-                        catch
+                        catch (Exception ex)
                         {
-                            StackLayoutAddDonor.IsVisible = true;
+                            WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
-                            throw;
+                            string msg = ex.ToString();
+                            msg = "Request Timeout";
+                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                         }
                         finally
                         {
@@ -102,10 +97,6 @@ namespace BloodDonation
                             WaitingLoader.IsVisible = false;
                         }
                     }
-                }
-                else
-                {
-                    LblCellNumber.IsVisible = true;
                 }
             }
         }

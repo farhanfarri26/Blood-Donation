@@ -6,7 +6,7 @@
              BackgroundImage="BG.png">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
+        <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
         <ScrollView>
             <StackLayout x:Name="StackLayoutAddRequest" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
@@ -15,7 +15,7 @@
                 <Entry x:Name="EntFullName" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="Enter Cell Number" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>

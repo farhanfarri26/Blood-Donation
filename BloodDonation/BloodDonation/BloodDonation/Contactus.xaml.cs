@@ -39,10 +39,14 @@ namespace BloodDonation
                     var name = JsonConvert.DeserializeObject<List<Models.Contactus>>(response);
                     LvContactus.ItemsSource = name;
                 }
-                catch
+                catch (Exception ex)
                 {
                     WaitingLoader.IsRunning = false;
                     WaitingLoader.IsVisible = false;
+                    string msg = ex.ToString();
+                    msg = "Request Timeout";
+                    await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                 }
                 finally
                 {

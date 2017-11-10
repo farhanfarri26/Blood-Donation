@@ -56,9 +56,7 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetAsync(
-                        "http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi?city=" + cityValue +
-                        "&&hospitals=" + hospitalValue + "&&blood=" + bloodGroupValue);
+                    var response = await httpClient.GetAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi?city={0}&&hospitals={1}&&blood={2}", cityValue, hospitalValue, bloodGroupValue));
 
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
@@ -79,10 +77,14 @@ namespace BloodDonation
                         await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
                     WaitingLoader.IsRunning = false;
                     WaitingLoader.IsVisible = false;
+                    string msg = ex.ToString();
+                    msg = "Request Timeout";
+                    await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                 }
                 finally
                 {

@@ -2,6 +2,85 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81+wp8/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {
+            "assetType": "runtime",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -506,6 +585,101 @@
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
           }
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -2491,6 +2665,51 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -3209,6 +3428,90 @@
         "type": "package",
         "native": {
           "runtimes/win8-arm/native/clrcompression.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -5010,6 +5313,51 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
+          "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -5764,6 +6112,90 @@
         },
         "native": {
           "runtimes/win8-arm-aot/native/_._": {}
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-arm/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -7565,6 +7997,51 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -8292,6 +8769,90 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x64/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -10093,6 +10654,51 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
+          "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -10856,6 +11462,90 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x64/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -12657,6 +13347,51 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -13384,6 +14119,90 @@
         },
         "runtime": {
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x86/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -15185,6 +16004,51 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
+      "Microsoft.Azure.Mobile/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Newtonsoft.Json": "6.0.1",
+          "sqlite-net-pcl": "1.3.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll": {}
+        }
+      },
+      "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Mobile": "0.17.1"
+        },
+        "compile": {
+          "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {}
+        },
+        "runtime": {
+          "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll": {},
+          "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/WatsonRegistrationUtility.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -15948,6 +16812,90 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.bundle_green": "1.1.2"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/Windows8/SQLite.Net.Platform.WinRT.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.2",
+          "SQLitePCLRaw.lib.e_sqlite3.v140": "1.1.2",
+          "SQLitePCLRaw.provider.e_sqlite3.uwp10": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+        "type": "package",
+        "native": {
+          "runtimes/win10-x86/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "SQLitePCLRaw.core": "1.1.2"
+        },
+        "compile": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -17750,6 +18698,64 @@
     }
   },
   "libraries": {
+    "Microsoft.Azure.Mobile/0.17.1": {
+      "sha512": "TnKP4utqg5/I04KfKNdhBQLcrnKjvCPOPQSZbrQViI1JAF4Q4FzgckhtLOD0Uxfn47hxIjN8vD8lSTabnDoUeA==",
+      "type": "package",
+      "path": "microsoft.azure.mobile/0.17.1",
+      "files": [
+        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.Azure.Mobile.dll",
+        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.dll",
+        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.Azure.Mobile.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.Azure.Mobile.dll",
+        "lib/uap10.0/Microsoft.Azure.Mobile.dll",
+        "microsoft.azure.mobile.0.17.1.nupkg.sha512",
+        "microsoft.azure.mobile.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Mobile.Analytics/0.17.1": {
+      "sha512": "UKOq00WaUgkecY8gm6KgNWK2HBzdTBVO/60Rcz+/pKygLDN4iqG+u956s3LwbDx8VcvchpmFtU7R+AIwwfGEIA==",
+      "type": "package",
+      "path": "microsoft.azure.mobile.analytics/0.17.1",
+      "files": [
+        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Analytics.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Analytics.dll",
+        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.Azure.Mobile.Analytics.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.Azure.Mobile.Analytics.dll",
+        "lib/uap10.0/Microsoft.Azure.Mobile.Analytics.dll",
+        "microsoft.azure.mobile.analytics.0.17.1.nupkg.sha512",
+        "microsoft.azure.mobile.analytics.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Mobile.Crashes/0.17.1": {
+      "sha512": "w9AvDJmsoXVvQ/HmhamLxBaF5x5BelaPS5dOjuf7Q/DipPlb2IU0X35XxVJ1yBQ8p0+P+qF0XueKsNRuUBmNgQ==",
+      "type": "package",
+      "path": "microsoft.azure.mobile.crashes/0.17.1",
+      "files": [
+        "build/uap10.0/Microsoft.Azure.Mobile.Crashes.targets",
+        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Crashes.Android.Bindings.dll",
+        "lib/MonoAndroid403/Microsoft.Azure.Mobile.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Crashes.dll",
+        "lib/Xamarin.iOS10/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll",
+        "lib/netstandard1.0/Microsoft.Azure.Mobile.Crashes.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Microsoft.Azure.Mobile.Crashes.dll",
+        "microsoft.azure.mobile.crashes.0.17.1.nupkg.sha512",
+        "microsoft.azure.mobile.crashes.nuspec",
+        "ref/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
+        "runtimes/win10-arm/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-arm/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x64/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
+        "runtimes/win10-x64/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x64/native/WatsonRegistrationUtility.dll",
+        "runtimes/win10-x86/lib/uap10.0/Microsoft.Azure.Mobile.Crashes.dll",
+        "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
+        "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
+      ]
+    },
     "Microsoft.CSharp/4.4.0": {
       "sha512": "vvVR/B08YVghQ4jHEloxqw2ZWzEGE1AOA5E0DioUM3ujbXz6FD3AfB/0Jl2ohJPd0nXYGwmPe1En6HTsSriq1A==",
       "type": "package",
@@ -21404,6 +22410,142 @@
         "runtime.win8-arm.runtime.native.system.io.compression.4.3.0.nupkg.sha512",
         "runtime.win8-arm.runtime.native.system.io.compression.nuspec",
         "runtimes/win8-arm/native/clrcompression.dll"
+      ]
+    },
+    "sqlite-net-pcl/1.3.1": {
+      "sha512": "YVqyIbWN4J1f7kYIJt3sHtnXw51MifWAsVSiMxDpexfzJuBR2QUmiqxxMlaV5IpFl9Nwgm9QICaNNSyNiEmGvA==",
+      "type": "package",
+      "path": "sqlite-net-pcl/1.3.1",
+      "files": [
+        "lib/netstandard1.1/SQLite-net.dll",
+        "lib/netstandard1.1/SQLite-net.dll.mdb",
+        "lib/netstandard1.1/SQLite-net.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll.mdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
+        "sqlite-net-pcl.1.3.1.nupkg.sha512",
+        "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLite.Net-PCL/3.1.1": {
+      "sha512": "eIaIk+k4MwvBeKyzj1kgIegWXYZlaDAHNzsaYP7wNDgSqAdaza8FgCRun7mIZScJD/RIuKxN/b1V+bkC+/WIeA==",
+      "type": "package",
+      "path": "sqlite.net-pcl/3.1.1",
+      "files": [
+        "lib/MonoAndroid/SQLite.Net.Platform.XamarinAndroid.dll",
+        "lib/Windows8/SQLite.Net.Platform.WinRT.dll",
+        "lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll",
+        "lib/monotouch/SQLite.Net.Platform.XamarinIOS.dll",
+        "lib/net4/SQLite.Net.Platform.Win32.dll",
+        "lib/net40/SQLite.Net.Platform.Generic.dll",
+        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll",
+        "lib/portable-win81+wpa81/SQLite.Net.Platform.WinRT.dll",
+        "lib/windowsphone8/ARM/SQLite.Net.Platform.WindowsPhone8.dll",
+        "lib/windowsphone8/x86/SQLite.Net.Platform.WindowsPhone8.dll",
+        "sqlite.net-pcl.3.1.1.nupkg.sha512",
+        "sqlite.net-pcl.nuspec"
+      ]
+    },
+    "SQLite.Net.Core-PCL/3.1.1": {
+      "sha512": "/0VdXnyj2srEh5rM1RW/snXJrVGRsxGB3xjW4EkhZIig9N/8EocZZrEr0vwRJU8a9Lz4BrweoLyKwp2evmSIzg==",
+      "type": "package",
+      "path": "sqlite.net.core-pcl/3.1.1",
+      "files": [
+        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll",
+        "sqlite.net.core-pcl.3.1.1.nupkg.sha512",
+        "sqlite.net.core-pcl.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_green/1.1.2": {
+      "sha512": "i7ZcVmz1CY9/Un9GrnZWtbou9va7ho54Bx9V7H59CxERCq9IJ10164rY8sg2uLGtiJY3AhWdtrA045QTlETmhA==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_green/1.1.2",
+      "files": [
+        "build/wp8/SQLitePCLRaw.bundle_green.targets",
+        "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net35/SQLitePCLRaw.batteries_green.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net40/SQLitePCLRaw.batteries_green.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net45/SQLitePCLRaw.batteries_green.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win8/SQLitePCLRaw.batteries_green.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win81/SQLitePCLRaw.batteries_green.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "lib/wp8/_._",
+        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_green.1.1.2.nupkg.sha512",
+        "sqlitepclraw.bundle_green.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/1.1.2": {
+      "sha512": "Hll9I6i6c9h+8gW250qGssQh/4l7AQEhSzK0TXSVju5utgXV6ruupaiGr/3MFdwGIDH8QyVxXz22/esZ8A6CMw==",
+      "type": "package",
+      "path": "sqlitepclraw.core/1.1.2",
+      "files": [
+        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/net35/SQLitePCLRaw.core.dll",
+        "lib/net40/SQLitePCLRaw.core.dll",
+        "lib/net45/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/uap10.0/SQLitePCLRaw.core.dll",
+        "lib/win8/SQLitePCLRaw.core.dll",
+        "lib/win81/SQLitePCLRaw.core.dll",
+        "lib/wpa81/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.1.1.2.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.v140/1.1.2": {
+      "sha512": "GTgZvXEE3hY0YVJNskdz6oUwN1k1kcaItobjPrUO2DVnRHolOMPuoR6F43VCeR3S7zioSOI5sqaSqwX6kkL0mQ==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.v140/1.1.2",
+      "files": [
+        "build/SQLitePCLRaw.lib.e_sqlite3.v140.targets",
+        "runtimes/win10-arm/native/e_sqlite3.dll",
+        "runtimes/win10-x64/native/e_sqlite3.dll",
+        "runtimes/win10-x86/native/e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.v140.1.1.2.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.v140.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3.uwp10/1.1.2": {
+      "sha512": "OGlBhALVrK1CQjUpzisIkSy243a/zCWyfV//b31/OYEK6Z3IjTp6yUuGfifMUzAI8EbiLAI4fPUa2YYthaIU1A==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3.uwp10/1.1.2",
+      "files": [
+        "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.uwp10.1.1.2.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.uwp10.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -26808,11 +27950,14 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Microsoft.Azure.Mobile.Analytics >= 0.17.1",
+      "Microsoft.Azure.Mobile.Crashes >= 0.17.1",
       "Microsoft.CSharp >= 4.4.0",
       "Microsoft.NETCore.Platforms >= 2.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.4.0",
       "NETStandard.Library >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
+      "SQLite.Net-PCL >= 3.1.1",
       "System.Net.Http >= 4.3.2",
       "Xam.Plugin.Connectivity >= 3.0.2",
       "Xam.Plugins.Messaging >= 4.0.0",
@@ -26851,11 +27996,14 @@
       }
     },
     "dependencies": {
+      "Microsoft.Azure.Mobile.Analytics": "0.17.1",
+      "Microsoft.Azure.Mobile.Crashes": "0.17.1",
       "Microsoft.CSharp": "4.4.0",
       "Microsoft.NETCore.Platforms": "2.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
       "NETStandard.Library": "2.0.0",
       "Newtonsoft.Json": "10.0.3",
+      "SQLite.Net-PCL": "3.1.1",
       "System.Net.Http": "4.3.2",
       "Xam.Plugin.Connectivity": "3.0.2",
       "Xam.Plugins.Messaging": "4.0.0",

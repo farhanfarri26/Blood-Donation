@@ -30,22 +30,28 @@ namespace BloodDonation
             }
             else
             {
+                HandleDB dB = new HandleDB();
+                var data = dB.GetDB().ToList();
+
                 try
                 {
                     WaitingLoader.IsRunning = true;
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/?cellnumber="
-                        + CellNumber.Number);
+                    var response = await httpClient.GetStringAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/?cellnumber=" + data[0].CellNumber);
                     var result = JsonConvert.DeserializeObject<List<SignupClass>>(response);
                     LvUserInfo.ItemsSource = result;
 
                 }
-                catch
+                catch (Exception ex)
                 {
                     WaitingLoader.IsRunning = false;
                     WaitingLoader.IsVisible = false;
+                    string msg = ex.ToString();
+                    msg = "Request Timeout";
+                    await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                 }
                 finally
                 {
@@ -53,6 +59,12 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = false;
                 }
             }
+        }
+
+
+        private void LvUserInfo_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            Navigation.PushAsync(new UpdateUserInfo());
         }
     }
 }

@@ -15,6 +15,7 @@
 
             <Style x:Key="CustomActivityIndicator" TargetType="ActivityIndicator">
                 <Setter Property="IsRunning" Value="False"/>
+                <Setter Property="Margin" Value="0,250,0,0"/>
                 <Setter Property="IsVisible" Value="False"/>
             </Style>
 
@@ -61,6 +62,13 @@
                 <Setter Property="Margin" Value="10,0,10,0"/>
             </Style>
 
+            <Style x:Key="CustomButtonTappedStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#d21d1d"/>
+                <Setter Property="BorderColor" Value="#d21d1d"/>
+                <Setter Property="IsVisible" Value="False"/>
+                <Setter Property="Margin" Value="10,0,10,0"/>
+            </Style>
+            
             <Style x:Key="CustomButtonStyleBottomMargin" TargetType="Button">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="BackgroundColor" Value="#d21d1d"/>

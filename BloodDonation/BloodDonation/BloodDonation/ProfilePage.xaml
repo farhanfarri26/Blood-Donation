@@ -5,6 +5,7 @@
              Title="Profile">
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+        <ScrollView>
         <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}" Grid.Row="0">
 
             <Image Source="ProfileInfo.png" Margin="10,0,10,0">
@@ -19,5 +20,6 @@
             <Button Text="Logout" TextColor="#d21d1d" Margin="10,0,10,5" Clicked="Button_Clicked"/>
 
         </StackLayout>
+        </ScrollView>
     </StackLayout>
 </ContentPage>

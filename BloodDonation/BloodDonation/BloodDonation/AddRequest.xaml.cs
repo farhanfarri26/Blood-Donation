@@ -29,7 +29,7 @@ namespace BloodDonation
         private async void BtnAddRequest_OnClicked(object sender, EventArgs e)
         {
             String phone = EntCellNumber.Text;
-            String phonepattern = "^((\\+92-?)|0)?[0-9]{11}$";
+            String phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
 
             if (string.IsNullOrWhiteSpace(EntFullName.Text) || string.IsNullOrWhiteSpace(EntCellNumber.Text)
                 || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(HospitalValue)
@@ -39,10 +39,12 @@ namespace BloodDonation
             }
             else
             {
-                if (Regex.IsMatch(phone, phonepattern))
+                if (!Regex.IsMatch(phone, phonepattern))
                 {
-                    LblCellNumber.IsVisible = false;
-
+                    LblCellNumber.IsVisible = true;
+                }
+                else
+                {
                     if (!CrossConnectivity.Current.IsConnected)
                     {
                         await DisplayAlert("Network Connection Alert !!",
@@ -50,6 +52,9 @@ namespace BloodDonation
                     }
                     else
                     {
+                        HandleDB dB = new HandleDB();
+                        var data = dB.GetDB().ToList();
+
                         DateTime dateValue = DateTime.Now;
 
                         AddRequestClass addRequestClass = new AddRequestClass()
@@ -59,7 +64,7 @@ namespace BloodDonation
                             City = CityValue,
                             Hospitals = HospitalValue,
                             BloodGroup = BloodGroupValue,
-                            AddedBy = CellNumber.Number,
+                            AddedBy = data[0].CellNumber,
                             TodayDate = dateValue.ToString(),
                         };
                         try
@@ -81,11 +86,14 @@ namespace BloodDonation
                             }
 
                         }
-                        catch
+                        catch (Exception ex)
                         {
-                            StackLayoutAddRequest.IsVisible = true;
+                            WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
-                            throw;
+                            string msg = ex.ToString();
+                            msg = "Request Timeout";
+                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                         }
                         finally
                         {
@@ -93,10 +101,6 @@ namespace BloodDonation
                             WaitingLoader.IsVisible = false;
                         }
                     }
-                }
-                else
-                {
-                    LblCellNumber.IsVisible = true;
                 }
             }
         }

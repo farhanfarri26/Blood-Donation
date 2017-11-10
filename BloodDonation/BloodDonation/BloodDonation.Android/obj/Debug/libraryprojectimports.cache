@@ -2,23 +2,44 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Analytics.Android.Bindings\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Analytics\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Android.Bindings\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Crashes.Android.Bindings\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Crashes\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\SQLite.Net.Platform.XamarinAndroid\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Analytics.Android.Bindings\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Analytics\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Android.Bindings\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Crashes.Android.Bindings\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Crashes\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.Azure.Mobile\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLite.Net.Platform.XamarinAndroid\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Connectivity\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Analytics.Android.Bindings.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Analytics.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Android.Bindings.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Crashes.Android.Bindings.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.Crashes.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Microsoft.Azure.Mobile.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Plugin.Messaging.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\SQLite.Net.Platform.XamarinAndroid.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\__library_projects__\Plugin.Connectivity.stamp</ResolvedResourceDirectoryStamp>

@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -18,8 +19,8 @@ namespace BloodDonation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChangePassword : ContentPage
     {
-        private string cellnumber;
         private string password;
+
 
         public ChangePassword()
         {
@@ -36,7 +37,8 @@ namespace BloodDonation
             {
                 if (EntNewPassword.Text != EntConfirmPassword.Text)
                 {
-                    await DisplayAlert("Error", "Your New and Confirm Password do not match !!", "Try");
+                    LblNewPassword.IsVisible = true;
+                    LblConfirmPassword.IsVisible = true;
                 }
                 else
                 {
@@ -46,7 +48,11 @@ namespace BloodDonation
                     }
                     else
                     {
-                        password = EntNewPassword.Text;
+                        HandleDB dB = new HandleDB();
+                        var data = dB.GetDB().ToList();
+
+                        password = EntNewPassword.Text.GetHashCode().ToString();
+                        var currentPassword = EntCurrentPassword.Text.GetHashCode().ToString();
 
                         try
                         {
@@ -54,14 +60,22 @@ namespace BloodDonation
                             WaitingLoader.IsRunning = true;
                             WaitingLoader.IsVisible = true;
 
-                            if (CellNumber.Password != EntCurrentPassword.Text)
+                            if (data[0].Password != currentPassword)
                             {
-                                await DisplayAlert("Error", "Your Current Password is incorrect !!", "Try");
+                                LblCurrentPassword.IsVisible = true;
                             }
                             else
                             {
                                 SignupClass pswd = new SignupClass()
                                 {
+                                    Id = data[0]._ID,
+                                    FullName = data[0].FullName,
+                                    CellNumber = data[0].CellNumber,
+                                    City = data[0].City,
+                                    Area = data[0].Area,
+                                    BloodGroup = data[0].BloodGroup,
+                                    Email = data[0].Email,
+                                    TodayDate = data[0].TodayDate,
                                     Password = password
                                 };
 
@@ -69,23 +83,23 @@ namespace BloodDonation
                                 var json = JsonConvert.SerializeObject(pswd);
                                 HttpContent httpContent = new StringContent(json);
                                 httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                                var response = await httpClient.PutAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi", httpContent);
+                                var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/{0}", pswd.Id), httpContent);
 
-                                if (response.StatusCode != HttpStatusCode.OK)
+                                if (response.IsSuccessStatusCode)
                                 {
-                                    await DisplayAlert("Error", " Sorry your change password request could not reached due to server timeout. ", "Cancel");
-                                }
-                                else
-                                {
-                                    await DisplayAlert("Successfull", " Your Password has Changed Successfully. ", "Cancel");
+                                    await DisplayAlert("Successfull", " Your Password has Changed Successfully. ", "OK");
+                                    await Navigation.PopAsync();
                                 }
                             }
                         }
-                        catch
+                        catch (Exception ex)
                         {
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
-                            throw;
+                            string msg = ex.ToString();
+                            msg = "Request Timeout";
+                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                         }
                         finally
                         {

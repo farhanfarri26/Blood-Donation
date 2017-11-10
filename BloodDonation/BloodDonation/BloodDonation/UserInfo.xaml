@@ -11,20 +11,21 @@
 
                 <ActivityIndicator x:Name="WaitingLoader" Margin="0,100,0,250" Style="{StaticResource CustomActivityIndicator}"/>
 
-                <ListView x:Name="LvUserInfo" HasUnevenRows="True" Margin="10,0,0,0">
+                <ListView x:Name="LvUserInfo" HasUnevenRows="True" Margin="10,0,0,0" ItemTapped="LvUserInfo_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.View>
-                                    <Grid RowSpacing="0" ColumnSpacing="0">
+                                    <Grid RowSpacing="5" ColumnSpacing="0">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="0.3*"/>
@@ -45,6 +46,7 @@
                                         <Label Text="{Binding Email}" FontSize="Small" Grid.Row="5" Grid.Column="1"/>
                                         <Label Text="Joinig Date" Grid.Row="6" Grid.Column="0"/>
                                         <Label Text="{Binding TodayDate}" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
+                                        <Label Text="Click to Update" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
 
                                     </Grid>
                                 </ViewCell.View>

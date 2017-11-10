@@ -9,6 +9,7 @@ using Plugin.Connectivity;
 using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Net;
 
 namespace BloodDonation
 {
@@ -20,7 +21,7 @@ namespace BloodDonation
             InitializeComponent();
             GetBloodBanks();
         }
-        
+
         private async void GetBloodBanks()
         {
             if (!CrossConnectivity.Current.IsConnected)
@@ -35,14 +36,31 @@ namespace BloodDonation
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new System.Net.Http.HttpClient();
-                    var response = await httpClient.GetStringAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodBanksApi");
-                    var name = JsonConvert.DeserializeObject<List<BloodBankClass>>(response);
-                    LvBloodBanks.ItemsSource = name;
+                    var response = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodBanksApi");
+
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        var result = response.Content.ReadAsStringAsync().Result;
+                        if (result == "[]")
+                        {
+                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await Navigation.PopAsync(SendBackButtonPressed());
+                        }
+                        else
+                        {
+                            var name = JsonConvert.DeserializeObject<List<BloodBankClass>>(result);
+                            LvBloodBanks.ItemsSource = name;
+                        }
+                    }
                 }
-                catch
+                catch (Exception ex)
                 {
                     WaitingLoader.IsRunning = false;
                     WaitingLoader.IsVisible = false;
+                    string msg = ex.ToString();
+                    msg = "Request Timeout";
+                    await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+
                 }
                 finally
                 {
@@ -52,7 +70,7 @@ namespace BloodDonation
             }
 
         }
-       
+
         private void LvBloodBanks_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             string phonenumber = ((BloodBankClass)LvBloodBanks.SelectedItem).PhoneNumber;

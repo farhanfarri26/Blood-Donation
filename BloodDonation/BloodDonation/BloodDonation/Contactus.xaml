@@ -7,18 +7,18 @@
     <ContentPage.Content>
         <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
             <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <ActivityIndicator x:Name="WaitingLoader" Margin="0,250,0,0" Style="{StaticResource CustomActivityIndicator}"/>
+                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
-                <ListView x:Name="LvContactus" HasUnevenRows="True" IsPullToRefreshEnabled="True" ItemTapped="LvContactus_OnItemTapped">
+                <ListView x:Name="LvContactus" HasUnevenRows="True" ItemTapped="LvContactus_OnItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.View>
                                     <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition  Width="0.3*"/>
@@ -33,6 +33,7 @@
                                         <Label Text="{Binding CellNumber}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
                                         <Label Text="From" Grid.Row="2" Grid.Column="1"/>
                                         <Label Text="{Binding From}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="2" Grid.Column="2"/>
+                                        <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
 
                                     </Grid>
                                 </ViewCell.View>
