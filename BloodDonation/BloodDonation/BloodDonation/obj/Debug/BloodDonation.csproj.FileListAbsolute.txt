@@ -291,3 +291,9 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debu
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.Analytics.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.Crashes.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.xml
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.xml

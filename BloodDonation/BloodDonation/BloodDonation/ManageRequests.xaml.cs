@@ -34,11 +34,14 @@ namespace BloodDonation
             {
                 try
                 {
+                    HandleDB dB = new HandleDB();
+                    var data = dB.GetDB().ToList();
+
                     WaitingLoader.IsRunning = true;
                     WaitingLoader.IsVisible = true;
 
                     var httpClient = new HttpClient();
-                    var responserequests = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi?cellnumber=" + CellNumber.Number);
+                    var responserequests = await httpClient.GetAsync("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi?cellnumber=" + data[0].CellNumber);
 
                     if (responserequests.StatusCode == HttpStatusCode.OK)
                     {

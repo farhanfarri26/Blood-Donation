@@ -463,6 +463,17 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3038,6 +3049,17 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.any.System.Collections/4.3.0": {
@@ -5687,6 +5709,17 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -8375,6 +8408,17 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -11031,6 +11075,17 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -13725,6 +13780,17 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        }
+      },
       "runtime.any.System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -16381,6 +16447,17 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Share/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.aot.System.Collections/4.3.0": {
@@ -21312,6 +21389,55 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Plugin.Share/5.0.0": {
+      "sha512": "zJ372zj0jLlffXHRVE+NfgoSlpi730/RHOsihqKm6hX7Llcd1XYX+LjBCXA6OmGfXcOnmcYpAGJV1SPEamhP3A==",
+      "type": "package",
+      "path": "plugin.share/5.0.0",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Share.dll",
+        "lib/MonoAndroid10/Plugin.Share.pdb",
+        "lib/MonoAndroid10/Plugin.Share.xml",
+        "lib/UAP10/Plugin.Share.Abstractions.dll",
+        "lib/UAP10/Plugin.Share.Abstractions.pdb",
+        "lib/UAP10/Plugin.Share.Abstractions.xml",
+        "lib/UAP10/Plugin.Share.dll",
+        "lib/UAP10/Plugin.Share.pdb",
+        "lib/UAP10/Plugin.Share.xml",
+        "lib/Xamarin.iOS10/Plugin.Share.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Share.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Share.dll",
+        "lib/Xamarin.iOS10/Plugin.Share.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.xml",
+        "lib/win8/Plugin.Share.Abstractions.dll",
+        "lib/win8/Plugin.Share.Abstractions.pdb",
+        "lib/win8/Plugin.Share.Abstractions.xml",
+        "lib/win8/Plugin.Share.dll",
+        "lib/win8/Plugin.Share.pdb",
+        "lib/win8/Plugin.Share.xml",
+        "lib/wp8/Plugin.Share.Abstractions.dll",
+        "lib/wp8/Plugin.Share.Abstractions.pdb",
+        "lib/wp8/Plugin.Share.Abstractions.xml",
+        "lib/wp8/Plugin.Share.dll",
+        "lib/wp8/Plugin.Share.pdb",
+        "lib/wp8/Plugin.Share.xml",
+        "lib/wpa81/Plugin.Share.Abstractions.dll",
+        "lib/wpa81/Plugin.Share.Abstractions.pdb",
+        "lib/wpa81/Plugin.Share.Abstractions.xml",
+        "lib/wpa81/Plugin.Share.dll",
+        "lib/wpa81/Plugin.Share.pdb",
+        "lib/wpa81/Plugin.Share.xml",
+        "plugin.share.5.0.0.nupkg.sha512",
+        "plugin.share.nuspec"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -27957,6 +28083,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.4.0",
       "NETStandard.Library >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
+      "Plugin.Share >= 5.0.0",
       "SQLite.Net-PCL >= 3.1.1",
       "System.Net.Http >= 4.3.2",
       "Xam.Plugin.Connectivity >= 3.0.2",
@@ -28003,6 +28130,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
       "NETStandard.Library": "2.0.0",
       "Newtonsoft.Json": "10.0.3",
+      "Plugin.Share": "5.0.0",
       "SQLite.Net-PCL": "3.1.1",
       "System.Net.Http": "4.3.2",
       "Xam.Plugin.Connectivity": "3.0.2",

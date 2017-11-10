@@ -7,7 +7,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <application android:label="BloodDonation.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/bloodbanklogo" android:debuggable="true">
+  <application android:label="BloodDonation.Android" android:name="md5c84c5b81e33cf29c9e50c72e056d5308.MainApplication" android:allowBackup="true" android:icon="@drawable/bloodbanklogo" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/bloodbanklogo" android:label="Blood Donation" android:screenOrientation="portrait" android:theme="@style/splashscreen" android:name="md5c84c5b81e33cf29c9e50c72e056d5308.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -15,6 +15,7 @@
       </intent-filter>
     </activity>
     <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md5a7903531ac28e2eb4c8576cdf2655bda.ConnectivityChangeBroadcastReceiver" />
+    <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="BloodDonation.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

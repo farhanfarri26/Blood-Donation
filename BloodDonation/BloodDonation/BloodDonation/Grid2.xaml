@@ -34,7 +34,11 @@
                 </Image.GestureRecognizers>
             </Image>
 
-            <Image Source="Share.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}"/>
+            <Image Source="Share.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapShare" Tapped="TapShare_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <Image Source="Contactus.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
                 <Image.GestureRecognizers>
