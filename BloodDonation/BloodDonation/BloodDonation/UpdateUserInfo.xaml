@@ -5,11 +5,12 @@
              Title="Update Info"
              BackgroundImage="BG.png">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
-            <ScrollView>
-                <StackLayout x:Name="StackLayoutSignup" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+
+                <StackLayout x:Name="StackLayoutSignup" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                     <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Entry x:Name="EntFullName" Text="{Binding FullName}" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
@@ -27,7 +28,7 @@
                     </Picker>
 
                     <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSignupArea" Title="Choose Nearby Area" SelectedIndexChanged="PkrSignupArea_OnSelectedIndexChanged"
+                    <Picker x:Name="PkrSignupArea" Title="Nearest Area" SelectedIndexChanged="PkrSignupArea_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
                             <x:String>Allama Iqbal Town</x:String>
@@ -39,7 +40,6 @@
                             <x:String>Chah Miran</x:String>
                             <x:String>Data Ganj Baksh Town</x:String>
                             <x:String>Defence Housing Authority (Lahore)</x:String>
-                            <x:String>Diamond Market</x:String>
                             <x:String>Faisal Town</x:String>
                             <x:String>Garden Town</x:String>
                             <x:String>Gawalmandi</x:String>
@@ -79,10 +79,10 @@
                     </Picker>
 
                     <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrSignupBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSignupBloodGroup_OnSelectedIndexChanged"
+                    <Picker x:Name="PkrSignupBloodGroup" Title="My Blood Group" SelectedIndexChanged="PkrSignupBloodGroup_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
-                            <x:String>None</x:String>
+                            <x:String>Dont Know</x:String>
                             <x:String>A positive</x:String>
                             <x:String>A negative</x:String>
                             <x:String>B positive</x:String>
@@ -104,6 +104,11 @@
 
                 </StackLayout>
             </ScrollView>
-        </StackLayout>
+            <StackLayout Padding="6" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+                </StackLayout>
+
+            </AbsoluteLayout>
+       
     </ContentPage.Content>
 </ContentPage>

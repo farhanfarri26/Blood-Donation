@@ -18,7 +18,7 @@ namespace BloodDonationMCVAPI.Controllers.Api
         // GET: api/RequestApi
         public IQueryable<Request> GetRequests()
         {
-            return db.Request;
+            return db.Request.OrderByDescending(m => m.Id);
         }
 
         //GET: api/RequestApi?cellnumber=Value

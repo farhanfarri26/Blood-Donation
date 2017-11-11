@@ -6,9 +6,12 @@
              BackgroundImage="BG.png">
     <ContentPage.Content>
 
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+        <AbsoluteLayout>
+            <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
                 <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+            </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                 <ListView x:Name="LvRequests" HasUnevenRows="True" ItemTapped="LvRequests_OnItemTapped">
                     <ListView.ItemTemplate>
@@ -56,7 +59,6 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </StackLayout>
-        </StackLayout>
-
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

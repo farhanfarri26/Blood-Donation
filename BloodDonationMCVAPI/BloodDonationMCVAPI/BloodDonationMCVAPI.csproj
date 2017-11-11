@@ -200,17 +200,25 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\BloodBanksApiController.cs" />
     <Compile Include="Controllers\Api\BloodUsersApiController.cs" />
+    <Compile Include="Controllers\Api\ContactusApiController.cs" />
     <Compile Include="Controllers\Api\DonorsApiController.cs" />
     <Compile Include="Controllers\Api\RequestApiController.cs" />
+    <Compile Include="Controllers\BloodBanksController.cs" />
+    <Compile Include="Controllers\ContactusController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BloodBank.cs" />
+    <Compile Include="Models\BloodBankDBContext.cs" />
     <Compile Include="Models\BloodUsers.cs" />
     <Compile Include="Models\BloodUsersDBContext.cs" />
+    <Compile Include="Models\Contactus.cs" />
+    <Compile Include="Models\ContactusDBContext.cs" />
     <Compile Include="Models\Donors.cs" />
     <Compile Include="Models\DonorsDBContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -245,7 +253,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -279,6 +289,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Contactus\Create.cshtml" />
+    <Content Include="Views\Contactus\Delete.cshtml" />
+    <Content Include="Views\Contactus\Details.cshtml" />
+    <Content Include="Views\Contactus\Edit.cshtml" />
+    <Content Include="Views\Contactus\Index.cshtml" />
+    <Content Include="Views\BloodBanks\Create.cshtml" />
+    <Content Include="Views\BloodBanks\Delete.cshtml" />
+    <Content Include="Views\BloodBanks\Details.cshtml" />
+    <Content Include="Views\BloodBanks\Edit.cshtml" />
+    <Content Include="Views\BloodBanks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

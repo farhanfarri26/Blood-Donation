@@ -5,10 +5,11 @@
              Title="Find Requests"
              BackgroundImage="BG.png">
 
-    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
-        <ScrollView>
-            <StackLayout x:Name="StackLayoutSearchRequest" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+            <StackLayout x:Name="StackLayoutSearchRequest" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrSearchRequestCity" Title="Choose City" SelectedIndexChanged="PkrSearchRequestCity_SelectedIndexChanged"
@@ -22,6 +23,7 @@
                 <Picker x:Name="PkrSearchRequestHospital" Title="Choose Nearby Hospital" SelectedIndexChanged="PkrSearchRequestHospital_SelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
+                        <x:String>Other</x:String>
                         <x:String>Bajwa Hospital, Shahdara Town</x:String>
                         <x:String>Bajwa Hospital, Iqbal Town</x:String>
                         <x:String>Doctors Hospital</x:String>
@@ -55,10 +57,10 @@
                 </Picker>
 
                 <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Picker x:Name="PkrSearchRequestBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSearchRequestBloodGroup_SelectedIndexChanged"
+                <Picker x:Name="PkrSearchRequestBloodGroup" Title="My Blood Group" SelectedIndexChanged="PkrSearchRequestBloodGroup_SelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
-                        <x:String>None</x:String>
+                        <x:String>Dont Know</x:String>
                         <x:String>A positive</x:String>
                         <x:String>A negative</x:String>
                         <x:String>B positive</x:String>
@@ -78,5 +80,5 @@
                     Clicked="BtnAllRequests_Clicked"/>
             </StackLayout>
         </ScrollView>
-    </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>

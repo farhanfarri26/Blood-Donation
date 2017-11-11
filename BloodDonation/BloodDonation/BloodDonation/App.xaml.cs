@@ -16,9 +16,6 @@ namespace BloodDonation
         public App()
         {
             InitializeComponent();
-            MobileCenter.Start("android=ed02ae7d-1052-43d5-b4fa-2fb6ae919c1f;" + "uwp={Your UWP App secret here};" +
-                   "ios={Your iOS App secret here}",
-                   typeof(Analytics), typeof(Crashes));
             MainPage = new NavigationPage(new MainPage());
             FirstCheck();
         }
@@ -37,7 +34,9 @@ namespace BloodDonation
         protected override void OnStart()
         {
             // Handle when your app starts
-
+            MobileCenter.Start("android=ed02ae7d-1052-43d5-b4fa-2fb6ae919c1f;" + "uwp={Your UWP App secret here};" +
+                   "ios={Your iOS App secret here}",
+                   typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

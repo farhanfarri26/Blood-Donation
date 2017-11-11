@@ -2,14 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.UpdateRequests"
-             Title="Update Donor Request"
+             Title="Update Donor"
              BackgroundImage="BG.png">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
-            <ScrollView>
-                <StackLayout x:Name="StackLayoutAddDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+
+                <StackLayout x:Name="StackLayoutAddDonor" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                     <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Entry x:Name="EntFullName" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
@@ -27,7 +28,7 @@
                     </Picker>
 
                     <Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrAddDonorArea" Title="Choose Area" SelectedIndexChanged="PkrAddDonorArea_OnSelectedIndexChanged"
+                    <Picker x:Name="PkrAddDonorArea" Title="Nearest Area" SelectedIndexChanged="PkrAddDonorArea_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
                             <x:String>Allama Iqbal Town</x:String>
@@ -39,7 +40,6 @@
                             <x:String>Chah Miran</x:String>
                             <x:String>Data Ganj Baksh Town</x:String>
                             <x:String>Defence Housing Authority (Lahore)</x:String>
-                            <x:String>Diamond Market</x:String>
                             <x:String>Faisal Town</x:String>
                             <x:String>Garden Town</x:String>
                             <x:String>Gawalmandi</x:String>
@@ -79,10 +79,10 @@
                     </Picker>
 
                     <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Picker x:Name="PkrAddDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrAddDonorBloodGroup_OnSelectedIndexChanged"
+                    <Picker x:Name="PkrAddDonorBloodGroup" Title="My Blood Group" SelectedIndexChanged="PkrAddDonorBloodGroup_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
-                            <x:String>None</x:String>
+                            <x:String>Dont Know</x:String>
                             <x:String>A positive</x:String>
                             <x:String>A negative</x:String>
                             <x:String>B positive</x:String>
@@ -91,7 +91,6 @@
                             <x:String>AB negative</x:String>
                             <x:String>O positive</x:String>
                             <x:String>O negative</x:String>
-
                         </Picker.Items>
                     </Picker>
 
@@ -100,7 +99,11 @@
 
                 </StackLayout>
             </ScrollView>
-        </StackLayout>
 
+            <StackLayout Padding="6" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+            </StackLayout>
+
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

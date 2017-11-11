@@ -5,19 +5,21 @@
              Title="Find Donors"
              BackgroundImage="BG.png">
 
-    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
-        <StackLayout x:Name="StackLayoutSearchDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+            <StackLayout x:Name="StackLayoutSearchDonor" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-            <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
-            <Picker x:Name="PkrSearchDonorCity" Title="Choose City" SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged"
+                <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Picker x:Name="PkrSearchDonorCity" Title="Choose City" SelectedIndexChanged="PkrSearchDonorCity_OnSelectedIndexChanged"
                             Style="{StaticResource CustomEntryStyle}">
-                <Picker.Items>
-                    <x:String>Lahore</x:String>
-                </Picker.Items>
-            </Picker>
+                    <Picker.Items>
+                        <x:String>Lahore</x:String>
+                    </Picker.Items>
+                </Picker>
 
-            <!--<Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <!--<Label Text="Area" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Picker x:Name="PkrSearchArea" Title="Select Nearby Area" SelectedIndexChanged="PkrSearchArea_OnSelectedIndexChanged"
                             Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
@@ -69,30 +71,30 @@
                         </Picker.Items>
                     </Picker>-->
 
-            <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
-            <Picker x:Name="PkrSearchDonorBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrSearchDonorBloodGroup_OnSelectedIndexChanged"
+                <Label Text="Blood Group" Style="{StaticResource CustomLabelEntryStyle}"/>
+                <Picker x:Name="PkrSearchDonorBloodGroup" Title="My Blood Group" SelectedIndexChanged="PkrSearchDonorBloodGroup_OnSelectedIndexChanged"
                             Style="{StaticResource CustomEntryStyle}">
-                <Picker.Items>
-                    <x:String>None</x:String>
-                    <x:String>A positive</x:String>
-                    <x:String>A negative</x:String>
-                    <x:String>B positive</x:String>
-                    <x:String>B negative</x:String>
-                    <x:String>AB positive</x:String>
-                    <x:String>AB negative</x:String>
-                    <x:String>O positive</x:String>
-                    <x:String>O negative</x:String>
-                </Picker.Items>
-            </Picker>
+                    <Picker.Items>
+                        <x:String>Dont Know</x:String>
+                        <x:String>A positive</x:String>
+                        <x:String>A negative</x:String>
+                        <x:String>B positive</x:String>
+                        <x:String>B negative</x:String>
+                        <x:String>AB positive</x:String>
+                        <x:String>AB negative</x:String>
+                        <x:String>O positive</x:String>
+                        <x:String>O negative</x:String>
+                    </Picker.Items>
+                </Picker>
 
-            <Button Text="Search" x:Name="BtnSearchDonor" Style="{StaticResource CustomButtonStyle}"
+                <Button Text="Search" x:Name="BtnSearchDonor" Style="{StaticResource CustomButtonStyle}"
                         Clicked="BtnSearchDonor_OnClicked"/>
 
-            <Label Text="Get All Donors here" HorizontalOptions="Center" Margin="0,30,0,5" TextColor="DarkGray"/>
-            <Button Text="All Donors" x:Name="BtnAllDonors" Style="{StaticResource CustomButtonStyleBottomMargin}" 
+                <Label Text="Get All Donors here" HorizontalOptions="Center" Margin="0,30,0,5" TextColor="DarkGray"/>
+                <Button Text="All Donors" x:Name="BtnAllDonors" Style="{StaticResource CustomButtonStyleBottomMargin}" 
                     Clicked="BtnAllDonors_Clicked"/>
 
-        </StackLayout>
-
-    </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>

@@ -6,7 +6,6 @@
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
 
-
         <Grid RowSpacing="0" ColumnSpacing="10" >
             <Grid.RowDefinitions>
 

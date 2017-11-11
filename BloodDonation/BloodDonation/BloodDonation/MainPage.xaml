@@ -5,14 +5,16 @@
              x:Class="BloodDonation.MainPage"
              BackgroundImage="BG.png">
 
-    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-        <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
 
-        <ScrollView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
-            <StackLayout x:Name="LayoutMainPage" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+
+            <StackLayout x:Name="LayoutMainPage" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+
                 <Image Source="logo.png" Margin="0,10,0,0"/>
-                
+
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntCellName" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
@@ -22,7 +24,7 @@
                 <Label x:Name="LblEmpty" Text="Cell Number or Password are Empty" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}" Clicked="BtnLogin_OnClicked"/>
-                   
+
 
                 <Label Text="Forget Password?" TextColor="Blue" Margin="0,0,30,0"
                        FontSize="15" HorizontalOptions="End">
@@ -37,7 +39,14 @@
                         Clicked="BtnSignup_OnClicked"/>
 
             </StackLayout>
-            
         </ScrollView>
-    </StackLayout>
+
+        <StackLayout Padding="6" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+        </StackLayout>
+
+
+    </AbsoluteLayout>
+
+
 </ContentPage>

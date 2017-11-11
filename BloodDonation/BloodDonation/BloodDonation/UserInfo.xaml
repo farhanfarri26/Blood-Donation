@@ -5,11 +5,15 @@
               Title="My Info"
              BackgroundImage="BG.png">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <StackLayout x:Name="StackLayoutAddDonor" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <Image Source="ProfileHeader.png"/>
 
-                <ActivityIndicator x:Name="WaitingLoader" Margin="0,100,0,250" Style="{StaticResource CustomActivityIndicator}"/>
+        <AbsoluteLayout>
+            <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+            </StackLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+                
+                <Image Source="ProfileHeader.png"/>
 
                 <ListView x:Name="LvUserInfo" HasUnevenRows="True" Margin="10,0,0,0" ItemTapped="LvUserInfo_ItemTapped">
                     <ListView.ItemTemplate>
@@ -31,7 +35,7 @@
                                             <ColumnDefinition Width="0.3*"/>
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
-                                        
+
                                         <Label Text="Name " Grid.Row="0" Grid.Column="0" />
                                         <Label Text="{Binding FullName}" TextColor="#d21d1d" FontSize="Medium" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
                                         <Label Text="Blood Group" Grid.Row="1" Grid.Column="0"/>
@@ -55,6 +59,6 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </StackLayout>
-        </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

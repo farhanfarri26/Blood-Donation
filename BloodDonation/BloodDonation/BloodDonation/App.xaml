@@ -8,14 +8,11 @@
 
         <ResourceDictionary>
 
-            <!--<Style x:Key="CustomGridStyle" TargetType="Grid">
-                <Setter Property="Padding" Value="0,10,10,10"/>
-                <Setter Property="" Value="False"/>
-            </Style>-->
-
             <Style x:Key="CustomActivityIndicator" TargetType="ActivityIndicator">
                 <Setter Property="IsRunning" Value="False"/>
-                <Setter Property="Margin" Value="0,250,0,0"/>
+                <!--<Setter Property="Margin" Value="0,250,0,0"/>-->
+                <!--<Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>-->
                 <Setter Property="IsVisible" Value="False"/>
             </Style>
 
@@ -90,6 +87,7 @@
             <Style x:Key="CustomStackLayoutEnteriesStyle" TargetType="StackLayout">
                 <Setter Property="VerticalOptions" Value="FillAndExpand"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="Orientation" Value="Vertical"/>
                 <Setter Property="Margin" Value="0,10,0,10"/>
             </Style>
 

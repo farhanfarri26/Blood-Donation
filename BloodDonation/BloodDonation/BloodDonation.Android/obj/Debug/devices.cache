@@ -12,4 +12,16 @@
     <ResultingAbi>x86</ResultingAbi>
     <SdkVersion>19</SdkVersion>
   </Device>
+  <Device id="6088ca14">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
+  <Device id="BUC4C16728000243">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>24</SdkVersion>
+  </Device>
+  <Device id="0123456789ABCDEF">
+    <ResultingAbi>armeabi-v7a</ResultingAbi>
+    <SdkVersion>21</SdkVersion>
+  </Device>
 </Devices>

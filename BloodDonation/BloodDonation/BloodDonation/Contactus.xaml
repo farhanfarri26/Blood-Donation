@@ -5,43 +5,47 @@
              Title="Volunteers"
              BackgroundImage="BG.png">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+       
+            <AbsoluteLayout>
+                <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+                </StackLayout>
 
-                <ListView x:Name="LvContactus" HasUnevenRows="True" ItemTapped="LvContactus_OnItemTapped">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <ViewCell.View>
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition  Width="0.3*"/>
-                                            <ColumnDefinition  Width="0.2*"/>
-                                            <ColumnDefinition  Width="*"/>
-                                        </Grid.ColumnDefinitions>
+                <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-                                        <Image Source="Man" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"/>
-                                        <Label  Text="Name" Grid.Row="0" Grid.Column="1" />
-                                        <Label Text="{Binding FullName}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
-                                        <Label Text="Cell #" Grid.Row="1" Grid.Column="1"/>
-                                        <Label Text="{Binding CellNumber}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
-                                        <Label Text="From" Grid.Row="2" Grid.Column="1"/>
-                                        <Label Text="{Binding From}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="2" Grid.Column="2"/>
-                                        <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
+                    <ListView x:Name="LvContactus" HasUnevenRows="True" ItemTapped="LvContactus_OnItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="0.3*"/>
+                                                <ColumnDefinition  Width="0.2*"/>
+                                                <ColumnDefinition  Width="*"/>
+                                            </Grid.ColumnDefinitions>
 
-                                    </Grid>
-                                </ViewCell.View>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackLayout>
-        </StackLayout>
+                                            <Image Source="Man" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"/>
+                                            <Label  Text="Name" Grid.Row="0" Grid.Column="1" />
+                                            <Label Text="{Binding FullName}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
+                                            <Label Text="Cell #" Grid.Row="1" Grid.Column="1"/>
+                                            <Label Text="{Binding CellNumber}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
+                                            <Label Text="From" Grid.Row="2" Grid.Column="1"/>
+                                            <Label Text="{Binding From}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="2" Grid.Column="2"/>
+                                            <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+                                        </Grid>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

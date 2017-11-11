@@ -38,8 +38,6 @@ namespace BloodDonation
             String password = EntPassword.Text;
             String emailpattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
             String phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
-            //String passwordpattern = @"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{3,}$";
-
 
             if (string.IsNullOrWhiteSpace(EntFullName.Text) || string.IsNullOrWhiteSpace(EntCellNumber.Text)
                 || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
@@ -58,13 +56,9 @@ namespace BloodDonation
                 {
                     LblEmail.IsVisible = true;
                 }
-                //else if (!Regex.IsMatch(password, passwordpattern))
-                //{
-                //    LblPassword.IsVisible = true;
-                //}
                 else
                 {
-                    var ans = await DisplayAlert("Terms and Policies", "- People registering on this App must understand that the information provided by them on the registration page is available to a person seeking for a particular blood group.\n - We do not sell contact details of potential donors to any third party or use it in any way for commercial gains.\n - We do not arrange for blood. We only provide relevant information about potential donors to those in need of blood.\n - We do not guarantee that a potential donor will agree to donate blood whenever called upon to do so. It is entirely at the discretion of the individual whether or not to donate blood.\n - We do not claim that potential donors are free from any disease, ailment, or bodily conditions preventing them from donating blood at the time when they are contacted for blood donation. Onus is completely on the individual looking for blood to verify these details from the donor.\n - We urge you not to make false registrations if you do not seriously wish to donate blood. It is a matter of life and death for those in need of blood in an emergency or otherwise.\n - We reserve right to inactivate member at any given time in case found wrong information given or misuse of service.", "Accept", "Deny");
+                    var ans = await DisplayAlert("Disclaimer", "- People registering on this App must understand that the information provided by them on the registration page is available to a person seeking for a particular blood group.\n - We do not sell contact details of potential donors to any third party or use it in any way for commercial gains.\n - We do not arrange for blood. We only provide relevant information about potential donors to those in need of blood.\n - We do not guarantee that a potential donor will agree to donate blood whenever called upon to do so. It is entirely at the discretion of the individual whether or not to donate blood.\n - We do not claim that potential donors are free from any disease, ailment, or bodily conditions preventing them from donating blood at the time when they are contacted for blood donation. Onus is completely on the individual looking for blood to verify these details from the donor.\n - We urge you not to make false registrations if you do not seriously wish to donate blood. It is a matter of life and death for those in need of blood in an emergency or otherwise.\n - We reserve right to inactivate member at any given time in case found wrong information given or misuse of service.", "Accept", "Deny");
                     if (ans == true)
                     {
                         DateTime dateValue = DateTime.Now;
@@ -99,7 +93,7 @@ namespace BloodDonation
                             }
                             else
                             {
-                                await DisplayAlert("Hello New Member", " Your Account is Successfully Created!! ", "Login");
+                                await DisplayAlert("Salam " + signupClass.FullName, " Your Account is Successfully Created !! ", "Login");
                                 await Navigation.PushAsync(new MainPage());
                             }
 
@@ -111,7 +105,6 @@ namespace BloodDonation
                             string msg = ex.ToString();
                             msg = "Request Timeout";
                             await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
-
                         }
                         finally
                         {

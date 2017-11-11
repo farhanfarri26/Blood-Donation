@@ -5,60 +5,65 @@
              Title="Manage Donors"
              BackgroundImage="BG.png">
     <ContentPage.Content>
-        <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
-            <StackLayout x:Name="StackLayoutManageDonors" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+      
+            <AbsoluteLayout>
+                <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+                </StackLayout>
 
-                <ListView x:Name="LvDonors" HasUnevenRows="True" ItemTapped="LvDonors_ItemTapped">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <ViewCell.View>
-                                    <Grid Margin="10" RowSpacing="3" ColumnSpacing="0">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition  Width="0.3*"/>
-                                            <ColumnDefinition  Width="*"/>
-                                        </Grid.ColumnDefinitions>
+                <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-                                        <Label Text="Donor Detail" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" TextColor="White" BackgroundColor="#d21d1d" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                        <Label Text="Name " Grid.Row="1" Grid.Column="0" />
-                                        <Label Text="{Binding FullName}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="1"/>
-                                        <Label Text="Blood Group" Grid.Row="2" Grid.Column="0"/>
-                                        <Label Text="{Binding BloodGroup}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="2" Grid.Column="1"/>
-                                        <Label Text="Cell #" Grid.Row="3" Grid.Column="0"/>
-                                        <Label Text="{Binding CellNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="3" Grid.Column="1"/>
-                                        <Label Text="Area" Grid.Row="4" Grid.Column="0"/>
-                                        <Label Text="{Binding Area}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="4" Grid.Column="1"/>
-                                        <Label Text="City" Grid.Row="5" Grid.Column="0"/>
-                                        <Label Text="{Binding City}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
-                                        <Label Text="Added by" Grid.Row="6" Grid.Column="0"/>
-                                        <Label Text="{Binding AddedBy}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
-                                        <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                        <Label Text="Click to Modify" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <ListView x:Name="LvDonors" HasUnevenRows="True" ItemTapped="LvDonors_ItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <Grid Margin="10" RowSpacing="3" ColumnSpacing="0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="0.3*"/>
+                                                <ColumnDefinition  Width="*"/>
+                                            </Grid.ColumnDefinitions>
 
-                                    </Grid>
-                                </ViewCell.View>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                                            <Label Text="Donor Detail" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" TextColor="White" BackgroundColor="#d21d1d" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                                            <Label Text="Name " Grid.Row="1" Grid.Column="0" />
+                                            <Label Text="{Binding FullName}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="1"/>
+                                            <Label Text="Blood Group" Grid.Row="2" Grid.Column="0"/>
+                                            <Label Text="{Binding BloodGroup}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="2" Grid.Column="1"/>
+                                            <Label Text="Cell #" Grid.Row="3" Grid.Column="0"/>
+                                            <Label Text="{Binding CellNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="3" Grid.Column="1"/>
+                                            <Label Text="Area" Grid.Row="4" Grid.Column="0"/>
+                                            <Label Text="{Binding Area}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="4" Grid.Column="1"/>
+                                            <Label Text="City" Grid.Row="5" Grid.Column="0"/>
+                                            <Label Text="{Binding City}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
+                                            <Label Text="Added by" Grid.Row="6" Grid.Column="0"/>
+                                            <Label Text="{Binding AddedBy}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
+                                            <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
+                                            <Label Text="Click to Modify" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-                <Button x:Name="BtnCall" Text="Call" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Call_Button_Clicked"/>
-                <Button x:Name="BtnUpdate" Text="Update" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Update_Button_Clicked"/>
-                <Button x:Name="BtnDelete" Text="Delete" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Delete_Button_Clicked"/>
-                <Button x:Name="BtnCancel" Text="Cancel" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Cancel_Button_Clicked"/>
+                                        </Grid>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
 
-            </StackLayout>
-        </StackLayout>
+                    <Button x:Name="BtnCall" Text="Call" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Call_Button_Clicked"/>
+                    <Button x:Name="BtnUpdate" Text="Update" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Update_Button_Clicked"/>
+                    <Button x:Name="BtnDelete" Text="Delete" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Delete_Button_Clicked"/>
+                    <Button x:Name="BtnCancel" Text="Cancel" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Cancel_Button_Clicked"/>
+
+                </StackLayout>
+            </AbsoluteLayout>
+        
     </ContentPage.Content>
 </ContentPage>
