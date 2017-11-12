@@ -4,9 +4,8 @@
              x:Class="BloodDonation.ProfilePage"
              Title="Profile">
 
-    <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <ScrollView>
-        <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}" Grid.Row="0">
+        <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
             <Image Source="ProfileInfo.png" Margin="10,0,10,0">
                 <Image.GestureRecognizers>
@@ -21,5 +20,4 @@
 
         </StackLayout>
         </ScrollView>
-    </StackLayout>
 </ContentPage>

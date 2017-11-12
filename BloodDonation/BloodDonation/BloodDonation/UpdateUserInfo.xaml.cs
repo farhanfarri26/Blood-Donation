@@ -23,6 +23,17 @@ namespace BloodDonation
         public UpdateUserInfo()
         {
             InitializeComponent();
+            RecentData();
+        }
+
+        private void RecentData()
+        {
+            HandleDB dB = new HandleDB();
+            var data = dB.GetDB().ToList();
+
+            EntFullName.Text = data[0].FullName;
+            EntCellNumber.Text = data[0].CellNumber;
+            EntEmail.Text = data[0].Email;
         }
 
         private async void BtnUpdateInfo_Clicked(object sender, EventArgs e)
