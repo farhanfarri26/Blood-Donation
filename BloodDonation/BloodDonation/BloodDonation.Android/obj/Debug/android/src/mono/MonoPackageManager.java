@@ -117,6 +117,7 @@ class MonoPackageManager_Resources {
 		"Plugin.Share.dll",
 		"SQLite.Net.dll",
 		"SQLite.Net.Platform.XamarinAndroid.dll",
+		"SQLite.Net.Platform.XamarinAndroidN.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.CustomTabs.dll",
 		"Xamarin.Android.Support.Design.dll",

@@ -48,7 +48,7 @@
                                         <Label Text="City" Grid.Row="5" Grid.Column="0"/>
                                         <Label Text="{Binding City}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
                                         <Label Text="Added by" Grid.Row="6" Grid.Column="0"/>
-                                        <Label Text="{Binding AddedBy}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="6" Grid.Column="1"/>
+                                        <Label Text="{Binding AddedBy}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
                                         <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
                                         <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
 

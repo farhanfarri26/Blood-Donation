@@ -17,6 +17,7 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Plugin.Share.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\SQLite.Net.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\SQLite.Net.Platform.XamarinAndroid.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\SQLite.Net.Platform.XamarinAndroidN.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Android.Support.CustomTabs.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll

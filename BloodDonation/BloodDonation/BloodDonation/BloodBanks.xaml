@@ -4,43 +4,46 @@
              x:Class="BloodDonation.BloodBanks"
              Title="Blood Banks"
              BackgroundImage="BG.png">
+    <ContentPage.Content>
 
-    <AbsoluteLayout>
-        <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
-            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
-        </StackLayout>
+        <AbsoluteLayout>
+            <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+            </StackLayout>
 
-        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-            <ListView x:Name="LvBloodBanks" HasUnevenRows="True" ItemTapped="LvBloodBanks_OnItemTapped">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.View>
-                                <Grid Margin="5" RowSpacing="3" ColumnSpacing="0">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="0.3*"/>
-                                        <RowDefinition Height="0.3*"/>
-                                        <RowDefinition Height="0.4*"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition  Width="0.2*"/>
-                                        <ColumnDefinition  Width="0.22*"/>
-                                        <ColumnDefinition  Width="*"/>
-                                    </Grid.ColumnDefinitions>
+            <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+               
+                <ListView x:Name="LvBloodBanks" HasUnevenRows="True" ItemTapped="LvBloodBanks_OnItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid ColumnSpacing="0" RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="0.3*"/>
+                                            <ColumnDefinition  Width="0.22*"/>
+                                            <ColumnDefinition  Width="*"/>
+                                        </Grid.ColumnDefinitions>
 
-                                    <Image Source="CallIcon2" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
-                                    <Label  Text="Name" Grid.Row="0" Grid.Column="1" />
-                                    <Label Text="{Binding HospitalName}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
-                                    <Label Text="Phone #" Grid.Row="1" Grid.Column="1"/>
-                                    <Label Text="{Binding PhoneNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
-                                    <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"/>
+                                        <Image Source="CallIcon2" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+                                        <Label  Text="Name" Margin="2,5,0,0" Grid.Row="0" Grid.Column="1" />
+                                        <Label Text="{Binding HospitalName}" Margin="5,5,0,0" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
+                                        <Label Text="Number" Margin="2,5,0,0" Grid.Row="1" Grid.Column="1"/>
+                                        <Label Text="{Binding PhoneNumber}" Margin="5,5,0,0" TextColor="#d21d1d" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
+                                        <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"/>
 
-                                </Grid>
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
-    </AbsoluteLayout>
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>

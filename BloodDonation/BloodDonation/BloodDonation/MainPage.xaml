@@ -9,7 +9,6 @@
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
-
             <StackLayout x:Name="LayoutMainPage" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
                          Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
@@ -33,9 +32,9 @@
                     </Label.GestureRecognizers>
                 </Label>
 
-                <Label Text="Create a new Account!!" Style="{StaticResource CustomLabelStyle}"/>
+                <Label Text="Dont have an account ?" Style="{StaticResource CustomLabelStyle}"/>
 
-                <Button x:Name="BtnSignup" Text="Signup" Style="{StaticResource CustomButtonStyleBottomMargin}"
+                <Button x:Name="BtnSignup" Text="Create a new Account" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnSignup_OnClicked"/>
 
             </StackLayout>

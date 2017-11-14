@@ -27,7 +27,7 @@ namespace BloodDonation
             Navigation.PushAsync(new UserInfo());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Logout_Button_Clicked(object sender, EventArgs e)
         {
             LocalDB localDB = new LocalDB();
             HandleDB dB = new HandleDB();

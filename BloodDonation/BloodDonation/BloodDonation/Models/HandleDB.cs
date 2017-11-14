@@ -23,6 +23,7 @@ namespace BloodDonation.Models
             return (from t in _sqlconnection.Table<LocalDB>() select t).ToList();
         }
 
+       
         //Get specific student  
         public LocalDB GetDB(int id)
         {

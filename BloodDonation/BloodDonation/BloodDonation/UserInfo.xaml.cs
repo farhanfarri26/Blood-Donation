@@ -41,6 +41,7 @@ namespace BloodDonation
                     var httpClient = new HttpClient();
                     var response = await httpClient.GetStringAsync("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/?cellnumber=" + data[0].CellNumber);
                     var result = JsonConvert.DeserializeObject<List<SignupClass>>(response);
+
                     LvUserInfo.ItemsSource = result;
 
                 }

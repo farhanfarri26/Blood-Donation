@@ -499,3 +499,8 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Plugin.Share.Abstractions.dll.mdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Plugin.Share.Abstractions.dll.mdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Plugin.Share.dll.mdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.Platform.XamarinAndroidN.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\man2.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\menu2.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\leftarrow.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\rightarrow.png

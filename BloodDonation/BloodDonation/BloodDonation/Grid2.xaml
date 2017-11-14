@@ -2,57 +2,63 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.Grid2"
-             Title="Menu">
+             Icon="Menu2">
 
-    <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+    <AbsoluteLayout>
 
-        <Grid RowSpacing="0" ColumnSpacing="10" >
-            <Grid.RowDefinitions>
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutOuterStyle}">
 
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="0.3*"/>
+            <Grid  Style="{StaticResource CustomGridStyle}">
+                <Grid.RowDefinitions>
 
-            </Grid.RowDefinitions>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition Height="0.3*"/>
 
-            <Grid.ColumnDefinitions>
+                </Grid.RowDefinitions>
 
-                <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="0.5*"/>
+                <Grid.ColumnDefinitions>
 
-            </Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
 
-            <Image Source="TermsConditions.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="TapTermsCondition" Tapped="TapTermsCondition_OnTapped"/>
-                </Image.GestureRecognizers>
-            </Image>
+                </Grid.ColumnDefinitions>
 
-            <Image Source="Eligibleicon.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="TapEligibility" Tapped="TapEligibility_OnTapped"/>
-                </Image.GestureRecognizers>
-            </Image>
+                <Image Source="TermsConditions.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapTermsCondition" Tapped="TapTermsCondition_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
 
-            <Image Source="Share.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="TapShare" Tapped="TapShare_Tapped"/>
-                </Image.GestureRecognizers>
-            </Image>
+                <Image Source="Eligibleicon.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapEligibility" Tapped="TapEligibility_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
 
-            <Image Source="Contactus.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="TapContactus" Tapped="TapContactus_OnTapped"/>
-                </Image.GestureRecognizers>
-            </Image>
+                <Image Source="Share.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapShare" Tapped="TapShare_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
 
-            <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" >
-                <Label Text="Advertisement" HorizontalOptions="Center" VerticalOptions="Center"></Label>
-            </StackLayout>
+                <Image Source="Contactus.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapContactus" Tapped="TapContactus_OnTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
 
-        </Grid>
+                <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" >
+                    <Label Text="Advertisement" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
 
+            </Grid>
+        </StackLayout>
 
+        <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
+                     AbsoluteLayout.LayoutBounds="0,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Image Source="LeftArrow.png"/>
+        </StackLayout>
 
-    </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>

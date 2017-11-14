@@ -2,22 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BloodDonation.ProfilePage"
-             Title="Profile">
+             Icon="Man2">
 
-        <ScrollView>
-        <StackLayout Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+    <AbsoluteLayout>
+        
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
-            <Image Source="ProfileInfo.png" Margin="10,0,10,0">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="TapProfile" Tapped="TapProfile_Tapped"/>
-                </Image.GestureRecognizers>
-            </Image>
+            <StackLayout x:Name="LayoutMainPage" Margin="10,20,10,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         Style="{StaticResource CustomStackLayoutEnteriesStyle}">
+
+                <Image Source="ProfileInfo.png" Margin="10,0,10,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapProfile" Tapped="TapProfile_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Button Text="My Donors" TextColor="#d21d1d" Margin="10,5,10,5" Clicked="Button_Clicked_Donors"/>
+                <Button Text="My Requests" TextColor="#d21d1d" Margin="10,5,10,5" Clicked="Button_Clicked_Requests"/>
+                <Button Text="Change Password" TextColor="#d21d1d" Margin="10,5,10,5" Clicked="BtnChangePasswordClicked"/>
+                <Button Text="Logout" TextColor="#d21d1d" Margin="10,0,10,5" Clicked="Logout_Button_Clicked"/>
+
+            </StackLayout>
             
-            <Button Text="Manage Donors" TextColor="#d21d1d" Margin="10,5,10,5" Clicked="Button_Clicked_Donors"/>
-            <Button Text="Manage Requests" TextColor="#d21d1d" Margin="10,5,10,5" Clicked="Button_Clicked_Requests"/>
-            <Button Text="Change Password" TextColor="#d21d1d" Margin="10,5,10,5" Clicked="BtnChangePasswordClicked"/>
-            <Button Text="Logout" TextColor="#d21d1d" Margin="10,0,10,5" Clicked="Button_Clicked"/>
-
-        </StackLayout>
         </ScrollView>
+
+        <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
+                     AbsoluteLayout.LayoutBounds="1,.5, 25, 100" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Image Source="RightArrow.png"/>
+        </StackLayout>
+
+    </AbsoluteLayout>
 </ContentPage>

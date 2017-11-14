@@ -28,6 +28,8 @@ namespace BloodDonation.Droid
 		{
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::BloodDonation.Droid.Resource.String.ApplicationName;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::BloodDonation.Droid.Resource.String.Hello;
+			global::SQLite.Net.Platform.XamarinAndroidN.Resource.String.ApplicationName = global::BloodDonation.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroidN.Resource.String.Hello = global::BloodDonation.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::BloodDonation.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2200,91 +2202,103 @@ namespace BloodDonation.Droid
 			public const int ic_tv_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int logo = 2130837664;
+			public const int LeftArrow = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int LogOut = 2130837665;
+			public const int logo = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int Man = 2130837666;
+			public const int LogOut = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int mr_dialog_material_background_dark = 2130837667;
+			public const int Man = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int mr_dialog_material_background_light = 2130837668;
+			public const int Man2 = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int mr_ic_audiotrack_light = 2130837669;
+			public const int Menu2 = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int mr_ic_cast_dark = 2130837670;
+			public const int mr_dialog_material_background_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int mr_ic_cast_light = 2130837671;
+			public const int mr_dialog_material_background_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int mr_ic_close_dark = 2130837672;
+			public const int mr_ic_audiotrack_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int mr_ic_close_light = 2130837673;
+			public const int mr_ic_cast_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837674;
+			public const int mr_ic_cast_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int mr_ic_media_route_connecting_mono_light = 2130837675;
+			public const int mr_ic_close_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int mr_ic_media_route_mono_dark = 2130837676;
+			public const int mr_ic_close_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int mr_ic_media_route_mono_light = 2130837677;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int mr_ic_pause_dark = 2130837678;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int mr_ic_pause_light = 2130837679;
+			public const int mr_ic_media_route_mono_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int mr_ic_play_dark = 2130837680;
+			public const int mr_ic_media_route_mono_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int mr_ic_play_light = 2130837681;
-			
-			// aapt resource value: 0x7f0200bc
-			public const int notification_template_icon_bg = 2130837692;
+			public const int mr_ic_pause_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ProfileHeader = 2130837682;
+			public const int mr_ic_pause_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ProfileInfo = 2130837683;
+			public const int mr_ic_play_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int RequestsAdded = 2130837684;
+			public const int mr_ic_play_light = 2130837684;
+			
+			// aapt resource value: 0x7f0200c0
+			public const int notification_template_icon_bg = 2130837696;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int Search = 2130837685;
+			public const int ProfileHeader = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int SearchRequest = 2130837686;
+			public const int ProfileInfo = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int Setting = 2130837687;
+			public const int RequestsAdded = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int Share = 2130837688;
+			public const int RightArrow = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int signuplogo = 2130837689;
+			public const int Search = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int splash = 2130837690;
+			public const int SearchRequest = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int TermsConditions = 2130837691;
+			public const int Setting = 2130837691;
+			
+			// aapt resource value: 0x7f0200bc
+			public const int Share = 2130837692;
+			
+			// aapt resource value: 0x7f0200bd
+			public const int signuplogo = 2130837693;
+			
+			// aapt resource value: 0x7f0200be
+			public const int splash = 2130837694;
+			
+			// aapt resource value: 0x7f0200bf
+			public const int TermsConditions = 2130837695;
 			
 			static Drawable()
 			{

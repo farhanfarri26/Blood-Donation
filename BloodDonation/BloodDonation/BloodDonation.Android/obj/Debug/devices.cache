@@ -24,4 +24,44 @@
     <ResultingAbi>armeabi-v7a</ResultingAbi>
     <SdkVersion>21</SdkVersion>
   </Device>
+  <Device id="169.254.191.177:5555">
+    <ResultingAbi>x86</ResultingAbi>
+    <SdkVersion>17</SdkVersion>
+  </Device>
+  <Device id="169.254.56.136:5555">
+    <ResultingAbi>x86</ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
+  <Device id="169.254.247.95:5555">
+    <ResultingAbi>x86</ResultingAbi>
+    <SdkVersion>21</SdkVersion>
+  </Device>
+  <Device id="169.254.160.177:5555">
+    <ResultingAbi>x86</ResultingAbi>
+    <SdkVersion>19</SdkVersion>
+  </Device>
+  <Device id="02157df2c4454608">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>24</SdkVersion>
+  </Device>
+  <Device id="487ad013">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>21</SdkVersion>
+  </Device>
+  <Device id="HGHDU17221003023">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>24</SdkVersion>
+  </Device>
+  <Device id="LGD8511196160f">
+    <ResultingAbi>armeabi-v7a</ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
+  <Device id="3300737cab2e4327">
+    <ResultingAbi>armeabi-v7a</ResultingAbi>
+    <SdkVersion>24</SdkVersion>
+  </Device>
+  <Device id="MUYDU15915000527">
+    <ResultingAbi></ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
 </Devices>

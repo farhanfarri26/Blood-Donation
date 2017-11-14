@@ -93,13 +93,15 @@ namespace BloodDonation
                             }
                             else
                             {
-                                await DisplayAlert("Salam " + signupClass.FullName, " Your Account is Successfully Created !! ", "Login");
-                                await Navigation.PushAsync(new MainPage());
+                                await DisplayAlert("Salam ! " + signupClass.FullName, " Your Account is Successfully Created !! ", "Login");
+                                await Navigation.PopAsync();
                             }
 
                         }
                         catch (Exception ex)
                         {
+                            StackLayoutSignup.IsVisible = true;
+
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
