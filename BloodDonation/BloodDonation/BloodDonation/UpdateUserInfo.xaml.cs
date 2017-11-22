@@ -128,8 +128,7 @@ namespace BloodDonation
                 }
             }
         }
-
-
+        
         private void PkrSignupCity_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             CityValue = PkrSignupCity.Items[PkrSignupCity.SelectedIndex];

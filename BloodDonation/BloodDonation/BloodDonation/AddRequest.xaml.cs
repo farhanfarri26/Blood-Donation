@@ -57,6 +57,18 @@ namespace BloodDonation
 
                         DateTime dateValue = DateTime.Now;
 
+                        string pickdrop;
+
+                        var ans = await DisplayAlert("Pick & Drop", "Will you provide pick & drop to donor ?", "Yes", "No");
+                        if (ans == true)
+                        {
+                            pickdrop = "Yes";
+                        }
+                        else
+                        {
+                            pickdrop = "No";
+                        }
+
                         AddRequestClass addRequestClass = new AddRequestClass()
                         {
                             FullName = EntFullName.Text,
@@ -66,6 +78,7 @@ namespace BloodDonation
                             BloodGroup = BloodGroupValue,
                             AddedBy = data[0].CellNumber,
                             TodayDate = dateValue.ToString(),
+                            FutureUse = pickdrop,
                         };
                         try
                         {
@@ -93,6 +106,7 @@ namespace BloodDonation
                             string msg = ex.ToString();
                             msg = "Request Timeout";
                             await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            StackLayoutAddRequest.IsVisible = true;
 
                         }
                         finally

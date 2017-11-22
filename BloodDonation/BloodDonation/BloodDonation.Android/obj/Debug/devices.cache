@@ -1,67 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Devices>
-  <Device id="67c3e010">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
   <Device id="169.254.76.233:5555">
     <ResultingAbi>x86</ResultingAbi>
     <SdkVersion>23</SdkVersion>
   </Device>
-  <Device id="169.254.138.177:5555">
-    <ResultingAbi>x86</ResultingAbi>
+  <Device id="5203e9ad41bb8315">
+    <ResultingAbi>armeabi-v7a</ResultingAbi>
+    <SdkVersion>24</SdkVersion>
+  </Device>
+  <Device id="67c3e010">
+    <ResultingAbi>armeabi-v7a</ResultingAbi>
+    <SdkVersion>23</SdkVersion>
+  </Device>
+  <Device id="114b97df">
+    <ResultingAbi>armeabi-v7a</ResultingAbi>
     <SdkVersion>19</SdkVersion>
-  </Device>
-  <Device id="6088ca14">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
-  <Device id="BUC4C16728000243">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
-  <Device id="0123456789ABCDEF">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>21</SdkVersion>
-  </Device>
-  <Device id="169.254.191.177:5555">
-    <ResultingAbi>x86</ResultingAbi>
-    <SdkVersion>17</SdkVersion>
-  </Device>
-  <Device id="169.254.56.136:5555">
-    <ResultingAbi>x86</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
-  <Device id="169.254.247.95:5555">
-    <ResultingAbi>x86</ResultingAbi>
-    <SdkVersion>21</SdkVersion>
-  </Device>
-  <Device id="169.254.160.177:5555">
-    <ResultingAbi>x86</ResultingAbi>
-    <SdkVersion>19</SdkVersion>
-  </Device>
-  <Device id="02157df2c4454608">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
-  <Device id="487ad013">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>21</SdkVersion>
-  </Device>
-  <Device id="HGHDU17221003023">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
-  <Device id="LGD8511196160f">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
-  <Device id="3300737cab2e4327">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
-  <Device id="MUYDU15915000527">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>23</SdkVersion>
   </Device>
 </Devices>

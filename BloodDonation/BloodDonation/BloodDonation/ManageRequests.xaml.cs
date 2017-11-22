@@ -70,7 +70,6 @@ namespace BloodDonation
                     string msg = ex.ToString();
                     msg = "Request Timeout";
                     await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
-
                 }
                 finally
                 {
@@ -117,7 +116,6 @@ namespace BloodDonation
 
                         int Id = ((AddRequestClass)LvRequests.SelectedItem).ID;
 
-
                         var httpClient = new HttpClient();
                         var response = httpClient.DeleteAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi/{0}", Id));
 
@@ -132,7 +130,6 @@ namespace BloodDonation
                         string msg = ex.ToString();
                         msg = "Request Timeout";
                         await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
-
                     }
                     finally
                     {

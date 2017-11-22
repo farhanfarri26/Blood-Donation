@@ -17,7 +17,7 @@ public class Channel_ListenerImplementor
 	}
 
 
-	public Channel_ListenerImplementor () throws java.lang.Throwable
+	public Channel_ListenerImplementor ()
 	{
 		super ();
 		if (getClass () == Channel_ListenerImplementor.class)

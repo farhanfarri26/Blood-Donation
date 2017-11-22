@@ -54,6 +54,7 @@ namespace BloodDonation
                 }
                 else if (!Regex.IsMatch(email, emailpattern))
                 {
+                    LblCellNumber.IsVisible = false;
                     LblEmail.IsVisible = true;
                 }
                 else
@@ -89,11 +90,17 @@ namespace BloodDonation
 
                             if (response.StatusCode == HttpStatusCode.InternalServerError)
                             {
-                                await DisplayAlert("Dear User!!", " Your CellNumber Already Exist!! ", "OK");
+                                LblCellNumber.IsVisible = false;
+                                LblEmail.IsVisible = false;
+                                LblExitNumber.IsVisible = true;
+                                //await DisplayAlert("Dear User!!", " Your CellNumber Already Exist!! ", "OK");
                             }
                             else
                             {
-                                await DisplayAlert("Salam ! " + signupClass.FullName, " Your Account is Successfully Created !! ", "Login");
+                                LblCellNumber.IsVisible = false;
+                                LblEmail.IsVisible = false;
+                                LblExitNumber.IsVisible = false;
+                                await DisplayAlert("Salam ! " + signupClass.FullName.ToUpper(), " Your Account is Successfully Created !! ", "Login");
                                 await Navigation.PopAsync();
                             }
 
@@ -101,12 +108,12 @@ namespace BloodDonation
                         catch (Exception ex)
                         {
                             StackLayoutSignup.IsVisible = true;
-
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
                             msg = "Request Timeout";
                             await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            await Navigation.PopAsync();
                         }
                         finally
                         {
@@ -121,8 +128,7 @@ namespace BloodDonation
                 }
             }
         }
-
-
+        
         private void PkrSignupCity_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             CityValue = PkrSignupCity.Items[PkrSignupCity.SelectedIndex];

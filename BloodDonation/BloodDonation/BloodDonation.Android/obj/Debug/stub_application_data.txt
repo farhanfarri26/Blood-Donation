@@ -1,2 +1,2 @@
 android.app.Application
-BloodDonation.Android
+com.companyname.BloodDonation

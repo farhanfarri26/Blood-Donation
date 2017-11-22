@@ -22,9 +22,11 @@ namespace BloodDonation
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void TapProfile_Tapped(object sender, EventArgs e)
+        private async void TapProfile_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new UserInfo());
+            await ImgUserInfo.FadeTo(0.8, 100);
+            ImgUserInfo.Opacity = 1;
+            await Navigation.PushAsync(new UserInfo());
         }
 
         private void Logout_Button_Clicked(object sender, EventArgs e)

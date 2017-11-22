@@ -7,7 +7,7 @@
 
     <StackLayout Style="{StaticResource CustomStackLayoutOuterStyle}">
         <ScrollView>
-                <Image Source="BloodDetails.png"/>
+            <Image Source="BloodDetails.png"/>
         </ScrollView>
     </StackLayout>
 </ContentPage>

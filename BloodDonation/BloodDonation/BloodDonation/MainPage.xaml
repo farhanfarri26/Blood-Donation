@@ -21,6 +21,7 @@
                 <Label Text="Password"  Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntPassword" Placeholder="Enter Password" IsPassword="True" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblEmpty" Text="Cell Number or Password are Empty" Style="{StaticResource CustomUnderLabelStyle}"/>
+                <Label x:Name="LblIncorrect" Text="Incorrect Cell Number or Password" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Button x:Name="BtnLogin" Text="Login"  Style="{StaticResource CustomButtonStyle}" Clicked="BtnLogin_OnClicked"/>
 
@@ -28,7 +29,7 @@
                 <Label Text="Forget Password?" TextColor="Blue" Margin="0,0,30,0"
                        FontSize="15" HorizontalOptions="End">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer x:Name="BtnForgetPasswordLabel" Tapped="BtnLabel_OnTapped"/>
+                        <TapGestureRecognizer x:Name="BtnForgetPasswordLabel" Tapped="BtnForgetLabel_OnTapped"/>
                     </Label.GestureRecognizers>
                 </Label>
 

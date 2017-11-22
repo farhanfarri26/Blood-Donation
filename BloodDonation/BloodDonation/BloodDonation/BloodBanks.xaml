@@ -12,7 +12,7 @@
             </StackLayout>
 
             <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-               
+
                 <ListView x:Name="LvBloodBanks" HasUnevenRows="True" ItemTapped="LvBloodBanks_OnItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>

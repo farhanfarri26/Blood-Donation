@@ -5,13 +5,13 @@
              Icon="Man2">
 
     <AbsoluteLayout>
-        
+
         <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
             <StackLayout x:Name="LayoutMainPage" Margin="10,20,10,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
                          Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-                <Image Source="ProfileInfo.png" Margin="10,0,10,0">
+                <Image x:Name="ImgUserInfo" Source="ProfileInfo.png" Margin="10,0,10,0">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapProfile" Tapped="TapProfile_Tapped"/>
                     </Image.GestureRecognizers>
@@ -23,12 +23,12 @@
                 <Button Text="Logout" TextColor="#d21d1d" Margin="10,0,10,5" Clicked="Logout_Button_Clicked"/>
 
             </StackLayout>
-            
+
         </ScrollView>
 
         <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
                      AbsoluteLayout.LayoutBounds="1,.5, 25, 100" AbsoluteLayout.LayoutFlags="PositionProportional">
-            <Image Source="RightArrow.png"/>
+            <Image x:Name="ImgRightArrow" Source="RightArrow.png"/>
         </StackLayout>
 
     </AbsoluteLayout>

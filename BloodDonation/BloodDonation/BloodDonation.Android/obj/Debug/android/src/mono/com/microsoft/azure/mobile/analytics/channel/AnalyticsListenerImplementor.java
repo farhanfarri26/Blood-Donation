@@ -19,7 +19,7 @@ public class AnalyticsListenerImplementor
 	}
 
 
-	public AnalyticsListenerImplementor () throws java.lang.Throwable
+	public AnalyticsListenerImplementor ()
 	{
 		super ();
 		if (getClass () == AnalyticsListenerImplementor.class)

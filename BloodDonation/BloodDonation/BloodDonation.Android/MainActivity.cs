@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace BloodDonation.Droid
 {
-    [Activity(Label = "Blood Donation",
+    [Activity(Label = "Blood Donation PK",
         Icon = "@drawable/BloodBankLogo",
         Theme = "@style/splashscreen",
         MainLauncher = true,

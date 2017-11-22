@@ -26,12 +26,6 @@ namespace BloodDonation
             GetAllRequests();
         }
 
-        //public Requests(string bloodGroupValue)
-        //{
-        //    InitializeComponent();
-        //    this.bloodGroupValue = bloodGroupValue;
-        //    GetRequests();
-        //}
 
         public Requests(string cityValue, string hospitalValue, string bloodGroupValue)
         {
@@ -84,7 +78,7 @@ namespace BloodDonation
                     string msg = ex.ToString();
                     msg = "Request Timeout";
                     await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
-
+                    await Navigation.PopAsync();
                 }
                 finally
                 {

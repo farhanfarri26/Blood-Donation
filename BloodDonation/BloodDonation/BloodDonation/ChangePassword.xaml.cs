@@ -20,8 +20,7 @@ namespace BloodDonation
     public partial class ChangePassword : ContentPage
     {
         private string password;
-
-
+        
         public ChangePassword()
         {
             InitializeComponent();

@@ -4,14 +4,14 @@
              xmlns:local="clr-namespace:BloodDonation"
              x:Class="BloodDonation.Tabbed"
              BackgroundImage="BG.png"
-            Title="Blood Donation Pakistan">
+            Title="Blood Donation PK">
 
     <TabbedPage.Children>
 
         <local:ProfilePage/>
         <local:Grid/>
         <local:Grid2/>
-                
+
     </TabbedPage.Children>
 </TabbedPage>
 

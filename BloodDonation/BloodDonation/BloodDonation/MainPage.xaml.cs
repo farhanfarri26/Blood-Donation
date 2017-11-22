@@ -37,6 +37,7 @@ namespace BloodDonation
             {
                 if (!Regex.IsMatch(EntCellName.Text, phonepattern))
                 {
+                    LblEmpty.IsVisible = false;
                     LblCellNumber.IsVisible = true;
                 }
                 else
@@ -65,7 +66,10 @@ namespace BloodDonation
                                 var result = response.Content.ReadAsStringAsync().Result;
                                 if (result == "[]")
                                 {
-                                    await DisplayAlert("Invalid", "Your Cell Number or Password Did not Match to any account", "Try Again");
+                                    LblEmpty.IsVisible = false;
+                                    LblCellNumber.IsVisible = false;
+                                    LblIncorrect.IsVisible = true;
+                                    //await DisplayAlert("Invalid", "Your Cell Number or Password Did not Match to any account", "Try Again");
                                 }
                                 else
                                 {
@@ -88,7 +92,7 @@ namespace BloodDonation
                                     HandleDB dB = new HandleDB();
                                     dB.AddDB(localDB);
 
-                                    await DisplayAlert("Welcome", "Dear User!  Please use our services in positive way. \n\n Regards: \n Blood Donation Team", "Get Started");
+                                    await DisplayAlert("Welcome Again", "Dear User!  Please use our services in positive way. \n\n Regards: \n Blood Donation Team", "Get Started");
                                     await Navigation.PushAsync(new Tabbed());
                                 }
                             }
@@ -104,6 +108,7 @@ namespace BloodDonation
                             string msg = ex.ToString();
                             msg = "Request Timeout";
                             await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            LayoutMainPage.IsVisible = true;
                         }
                         finally
                         {
@@ -121,16 +126,16 @@ namespace BloodDonation
             await Navigation.PushAsync(new SignupPage());
         }
 
-        private void BtnLabel_OnTapped(object sender, EventArgs e)
+        private void BtnForgetLabel_OnTapped(object sender, EventArgs e)
         {
-            //if (!CrossConnectivity.Current.IsConnected)
-            //{
-            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-            //}
-            //else
-            //{
-
-            //}
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+            }
+            else
+            {
+                Navigation.PushAsync(new ForgetPassword());
+            }
         }
     }
 }

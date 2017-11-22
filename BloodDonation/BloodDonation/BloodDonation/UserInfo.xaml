@@ -12,7 +12,7 @@
             </StackLayout>
 
             <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutEnteriesStyle}">
-                
+
                 <Image Source="ProfileHeader.png"/>
 
                 <ListView x:Name="LvUserInfo" HasUnevenRows="True" Margin="10,0,0,0" ItemTapped="LvUserInfo_ItemTapped">

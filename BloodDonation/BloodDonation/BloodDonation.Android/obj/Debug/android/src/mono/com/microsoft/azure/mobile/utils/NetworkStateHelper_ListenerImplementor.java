@@ -17,7 +17,7 @@ public class NetworkStateHelper_ListenerImplementor
 	}
 
 
-	public NetworkStateHelper_ListenerImplementor () throws java.lang.Throwable
+	public NetworkStateHelper_ListenerImplementor ()
 	{
 		super ();
 		if (getClass () == NetworkStateHelper_ListenerImplementor.class)

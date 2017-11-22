@@ -1,240 +1,20 @@
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SignupPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ReasonToDonate.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Reminder.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\GitHub\Blood-Donation\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SignupPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.pdb
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.xml
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SignupPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.dll
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.pdb
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.xml
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Donors.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Requests.xaml.g.cs
-C:\Users\Farhan Farri\Documents\AppWorkshop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Contactus.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.pdb
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.xml
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SignupPage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Donors.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Requests.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Contactus.xaml.g.cs
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Documents\Visual Studio 2017\Projects\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.Analytics.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.Crashes.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.Abstractions.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\SQLite.Net.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.pdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Connectivity.xml
@@ -244,56 +24,43 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debu
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.xml
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.pdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Messaging.Abstractions.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Net.Http.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Core.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Mono.Security.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\System.Xml.xml
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SignupPage.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchDonor.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddRequest.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Donors.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Requests.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Contactus.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UserInfo.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ChangePassword.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ManageDonors.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ManageRequests.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UpdateUserInfo.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UpdateDonors.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UpdateRequest.xaml.g.cs
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\SQLite.Net.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.Analytics.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.Crashes.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Microsoft.Azure.Mobile.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.pdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.xml
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.pdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Plugin.Share.Abstractions.xml
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Core.xml
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.MainPage.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.App.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddDonor.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.AddRequest.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodBanks.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.BloodDetails.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ChangePassword.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Contactus.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Donors.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Eligibility.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ForgetPassword.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Grid2.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ManageDonors.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ManageRequests.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.ProfilePage.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Requests.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchDonor.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SearchRequest.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.SignupPage.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Tabbed.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.TermsConditions.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UpdateDonors.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UpdateRequest.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UpdateUserInfo.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.UserInfo.xaml.g.cs
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation\bin\Debug\SQLite.Net.Platform.XamarinAndroidN.dll

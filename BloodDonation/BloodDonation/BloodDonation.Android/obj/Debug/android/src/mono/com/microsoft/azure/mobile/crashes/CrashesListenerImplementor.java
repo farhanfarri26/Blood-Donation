@@ -22,7 +22,7 @@ public class CrashesListenerImplementor
 	}
 
 
-	public CrashesListenerImplementor () throws java.lang.Throwable
+	public CrashesListenerImplementor ()
 	{
 		super ();
 		if (getClass () == CrashesListenerImplementor.class)

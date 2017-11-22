@@ -24,25 +24,25 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Image Source="TermsConditions.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="TermsConditions.png" x:Name="ImgTermsConditions" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapTermsCondition" Tapped="TapTermsCondition_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Eligibleicon.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="Eligibleicon.png" x:Name="ImgEligible" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapEligibility" Tapped="TapEligibility_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Share.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="Share.png" x:Name="ImgShare" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapShare" Tapped="TapShare_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Contactus.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="Contactus.png" x:Name="ImgContactus" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapContactus" Tapped="TapContactus_OnTapped"/>
                     </Image.GestureRecognizers>
@@ -57,7 +57,7 @@
 
         <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
                      AbsoluteLayout.LayoutBounds="0,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional">
-            <Image Source="LeftArrow.png"/>
+            <Image x:Name="ImgLeftArrow" Source="LeftArrow.png"/>
         </StackLayout>
 
     </AbsoluteLayout>

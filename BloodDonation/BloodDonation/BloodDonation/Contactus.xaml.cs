@@ -46,7 +46,7 @@ namespace BloodDonation
                     string msg = ex.ToString();
                     msg = "Request Timeout";
                     await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
-
+                    await Navigation.PopAsync();
                 }
                 finally
                 {

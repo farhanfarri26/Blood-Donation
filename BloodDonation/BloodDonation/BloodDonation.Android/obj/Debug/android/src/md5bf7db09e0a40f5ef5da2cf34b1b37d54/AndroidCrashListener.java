@@ -22,7 +22,7 @@ public class AndroidCrashListener
 	}
 
 
-	public AndroidCrashListener () throws java.lang.Throwable
+	public AndroidCrashListener ()
 	{
 		super ();
 		if (getClass () == AndroidCrashListener.class)

@@ -145,8 +145,7 @@ namespace BloodDonation
                 BtnCancel.IsVisible = false;
             }
         }
-
-
+        
         private void Cancel_Button_Clicked(object sender, EventArgs e)
         {
             LvDonors.Opacity = 1;
@@ -155,8 +154,7 @@ namespace BloodDonation
             BtnDelete.IsVisible = false;
             BtnCancel.IsVisible = false;
         }
-
-
+        
         private void LvDonors_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             LvDonors.Opacity = 0.4;

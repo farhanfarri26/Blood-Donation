@@ -52,7 +52,7 @@ namespace BloodDonation
                     string msg = ex.ToString();
                     msg = "Request Timeout";
                     await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
-
+                    await Navigation.PopAsync();
                 }
                 finally
                 {
@@ -61,8 +61,7 @@ namespace BloodDonation
                 }
             }
         }
-
-
+        
         private void LvUserInfo_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Navigation.PushAsync(new UpdateUserInfo());

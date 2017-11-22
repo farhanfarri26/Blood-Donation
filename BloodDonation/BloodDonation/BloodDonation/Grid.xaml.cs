@@ -15,63 +15,59 @@ namespace BloodDonation
         public Grid()
         {
             InitializeComponent();
+            Arrows();
+        }
+
+        private async void Arrows()
+        {
+            while (true)
+            {
+                await ImgRightArrow.FadeTo(0, 500);
+                ImgRightArrow.Opacity = 1;
+                await ImgLeftArrow.FadeTo(0, 500);
+                ImgLeftArrow.Opacity = 1;
+            }
         }
 
         private async void TapAddRequest_OnTapped(object sender, EventArgs e)
         {
-
+            await ImgAddRequest.FadeTo(0.8, 100);
+            ImgAddRequest.Opacity = 1;
             await Navigation.PushAsync(new AddRequest());
-
         }
 
         private async void TapAddDonor_OnTapped(object sender, EventArgs e)
         {
+            await ImgAddDonor.FadeTo(0.8, 100);
+            ImgAddDonor.Opacity = 1;
             await Navigation.PushAsync(new AddDonor());
         }
 
         private async void TapSearchDonor_OnTapped(object sender, EventArgs e)
         {
-            //if (!CrossConnectivity.Current.IsConnected)
-            //{
-            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-            //}
-            //else
-            //{
-
-            //}
-
+            await ImgSearchDonor.FadeTo(0.8, 100);
+            ImgSearchDonor.Opacity = 1;
             await Navigation.PushAsync(new SearchDonor());
         }
 
         private async void TapSearchRequest_OnTapped(object sender, EventArgs e)
         {
-            //if (!CrossConnectivity.Current.IsConnected)
-            //{
-            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-            //}
-            //else
-            //{
-
-            //}
-
+            await ImgSearchRequest.FadeTo(0.8, 100);
+            ImgSearchRequest.Opacity = 1;
             await Navigation.PushAsync(new SearchRequest());
         }
 
         private async void TapBloodBank_OnTapped(object sender, EventArgs e)
         {
-            //if (!CrossConnectivity.Current.IsConnected)
-            //{
-            //    DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
-            //}
-            //else
-            //{
-
-            //}
+            await ImgBloodBanks.FadeTo(0.8, 100);
+            ImgBloodBanks.Opacity = 1;
             await Navigation.PushAsync(new BloodBanks());
         }
 
         private async void TapDetailBlood_OnTapped(object sender, EventArgs e)
         {
+            await ImgBloodDetail.FadeTo(0.8, 100);
+            ImgBloodDetail.Opacity = 1;
             await Navigation.PushAsync(new BloodDetails());
         }
     }

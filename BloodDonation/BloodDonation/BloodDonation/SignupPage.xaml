@@ -8,7 +8,7 @@
              BackgroundImage="BG.png">
 
 
-        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
         <ScrollView VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 
@@ -18,11 +18,12 @@
                 <Image Source="signuplogo.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntFullName" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntFullName" Placeholder="Example( Muhammad Ali )" Style="{StaticResource CustomEntryStyle}"/>
 
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
+                <Label x:Name="LblExitNumber" Text="This Cell Number Already Exists!!" Style="{StaticResource CustomUnderLabelStyle}"/>
 
                 <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Picker x:Name="PkrSignupCity" Title="Choose City" SelectedIndexChanged="PkrSignupCity_OnSelectedIndexChanged"
@@ -114,8 +115,8 @@
         </ScrollView>
 
         <StackLayout Padding="6" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
-                <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
-            </StackLayout>
+            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+        </StackLayout>
 
     </AbsoluteLayout>
 

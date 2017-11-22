@@ -38,6 +38,13 @@ public class MonoPackageManager {
 				String cacheDir     = context.getCacheDir ().getAbsolutePath ();
 				String dataDir      = getNativeLibraryPath (context);
 				ClassLoader loader  = context.getClassLoader ();
+				java.io.File external0 = android.os.Environment.getExternalStorageDirectory ();
+				String externalDir = new java.io.File (
+							external0,
+							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
+				String externalLegacyDir = new java.io.File (
+							external0,
+							"../legacy/Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
 
 				Runtime.init (
 						language,
@@ -49,9 +56,10 @@ public class MonoPackageManager {
 							dataDir,
 						},
 						loader,
-						new java.io.File (
-							android.os.Environment.getExternalStorageDirectory (),
-							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath (),
+						new String[] {
+							externalDir,
+							externalLegacyDir
+						},
 						MonoPackageManager_Resources.Assemblies,
 						context.getPackageName ());
 				
@@ -119,8 +127,14 @@ class MonoPackageManager_Resources {
 		"SQLite.Net.Platform.XamarinAndroid.dll",
 		"SQLite.Net.Platform.XamarinAndroidN.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
+		"Xamarin.Android.Support.Annotations.dll",
+		"Xamarin.Android.Support.Compat.dll",
+		"Xamarin.Android.Support.Core.UI.dll",
+		"Xamarin.Android.Support.Core.Utils.dll",
 		"Xamarin.Android.Support.CustomTabs.dll",
 		"Xamarin.Android.Support.Design.dll",
+		"Xamarin.Android.Support.Fragment.dll",
+		"Xamarin.Android.Support.Media.Compat.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
@@ -134,5 +148,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_25";
 }

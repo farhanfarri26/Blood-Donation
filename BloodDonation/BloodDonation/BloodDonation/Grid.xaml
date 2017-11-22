@@ -5,7 +5,7 @@
              Title="Home">
 
     <AbsoluteLayout>
-        
+
         <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Style="{StaticResource CustomStackLayoutOuterStyle}">
 
             <Grid  Style="{StaticResource CustomGridStyle}">
@@ -24,37 +24,37 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Image Source="AddRequest.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="AddRequest.png" x:Name="ImgAddRequest" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapAddRequest" Tapped="TapAddRequest_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="AddDonor.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="AddDonor.png" x:Name="ImgAddDonor" Grid.Row="0" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapAddDonor" Tapped="TapAddDonor_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="Search.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="Search.png" x:Name="ImgSearchDonor" Grid.Row="1" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapSearchDonor" Tapped="TapSearchDonor_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="SearchRequest.png" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="SearchRequest.png" x:Name="ImgSearchRequest" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapSearchRequest" Tapped="TapSearchRequest_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image Source="BloodBank.png" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
+                <Image Source="BloodBank.png" x:Name="ImgBloodBanks" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapBloodBank" Tapped="TapBloodBank_OnTapped"/>
                     </Image.GestureRecognizers>
                 </Image>
 
-                <Image  Source="Detail.png" Grid.Row="2" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
+                <Image  Source="Detail.png" x:Name="ImgBloodDetail" Grid.Row="2" Grid.Column="1" Style="{StaticResource CustomImageGridStyle}">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer x:Name="TapDetailBlood" Tapped="TapDetailBlood_OnTapped"/>
                     </Image.GestureRecognizers>
@@ -65,12 +65,12 @@
 
         <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
                      AbsoluteLayout.LayoutBounds="1,.5, 25, 100" AbsoluteLayout.LayoutFlags="PositionProportional">
-            <Image Source="RightArrow.png"/>
+            <Image x:Name="ImgRightArrow" Source="RightArrow.png"/>
         </StackLayout>
 
         <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
                      AbsoluteLayout.LayoutBounds="0,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional">
-            <Image Source="LeftArrow.png"/>
+            <Image x:Name="ImgLeftArrow" Source="LeftArrow.png"/>
         </StackLayout>
 
     </AbsoluteLayout>

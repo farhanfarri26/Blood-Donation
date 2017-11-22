@@ -4,6 +4,31 @@
         <name>Plugin.Messaging.Abstractions</name>
     </assembly>
     <members>
+        <member name="T:Plugin.Messaging.IEmailAttachment">
+            <summary>
+                Abstraction for adding an attachment to an e-mail
+            </summary>
+        </member>
+        <member name="P:Plugin.Messaging.IEmailAttachment.FileName">
+            <summary>
+                File name for the attachment
+            </summary>
+        </member>
+        <member name="P:Plugin.Messaging.IEmailAttachment.FilePath">
+            <summary>
+                File path for the attachment
+            </summary>
+        </member>
+        <member name="P:Plugin.Messaging.IEmailAttachment.ContentType">
+            <summary>
+                Content type of the attachment
+            </summary>
+        </member>
+        <member name="T:Plugin.Messaging.IEmailMessage">
+            <summary>
+                Abstraction for sending e-mail
+            </summary>
+        </member>
         <member name="P:Plugin.Messaging.IEmailMessage.Message">
             <summary>
                 Email message body.
@@ -72,6 +97,11 @@
             <param name="to">Email recipient</param>
             <param name="subject">Email subject</param>
             <param name="message">Email message</param>        
+        </member>
+        <member name="T:Plugin.Messaging.IMessaging">
+            <summary>
+                Abstraction to access the <see cref="T:Plugin.Messaging.IEmailTask"/>, <see cref="T:Plugin.Messaging.IPhoneCallTask"/> and <see cref="T:Plugin.Messaging.ISmsTask"/> functionality
+            </summary>
         </member>
         <member name="P:Plugin.Messaging.IMessaging.EmailMessenger">
             <summary>
