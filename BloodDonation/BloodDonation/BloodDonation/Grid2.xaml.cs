@@ -43,13 +43,27 @@ namespace BloodDonation
         {
             await ImgShare.FadeTo(0.8, 100);
             ImgShare.Opacity = 1;
-            await CrossShare.Current.Share(new ShareMessage
+            try
             {
-                Text = "Download Now \n Blood Donation Pakistan App \n Link:",
-                Title = "Share Mobile app",
-                Url = "https://www.mysite.com/mobile"
-            });
-
+                WaitingLoader.IsRunning = true;
+                WaitingLoader.IsVisible = true;
+                await CrossShare.Current.Share(new ShareMessage
+                {
+                    Text = "Download Now \n Blood Donation Pakistan App \n Link:",
+                    Title = "Share Mobile app",
+                    Url = "https://www.mysite.com/mobile"
+                });
+            }
+            catch
+            {
+                WaitingLoader.IsRunning = false;
+                WaitingLoader.IsVisible = false;
+            }
+            finally
+            {
+                WaitingLoader.IsRunning = false;
+                WaitingLoader.IsVisible = false;
+            }
         }
     }
 }

@@ -48,7 +48,8 @@ namespace BloodDonation
                 {
                     if (!CrossConnectivity.Current.IsConnected)
                     {
-                        await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+                        await DisplayAlert("Network Error",
+                             "Network connection is off , turn it on and try again", "Ok");
                     }
                     else
                     {
@@ -80,37 +81,37 @@ namespace BloodDonation
 
 
 
-//                                    var message = new MimeMessage();
-//                                    message.From.Add(new MailboxAddress("Joey Tribbiani", "joey@friends.com"));
-//                                    message.To.Add(new MailboxAddress("Mrs. Chanandler Bong", "chandler@friends.com"));
-//                                    message.Subject = "How you doin'?";
+                                    //                                    var message = new MimeMessage();
+                                    //                                    message.From.Add(new MailboxAddress("Joey Tribbiani", "joey@friends.com"));
+                                    //                                    message.To.Add(new MailboxAddress("Mrs. Chanandler Bong", "chandler@friends.com"));
+                                    //                                    message.Subject = "How you doin'?";
 
-//                                    message.Body = new TextPart("plain")
-//                                    {
-//                                        Text = @"Hey Chandler,
+                                    //                                    message.Body = new TextPart("plain")
+                                    //                                    {
+                                    //                                        Text = @"Hey Chandler,
 
-//I just wanted to let you know that Monica and I were going to go play some paintball, you in?
+                                    //I just wanted to let you know that Monica and I were going to go play some paintball, you in?
 
-//-- Joey"
-//                                    };
+                                    //-- Joey"
+                                    //                                    };
 
-//                                    using (var client = new SmtpClient())
-//                                    {
-//                                        // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
-//                                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                                    //                                    using (var client = new SmtpClient())
+                                    //                                    {
+                                    //                                        // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+                                    //                                        client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
-//                                        client.Connect("smtp.friends.com", 587, false);
+                                    //                                        client.Connect("smtp.friends.com", 587, false);
 
-//                                        // Note: since we don't have an OAuth2 token, disable
-//                                        // the XOAUTH2 authentication mechanism.
-//                                        client.AuthenticationMechanisms.Remove("XOAUTH2");
+                                    //                                        // Note: since we don't have an OAuth2 token, disable
+                                    //                                        // the XOAUTH2 authentication mechanism.
+                                    //                                        client.AuthenticationMechanisms.Remove("XOAUTH2");
 
-//                                        // Note: only needed if the SMTP server requires authentication
-//                                        client.Authenticate("joey", "password");
+                                    //                                        // Note: only needed if the SMTP server requires authentication
+                                    //                                        client.Authenticate("joey", "password");
 
-//                                        client.Send(message);
-//                                        client.Disconnect(true);
-//                                    }
+                                    //                                        client.Send(message);
+                                    //                                        client.Disconnect(true);
+                                    //                                    }
 
 
 
@@ -130,7 +131,7 @@ namespace BloodDonation
                                     //SmtpServer.Send(mail);
                                     //Toast.MakeText(Application.Context, "Mail Send Sucessufully", ToastLength.Short).Show();
 
-                                    await DisplayAlert("Dear " + values[0].FullName + " !", "We are sending you a recovery code to your Email " + values[0].Email + " \n\nCheck your Email. \n\n - Thanks", "OK");
+                                    await DisplayAlert("Dear " + values[0].FullName.ToUpper(), "We are sending you a recovery code to your Email " + values[0].Email + " \n\nCheck your Email. \n\n - Thanks", "Ok");
 
                                     LayoutCellNumber.IsVisible = false;
                                     LayoutCodeSection.IsVisible = true;
@@ -142,8 +143,9 @@ namespace BloodDonation
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
-                            msg = "Request Timeout";
-                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            msg = "Request Timeout.";
+                            await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                                "Retry");
                             await Navigation.PopAsync();
                         }
                         finally

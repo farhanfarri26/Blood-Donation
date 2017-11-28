@@ -35,7 +35,7 @@ namespace BloodDonation
                 || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(HospitalValue)
                 || string.IsNullOrWhiteSpace(BloodGroupValue))
             {
-                await DisplayAlert("Empty", "Dear Donor!! \n Please Fill all Entries.", "Cancel");
+                await DisplayAlert("Empty", "Dear Donor \nPlease Fill all Entries.", "Ok");
             }
             else
             {
@@ -47,8 +47,8 @@ namespace BloodDonation
                 {
                     if (!CrossConnectivity.Current.IsConnected)
                     {
-                        await DisplayAlert("Network Connection Alert !!",
-                            "No Connection Available!! Turn On Data Connection", "Ok");
+                        await DisplayAlert("Network Error",
+                            "Network connection is off , turn it on and try again", "Ok");
                     }
                     else
                     {
@@ -94,7 +94,7 @@ namespace BloodDonation
 
                             if (response.StatusCode == HttpStatusCode.Created)
                             {
-                                await DisplayAlert("Dear!!", " Your Request is successfully Added", "OK");
+                                await DisplayAlert("Dear " + data[0].FullName.ToUpper(), addRequestClass.FullName.ToUpper() + " added in Blood Requests from your account.", "Ok");
                                 await Navigation.PopAsync();
                             }
 
@@ -104,14 +104,15 @@ namespace BloodDonation
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
-                            msg = "Request Timeout";
-                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            msg = "Request Timeout.";
+                            await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                                "Retry");
                             StackLayoutAddRequest.IsVisible = true;
-
                         }
                         finally
                         {
                             StackLayoutAddRequest.IsVisible = true;
+                            WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                         }
                     }

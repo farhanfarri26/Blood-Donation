@@ -44,7 +44,7 @@ namespace BloodDonation
                 || string.IsNullOrWhiteSpace(BloodGroupValue) || string.IsNullOrWhiteSpace(EntEmail.Text)
                 || string.IsNullOrWhiteSpace(EntPassword.Text))
             {
-                await DisplayAlert("Empty", "Dear User !! \n Please Fill all Entries.", "Cancel");
+                await DisplayAlert("Empty", "Dear User \nPlease Fill all Entries.", "Ok");
             }
             else
             {
@@ -100,7 +100,7 @@ namespace BloodDonation
                                 LblCellNumber.IsVisible = false;
                                 LblEmail.IsVisible = false;
                                 LblExitNumber.IsVisible = false;
-                                await DisplayAlert("Salam ! " + signupClass.FullName.ToUpper(), " Your Account is Successfully Created !! ", "Login");
+                                await DisplayAlert("Salam " + signupClass.FullName.ToUpper(), " Your Account is Successfully Created !! ", "Login");
                                 await Navigation.PopAsync();
                             }
 
@@ -111,8 +111,9 @@ namespace BloodDonation
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
-                            msg = "Request Timeout";
-                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            msg = "Request Timeout.";
+                            await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                                "Retry");
                             await Navigation.PopAsync();
                         }
                         finally

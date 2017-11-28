@@ -55,6 +55,10 @@
             </Grid>
         </StackLayout>
 
+        <StackLayout Padding="6" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <ActivityIndicator x:Name="WaitingLoader" Style="{StaticResource CustomActivityIndicator}"/>
+        </StackLayout>
+        
         <StackLayout Padding="6" Orientation="Vertical" VerticalOptions="Center"
                      AbsoluteLayout.LayoutBounds="0,.5,25,100" AbsoluteLayout.LayoutFlags="PositionProportional">
             <Image x:Name="ImgLeftArrow" Source="LeftArrow.png"/>

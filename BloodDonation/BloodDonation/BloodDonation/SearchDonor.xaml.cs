@@ -27,16 +27,16 @@ namespace BloodDonation
 
         private async void BtnSearchDonor_OnClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(BloodGroupValue))
+            if (string.IsNullOrWhiteSpace(BloodGroupValue) || string.IsNullOrWhiteSpace(CityValue))
             {
-                await DisplayAlert("Empty", "Dear User!! \n Please Fill Entry.", "Cancel");
+                await DisplayAlert("Empty", "Dear User!! \n Please Fill Entry.", "Ok");
             }
             else
             {
                 if (!CrossConnectivity.Current.IsConnected)
                 {
-                    await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection",
-                        "Ok");
+                    await DisplayAlert("Network Error",
+                              "Network connection is off , turn it on and try again", "Ok");
                 }
                 else
                 {
@@ -49,7 +49,8 @@ namespace BloodDonation
         {
             if (!CrossConnectivity.Current.IsConnected)
             {
-                await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+                await DisplayAlert("Network Error",
+                              "Network connection is off , turn it on and try again", "Ok");
             }
             else
             {

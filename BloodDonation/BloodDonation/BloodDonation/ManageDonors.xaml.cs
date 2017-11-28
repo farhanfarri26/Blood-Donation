@@ -28,7 +28,8 @@ namespace BloodDonation
         {
             if (!CrossConnectivity.Current.IsConnected)
             {
-                await DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+                await DisplayAlert("Network Error",
+                              "Network connection is off , turn it on and try again", "Ok");
             }
             else
             {
@@ -48,7 +49,7 @@ namespace BloodDonation
 
                         if (resultdonors == "[]")
                         {
-                            await DisplayAlert("Sorry", "No Record Found!!", "Try Again");
+                            await DisplayAlert("Sorry", "No Record Found.", "Try Again");
                             await Navigation.PopAsync(SendBackButtonPressed());
                         }
                         else
@@ -57,15 +58,15 @@ namespace BloodDonation
                             LvDonors.ItemsSource = namedonors;
                         }
                     }
-                    else
-                    {
-                        await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
-                    }
                 }
-                catch
+                catch(Exception ex)
                 {
                     WaitingLoader.IsRunning = false;
                     WaitingLoader.IsVisible = false;
+                    string msg = ex.ToString();
+                    msg = "Request Timeout.";
+                    await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                        "Retry");
                 }
                 finally
                 {
@@ -99,8 +100,8 @@ namespace BloodDonation
             {
                 if (!CrossConnectivity.Current.IsConnected)
                 {
-                    await DisplayAlert("Network Connection Alert !!",
-                        "No Connection Available!! Turn On Data Connection", "Ok");
+                    await DisplayAlert("Network Error",
+                               "Network connection is off , turn it on and try again", "Ok");
                 }
                 else
                 {
@@ -116,7 +117,7 @@ namespace BloodDonation
                         var httpClient = new HttpClient();
                         var response = httpClient.DeleteAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi/{0}", Id));
 
-                        await DisplayAlert("Dear Donor!!", " Your Donor Request is Successfully Deleted", "OK");
+                        await DisplayAlert("Dear Donor", " Your Donor Request is Successfully Deleted.", "OK");
                         await Navigation.PopAsync();
 
                     }
@@ -125,8 +126,9 @@ namespace BloodDonation
                         WaitingLoader.IsRunning = false;
                         WaitingLoader.IsVisible = false;
                         string msg = ex.ToString();
-                        msg = "Request Timeout";
-                        await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                        msg = "Request Timeout.";
+                        await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                            "Retry");
 
                     }
                     finally
@@ -145,7 +147,7 @@ namespace BloodDonation
                 BtnCancel.IsVisible = false;
             }
         }
-        
+
         private void Cancel_Button_Clicked(object sender, EventArgs e)
         {
             LvDonors.Opacity = 1;
@@ -154,7 +156,7 @@ namespace BloodDonation
             BtnDelete.IsVisible = false;
             BtnCancel.IsVisible = false;
         }
-        
+
         private void LvDonors_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             LvDonors.Opacity = 0.4;

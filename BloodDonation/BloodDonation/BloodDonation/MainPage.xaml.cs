@@ -24,7 +24,6 @@ namespace BloodDonation
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-
         private async void BtnLogin_OnClicked(object sender, EventArgs e)
         {
             string phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
@@ -44,8 +43,8 @@ namespace BloodDonation
                 {
                     if (!CrossConnectivity.Current.IsConnected)
                     {
-                        await DisplayAlert("Network Connection Alert !!",
-                            "No Connection Available!! Turn On Data Connection", "Ok");
+                        await DisplayAlert("Network Error",
+                              "Network connection is off , turn it on and try again", "Ok");
                     }
                     else
                     {
@@ -68,8 +67,8 @@ namespace BloodDonation
                                 {
                                     LblEmpty.IsVisible = false;
                                     LblCellNumber.IsVisible = false;
+                                    LayoutMainPage.IsVisible = true;
                                     LblIncorrect.IsVisible = true;
-                                    //await DisplayAlert("Invalid", "Your Cell Number or Password Did not Match to any account", "Try Again");
                                 }
                                 else
                                 {
@@ -96,18 +95,15 @@ namespace BloodDonation
                                     await Navigation.PushAsync(new Tabbed());
                                 }
                             }
-                            else
-                            {
-                                await DisplayAlert("Error", " Server Error !! Try Later ", "Cancel");
-                            }
                         }
                         catch (Exception ex)
                         {
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
-                            msg = "Request Timeout";
-                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            msg = "Request Timeout.";
+                            await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                                "Retry");
                             LayoutMainPage.IsVisible = true;
                         }
                         finally
@@ -120,22 +116,40 @@ namespace BloodDonation
                 }
             }
         }
-
         private async void BtnSignup_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SignupPage());
         }
 
-        private void BtnForgetLabel_OnTapped(object sender, EventArgs e)
+        private async void BtnForgetLabel_OnTapped(object sender, EventArgs e)
         {
             if (!CrossConnectivity.Current.IsConnected)
             {
-                DisplayAlert("Network Connection Alert !!", "No Connection Available!! Turn On Data Connection", "Ok");
+                await DisplayAlert("Network Error",
+                              "Network connection is off , turn it on and try again", "Ok");
             }
             else
             {
-                Navigation.PushAsync(new ForgetPassword());
+                await Navigation.PushAsync(new ForgetPassword());
             }
+        }
+
+        private async void CreateAccount_Tapped(object sender, EventArgs e)
+        {
+            await ImgCreateAccount.FadeTo(0.8, 100);
+            ImgCreateAccount.Opacity = 1;
+            await Navigation.PushAsync(new SignupPage());
+        }
+
+        private async void Login_Tapped(object sender, EventArgs e)
+        {
+            await ImgLogin.FadeTo(0.8, 100);
+            ImgLogo.IsVisible = false;
+            ImgCreateAccount.IsVisible = false;
+            ImgLogin.IsVisible = false;
+            Sclview.IsVisible = true;
+            LayoutMainPage.IsVisible = true;
+            ImgLogin.Opacity = 1;
         }
     }
 }

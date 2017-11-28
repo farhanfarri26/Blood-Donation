@@ -34,9 +34,9 @@
                                         <Label  Text="Name" Grid.Row="0" Grid.Column="1" />
                                         <Label Text="{Binding FullName}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="0" Grid.Column="2" />
                                         <Label Text="Cell #" Grid.Row="1" Grid.Column="1"/>
-                                        <Label Text="{Binding CellNumber}" TextColor="#7f7f7f" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
+                                        <Label Text="{Binding CellNumber}" TextColor="#424949" FontSize="Medium" Grid.Row="1" Grid.Column="2"/>
                                         <Label Text="From" Grid.Row="2" Grid.Column="1"/>
-                                        <Label Text="{Binding From}" TextColor="#7f7f7f" FontSize="Small" Grid.Row="2" Grid.Column="2"/>
+                                        <Label Text="{Binding From}" TextColor="#424949" FontSize="Small" Grid.Row="2" Grid.Column="2"/>
                                         <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"/>
 
                                     </Grid>

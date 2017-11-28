@@ -35,7 +35,7 @@ namespace BloodDonation
                 || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
                 || string.IsNullOrWhiteSpace(BloodGroupValue))
             {
-                await DisplayAlert("Empty", "Dear Donor!! \n Please Fill all Entries.", "Cancel");
+                await DisplayAlert("Empty", "Dear Donor \nPlease Fill all Entries.", "Ok");
             }
             else
             {
@@ -47,8 +47,8 @@ namespace BloodDonation
                 {
                     if (!CrossConnectivity.Current.IsConnected)
                     {
-                        await DisplayAlert("Network Connection Alert !!",
-                            "No Connection Available!! Turn On Data Connection", "Ok");
+                        await DisplayAlert("Network Error",
+                            "Network connection is off , turn it on and try again", "Ok");
                     }
                     else
                     {
@@ -79,7 +79,7 @@ namespace BloodDonation
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
                             await httpClient.PostAsync("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi", httpContent);
 
-                            await DisplayAlert("Dear Donor!!", " Your Request is Successfully Added", "OK");
+                            await DisplayAlert("Dear " + data[0].FullName.ToUpper(), addDonorClass.FullName.ToUpper() + " is added as Blood Donor from your account.", "Ok");
                             await Navigation.PopAsync();
                         }
                         catch (Exception ex)
@@ -87,14 +87,15 @@ namespace BloodDonation
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
-                            msg = "Request Timeout";
-                            await DisplayAlert("Sorry", "Cant Process due to " + msg, "OK");
+                            msg = "Request Timeout.";
+                            await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
+                                "Retry");
                             StackLayoutAddDonor.IsVisible = true;
-
                         }
                         finally
                         {
                             StackLayoutAddDonor.IsVisible = true;
+                            WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                         }
                     }

@@ -60,7 +60,6 @@
                 <Picker x:Name="PkrSearchRequestBloodGroup" Title="My Blood Group" SelectedIndexChanged="PkrSearchRequestBloodGroup_SelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">
                     <Picker.Items>
-                        <x:String>Dont Know</x:String>
                         <x:String>A positive</x:String>
                         <x:String>A negative</x:String>
                         <x:String>B positive</x:String>

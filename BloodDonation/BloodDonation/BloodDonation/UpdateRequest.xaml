@@ -13,7 +13,7 @@
                          Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
                     <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Entry x:Name="EntFullName" Placeholder="Enter Full Name" Style="{StaticResource CustomEntryStyle}"/>
+                    <Entry x:Name="EntFullName" Placeholder="Example( Muhammad Ali )" Style="{StaticResource CustomEntryStyle}"/>
 
                     <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
@@ -68,7 +68,6 @@
                     <Picker x:Name="PkrAddRequestBloodGroup" Title="Your Blood Group" SelectedIndexChanged="PkrAddRequestBloodGroup_OnSelectedIndexChanged" 
                         Style="{StaticResource CustomEntryStyle}">
                         <Picker.Items>
-                            <x:String>Dont Know</x:String>
                             <x:String>A positive</x:String>
                             <x:String>A negative</x:String>
                             <x:String>B positive</x:String>
