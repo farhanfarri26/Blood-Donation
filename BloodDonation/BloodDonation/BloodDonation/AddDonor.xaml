@@ -93,6 +93,21 @@
                     </Picker.Items>
                 </Picker>
 
+                <Grid Margin="30,10,30,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="0.5*"/>
+                        <ColumnDefinition  Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Availabilty" TextColor="#d21d1d" Grid.Row="0" Grid.Column="0"/>
+                    <Switch x:Name="AvlSwitch" IsToggled="True" Grid.Row="0" Grid.Column="1" IsEnabled="true" Toggled="Switch_Toggled"
+                            HorizontalOptions="EndAndExpand"/>
+                </Grid>
+
+
                 <Button Text="Add" x:Name="BtnAddDonor" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnAddDonor_OnClicked"/>
 

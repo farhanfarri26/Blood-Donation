@@ -20,6 +20,7 @@ namespace BloodDonation
         private string CityValue;
         private string AreaValue;
         private string BloodGroupValue;
+        private string Available;
 
         public AddDonor()
         {
@@ -66,6 +67,7 @@ namespace BloodDonation
                             BloodGroup = BloodGroupValue,
                             AddedBy = data[0].CellNumber,
                             TodayDate = dateValue.ToString(),
+                            FutureUse = Available
                         };
                         try
                         {
@@ -116,6 +118,18 @@ namespace BloodDonation
         private void PkrAddDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             BloodGroupValue = PkrAddDonorBloodGroup.Items[PkrAddDonorBloodGroup.SelectedIndex];
+        }
+
+        private void Switch_Toggled(object sender, ToggledEventArgs e)
+        {
+            if (AvlSwitch.IsToggled == true)
+            {
+                Available = "Available";
+            }
+            else
+            {
+                Available = "Sleep";
+            }
         }
     }
 }

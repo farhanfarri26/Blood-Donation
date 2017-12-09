@@ -10,6 +10,8 @@ using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System;
+using Plugin.Share;
+using Plugin.Share.Abstractions;
 
 namespace BloodDonation
 {
@@ -131,12 +133,58 @@ namespace BloodDonation
                 }
             }
         }
-        private void LvDonors_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void LvDonors_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            string phonenumber = ((AddDonorClass)LvDonors.SelectedItem).CellNumber;
-            var phoneDialer = CrossMessaging.Current.PhoneDialer;
-            if (phoneDialer.CanMakePhoneCall)
-                phoneDialer.MakePhoneCall(phonenumber);
+            var actionSheet = await DisplayActionSheet("", "Cancel", null, "Call", "Message", "Share");
+            switch (actionSheet)
+            {
+                case "Cancel":
+                    // Do Something when 'Cancel' Button is pressed
+                    break;
+
+                case "Call":
+
+                    string phonenumber = ((AddDonorClass)LvDonors.SelectedItem).CellNumber;
+                    var phoneDialer = CrossMessaging.Current.PhoneDialer;
+                    if (phoneDialer.CanMakePhoneCall)
+                        phoneDialer.MakePhoneCall(phonenumber);
+                    break;
+
+                case "Message":
+
+                    string number = ((AddDonorClass)LvDonors.SelectedItem).CellNumber;
+                    var smsMessenger = CrossMessaging.Current.SmsMessenger;
+                    if (smsMessenger.CanSendSms)
+                        smsMessenger.SendSms(number, "\n\n\n\n -From Blood Donation PK");
+                    break;
+
+                case "Share":
+
+                    var fullname = ((AddDonorClass)LvDonors.SelectedItem).FullName;
+                    var cellnumber = ((AddDonorClass)LvDonors.SelectedItem).CellNumber;
+                    var bloodgroup = ((AddDonorClass)LvDonors.SelectedItem).BloodGroup;
+                    var area = ((AddDonorClass)LvDonors.SelectedItem).Area;
+                    var city = ((AddDonorClass)LvDonors.SelectedItem).City;
+
+                    await CrossShare.Current.Share(new ShareMessage
+                    {
+                        //Text = "My name is " + fullname.ToUpper() +
+                        //       " and my Blood Group is " + bloodgroup.ToUpper() +
+                        //       ". I am from " + area.ToUpper() + " " + city.ToUpper() +
+                        //       ". Contact me on this number " + cellnumber + "\n\n" +
+
+                        Text = "-Donor Detail-" + "\n\n" +
+                               "Name: '" + fullname.ToUpper() + "'\n" +
+                               "Cell: '" + cellnumber.ToUpper() + "'\n" +
+                               "Blood: '" + bloodgroup.ToUpper() + "'\n" +
+                               "Address: '" + area.ToUpper() + " " + city.ToUpper() + "'\n\n" +
+
+                               "For more detail download the app from this link",
+                        Title = "Blood Donation PK",
+                        Url = "https://www.mysite.com/mobile"
+                    });
+                    break;
+            }
         }
     }
 }

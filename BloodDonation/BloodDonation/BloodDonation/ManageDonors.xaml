@@ -47,8 +47,9 @@
                                         <Label Text="{Binding City}" TextColor="#424949" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
                                         <Label Text="Added by" Grid.Row="6" Grid.Column="0"/>
                                         <Label Text="{Binding AddedBy}" TextColor="#424949" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
-                                        <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                        <Label Text="Click to Modify" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+                                        <Label Text="Status" Grid.Row="7" Grid.Column="0"/>
+                                        <Label Text="{Binding FutureUse}" TextColor="#29B400" FontSize="Medium" Grid.Row="7" Grid.Column="1"/>
+                                        <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
 
                                     </Grid>
                                 </ViewCell.View>
@@ -56,14 +57,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
-                <Button x:Name="BtnCall" Text="Call" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Call_Button_Clicked"/>
-                <Button x:Name="BtnUpdate" Text="Update" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Update_Button_Clicked"/>
-                <Button x:Name="BtnDelete" Text="Delete" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Delete_Button_Clicked"/>
-                <Button x:Name="BtnCancel" Text="Cancel" Style="{StaticResource CustomButtonTappedStyle}" Clicked="Cancel_Button_Clicked"/>
-
             </StackLayout>
         </AbsoluteLayout>
-
     </ContentPage.Content>
 </ContentPage>

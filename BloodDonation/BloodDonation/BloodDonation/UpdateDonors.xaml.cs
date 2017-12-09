@@ -20,19 +20,44 @@ namespace BloodDonation
         private string CityValue;
         private string AreaValue;
         private string BloodGroupValue;
-        private int id;
-        private string date;
+        private string Available;
+        //private int id;
+        //private string date;
+        private AddDonorClass addDonorClass;
 
         public UpdateRequests()
         {
             InitializeComponent();
         }
 
-        public UpdateRequests(int id, string date)
+        //public UpdateRequests(int id, string date)
+        //{
+        //    InitializeComponent();
+        //    this.id = id;
+        //    this.date = date;
+        //}
+
+        public UpdateRequests(AddDonorClass addDonorClass)
         {
             InitializeComponent();
-            this.id = id;
-            this.date = date;
+            this.addDonorClass = addDonorClass;
+            RecentData();
+        }
+
+        private void RecentData()
+        {
+            EntFullName.Text = addDonorClass.FullName;
+            EntCellNumber.Text = addDonorClass.CellNumber;
+            if (addDonorClass.FutureUse == "Available")
+            {
+                Available = "Available";
+                AvlSwitch.IsToggled = true;
+            }
+            else
+            {
+                Available = "Sleep";
+                AvlSwitch.IsToggled = false;
+            }
         }
 
         private async void BtnUpdateDonor_Clicked(object sender, EventArgs e)
@@ -64,14 +89,15 @@ namespace BloodDonation
                     {
                         AddDonorClass updatedonor = new AddDonorClass()
                         {
-                            ID = id,
+                            ID = addDonorClass.ID,
                             FullName = EntFullName.Text,
                             CellNumber = EntCellNumber.Text,
                             City = CityValue,
                             Area = AreaValue,
                             BloodGroup = BloodGroupValue,
                             AddedBy = data[0].CellNumber,
-                            TodayDate = date,
+                            TodayDate = addDonorClass.TodayDate,
+                            FutureUse = Available,
                         };
                         try
                         {
@@ -83,7 +109,7 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(updatedonor);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi/{0}", id), httpContent);
+                            var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi/{0}", addDonorClass.ID), httpContent);
 
                             if (response.IsSuccessStatusCode)
                             {
@@ -128,6 +154,18 @@ namespace BloodDonation
         private void PkrAddDonorBloodGroup_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             BloodGroupValue = PkrAddDonorBloodGroup.Items[PkrAddDonorBloodGroup.SelectedIndex];
+        }
+
+        private void AvlSwitch_Toggled(object sender, ToggledEventArgs e)
+        {
+            if (AvlSwitch.IsToggled == true)
+            {
+                Available = "Available";
+            }
+            else
+            {
+                Available = "Sleep";
+            }
         }
     }
 }

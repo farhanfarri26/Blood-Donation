@@ -17,47 +17,47 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <ViewCell.View>
-                                    <Grid Margin="10" RowSpacing="3" ColumnSpacing="0">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="Auto"/>
+                                <Grid Margin="10" RowSpacing="3" ColumnSpacing="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
 
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition  Width="0.35*"/>
-                                            <ColumnDefinition  Width="*"/>
-                                        </Grid.ColumnDefinitions>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition  Width="0.35*"/>
+                                        <ColumnDefinition  Width="0.15*"/>
+                                        <ColumnDefinition  Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
 
-                                        <Label Text="Donor Detail" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" TextColor="White" BackgroundColor="#d21d1d" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                        <Label Text="Name " Grid.Row="1" Grid.Column="0"/>
-                                        <Label Text="{Binding FullName}" TextColor="#424949" FontSize="Medium" Grid.Row="1" Grid.Column="1"/>
-                                        <Label Text="Blood Group" Grid.Row="2" Grid.Column="0"/>
-                                        <Label Text="{Binding BloodGroup}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="2" Grid.Column="1"/>
-                                        <Label Text="Cell #" Grid.Row="3" Grid.Column="0"/>
-                                        <Label Text="{Binding CellNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="3" Grid.Column="1"/>
-                                        <Label Text="Area" Grid.Row="4" Grid.Column="0"/>
-                                        <Label Text="{Binding Area}" TextColor="#424949" FontSize="Small" Grid.Row="4" Grid.Column="1"/>
-                                        <Label Text="City" Grid.Row="5" Grid.Column="0"/>
-                                        <Label Text="{Binding City}" TextColor="#424949" FontSize="Medium" Grid.Row="5" Grid.Column="1"/>
-                                        <Label Text="Added by" Grid.Row="6" Grid.Column="0"/>
-                                        <Label Text="{Binding AddedBy}" TextColor="#424949" FontSize="Small" Grid.Row="6" Grid.Column="1"/>
-                                        <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                        <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
-
-                                    </Grid>
-                                </ViewCell.View>
+                                    <Label Text="Donor Detail" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" TextColor="White" BackgroundColor="#d21d1d" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                                    <Label Text="Name " Grid.Row="1" Grid.Column="0"/>
+                                    <Label Text="{Binding FullName}" TextColor="#424949" FontSize="Medium" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="Blood Group" Grid.Row="2" Grid.Column="0"/>
+                                    <Label Text="{Binding BloodGroup}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="Cell #" Grid.Row="3" Grid.Column="0"/>
+                                    <Label Text="{Binding CellNumber}" TextColor="#d21d1d" FontSize="Medium" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="Area" Grid.Row="4" Grid.Column="0"/>
+                                    <Label Text="{Binding Area}" TextColor="#424949" FontSize="Small" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="City" Grid.Row="5" Grid.Column="0"/>
+                                    <Label Text="{Binding City}" TextColor="#424949" FontSize="Medium" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="Added by" Grid.Row="6" Grid.Column="0"/>
+                                    <Label Text="{Binding AddedBy}" TextColor="#424949" FontSize="Small" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="Status" Grid.Row="7" Grid.Column="0"/>
+                                    <Label Text="{Binding FutureUse}"  TextColor="#29B400" FontSize="Medium" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                    <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3"/>
+                                </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                
             </StackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>

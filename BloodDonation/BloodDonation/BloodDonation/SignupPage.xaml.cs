@@ -78,6 +78,7 @@ namespace BloodDonation
 
                         try
                         {
+                            ScrollViewSignup.IsVisible = false;
                             StackLayoutSignup.IsVisible = false;
                             WaitingLoader.IsRunning = true;
                             WaitingLoader.IsVisible = true;
@@ -107,6 +108,7 @@ namespace BloodDonation
                         }
                         catch (Exception ex)
                         {
+                            ScrollViewSignup.IsVisible = false;
                             StackLayoutSignup.IsVisible = true;
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
@@ -118,6 +120,7 @@ namespace BloodDonation
                         }
                         finally
                         {
+                            ScrollViewSignup.IsVisible = true;
                             StackLayoutSignup.IsVisible = true;
                             WaitingLoader.IsVisible = false;
                         }
@@ -129,7 +132,7 @@ namespace BloodDonation
                 }
             }
         }
-        
+
         private void PkrSignupCity_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             CityValue = PkrSignupCity.Items[PkrSignupCity.SelectedIndex];

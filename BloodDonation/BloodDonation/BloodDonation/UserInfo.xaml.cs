@@ -64,7 +64,7 @@ namespace BloodDonation
             }
         }
 
-        private void LvUserInfo_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new UpdateUserInfo());
         }

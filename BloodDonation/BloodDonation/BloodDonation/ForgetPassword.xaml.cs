@@ -36,12 +36,16 @@ namespace BloodDonation
 
             if (string.IsNullOrEmpty(EntCellNumber.Text))
             {
+                LblNotFound.IsVisible = false;
+                LblRegexNumber.IsVisible = false;
                 LblCellNumber.IsVisible = true;
             }
             else
             {
                 if (!Regex.IsMatch(phone, phonepattern))
                 {
+                    LblNotFound.IsVisible = false;
+                    LblCellNumber.IsVisible = false;
                     LblRegexNumber.IsVisible = true;
                 }
                 else
@@ -57,6 +61,9 @@ namespace BloodDonation
 
                         try
                         {
+                            LblNotFound.IsVisible = false;
+                            LblCellNumber.IsVisible = false;
+                            LblRegexNumber.IsVisible = false;
                             LayoutCellNumber.IsVisible = false;
                             WaitingLoader.IsRunning = true;
                             WaitingLoader.IsVisible = true;
@@ -69,6 +76,8 @@ namespace BloodDonation
                                 var result = response.Content.ReadAsStringAsync().Result;
                                 if (result == "[]")
                                 {
+                                    LblCellNumber.IsVisible = false;
+                                    LblRegexNumber.IsVisible = false;
                                     LayoutCellNumber.IsVisible = true;
                                     LblNotFound.IsVisible = true;
                                 }

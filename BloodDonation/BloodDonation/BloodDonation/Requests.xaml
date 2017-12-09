@@ -52,8 +52,6 @@
                                         <Label Text="Pick and Drop" Grid.Row="7" Grid.Column="0"/>
                                         <Label Text="{Binding FutureUse}" TextColor="#d21d1d" Margin="5,0,0,0" FontSize="Small" Grid.Row="7" Grid.Column="1"/>
                                         <Label Text="{Binding TodayDate, StringFormat='{0:dd MMM yyyy HH:mm}'}"  HorizontalTextAlignment="End" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                        <Label Text="Click to Call" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="#d21d1d" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2"/>
-
                                     </Grid>
                                 </ViewCell.View>
                             </ViewCell>

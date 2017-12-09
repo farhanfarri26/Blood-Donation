@@ -10,6 +10,8 @@ using Plugin.Messaging;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Net;
+using Plugin.Share;
+using Plugin.Share.Abstractions;
 
 namespace BloodDonation
 {
@@ -135,12 +137,53 @@ namespace BloodDonation
             }
         }
 
-        private void LvRequests_OnItemTapped(object sender, ItemTappedEventArgs e)
+        private async void LvRequests_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            string phonenumber = ((AddRequestClass)LvRequests.SelectedItem).CellNumber;
-            var phoneDialer = CrossMessaging.Current.PhoneDialer;
-            if (phoneDialer.CanMakePhoneCall)
-                phoneDialer.MakePhoneCall(phonenumber);
+            var actionSheet = await DisplayActionSheet("", "Cancel", null, "Call", "Message", "Share");
+            switch (actionSheet)
+            {
+                case "Cancel":
+                    // Do Something when 'Cancel' Button is pressed
+                    break;
+
+                case "Call":
+
+                    string phonenumber = ((AddRequestClass)LvRequests.SelectedItem).CellNumber;
+                    var phoneDialer = CrossMessaging.Current.PhoneDialer;
+                    if (phoneDialer.CanMakePhoneCall)
+                        phoneDialer.MakePhoneCall(phonenumber);
+                    break;
+
+                case "Message":
+
+                    string number = ((AddRequestClass)LvRequests.SelectedItem).CellNumber;
+                    var smsMessenger = CrossMessaging.Current.SmsMessenger;
+                    if (smsMessenger.CanSendSms)
+                        smsMessenger.SendSms(number, "\n\n\n\n -From Blood Donation PK");
+                    break;
+
+                case "Share":
+
+                    var fullname = ((AddRequestClass)LvRequests.SelectedItem).FullName;
+                    var cellnumber = ((AddRequestClass)LvRequests.SelectedItem).CellNumber;
+                    var bloodgroup = ((AddRequestClass)LvRequests.SelectedItem).BloodGroup;
+                    var hospital = ((AddRequestClass)LvRequests.SelectedItem).Hospitals;
+                    var city = ((AddRequestClass)LvRequests.SelectedItem).City;
+
+                    await CrossShare.Current.Share(new ShareMessage
+                    {
+                        Text = "-Blood Required-" + "\n\n" +
+                               "Name: '" + fullname.ToUpper() + "'\n" +
+                               "Cell: '" + cellnumber.ToUpper() + "'\n" +
+                               "Blood: '" + bloodgroup.ToUpper() + "'\n" +
+                               "Address: '" + hospital.ToUpper() + " " + city.ToUpper() + "'\n\n" +
+
+                               "For more detail download the app from this link",
+                        Title = "Blood Donation PK",
+                        Url = "https://www.mysite.com/mobile"
+                    });
+                    break;
+            }
         }
     }
 }

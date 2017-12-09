@@ -19,19 +19,28 @@ namespace BloodDonation
         private string CityValue;
         private string HospitalValue;
         private string BloodGroupValue;
-        private int id;
-        private string date;
+        private AddRequestClass addRequestClass;
+
+        //private int id;
+        //private string date;
+
 
         public UpdateRequest()
         {
             InitializeComponent();
         }
 
-        public UpdateRequest(int id, string date)
+        public UpdateRequest(AddRequestClass addRequestClass)
         {
             InitializeComponent();
-            this.id = id;
-            this.date = date;
+            this.addRequestClass = addRequestClass;
+            RecentData();
+        }
+
+        private void RecentData()
+        {
+            EntFullName.Text = addRequestClass.FullName;
+            EntCellNumber.Text = addRequestClass.CellNumber;
         }
 
         private async void BtnUpdateRequest_Clicked(object sender, EventArgs e)
@@ -63,16 +72,29 @@ namespace BloodDonation
                     }
                     else
                     {
+                        string pickdrop;
+
+                        var ans = await DisplayAlert("Pick & Drop", "Will you provide pick & drop to donor ?", "Yes", "No");
+                        if (ans == true)
+                        {
+                            pickdrop = "Yes";
+                        }
+                        else
+                        {
+                            pickdrop = "No";
+                        }
+
                         AddRequestClass updaterequest = new AddRequestClass()
                         {
-                            ID = id,
+                            ID = addRequestClass.ID,
                             FullName = EntFullName.Text,
                             CellNumber = EntCellNumber.Text,
                             City = CityValue,
                             Hospitals = HospitalValue,
                             BloodGroup = BloodGroupValue,
                             AddedBy = data[0].CellNumber,
-                            TodayDate = date,
+                            TodayDate = addRequestClass.TodayDate,
+                            FutureUse = pickdrop,
                         };
                         try
                         {
@@ -84,7 +106,7 @@ namespace BloodDonation
                             var json = JsonConvert.SerializeObject(updaterequest);
                             HttpContent httpContent = new StringContent(json);
                             httpContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                            var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi/{0}", id), httpContent);
+                            var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/RequestApi/{0}", addRequestClass.ID), httpContent);
 
                             if (response.IsSuccessStatusCode)
                             {

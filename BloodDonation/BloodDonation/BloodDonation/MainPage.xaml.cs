@@ -53,6 +53,7 @@ namespace BloodDonation
 
                         try
                         {
+                            Sclview.IsVisible = false;
                             LayoutMainPage.IsVisible = false;
                             WaitingLoader.IsRunning = true;
                             WaitingLoader.IsVisible = true;
@@ -104,10 +105,12 @@ namespace BloodDonation
                             msg = "Request Timeout.";
                             await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
                                 "Retry");
+                            Sclview.IsVisible = false;
                             LayoutMainPage.IsVisible = true;
                         }
                         finally
                         {
+                            Sclview.IsVisible = false;
                             LayoutMainPage.IsVisible = true;
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;

@@ -16,5 +16,7 @@ namespace BloodDonation.Models
         public string BloodGroup { get; set; }
         public string TodayDate { get; set; }
         public string AddedBy { get; set; }
+        public string FutureUse { get; set; }
+
     }
 }

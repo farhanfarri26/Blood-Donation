@@ -89,6 +89,7 @@ namespace BloodDonation
                         httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                         var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/{0}", updateinfo.Id), httpContent);
 
+                        
                         LocalDB localDB = new LocalDB()
                         {
                             _ID = data[0]._ID,
@@ -102,7 +103,10 @@ namespace BloodDonation
                             TodayDate = data[0].TodayDate,
                         };
 
-                        dB.UpdateDB(localDB);
+                        //Deleting Data
+                        dB.DeleteDB(localDB);
+                        //Inserting Edited Data
+                        dB.AddDB(localDB);
 
                         if (response.IsSuccessStatusCode)
                         {

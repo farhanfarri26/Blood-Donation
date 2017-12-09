@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BloodDonation.Models
 {
-    class AddRequestClass
+    public class AddRequestClass
     {
         public int ID { get; set; }
         public string FullName { get; set; }
@@ -17,7 +17,6 @@ namespace BloodDonation.Models
         public string TodayDate { get; set; }
         public string AddedBy { get; set; }
         public string FutureUse { get; set; }
-
 
     }
 }
