@@ -46,7 +46,7 @@ namespace BloodDonation
             }
             else
             {
-                Available = "Sleep";
+                Available = "Not Available";
                 AvlSwitch.IsToggled = false;
             }
         }
@@ -159,7 +159,7 @@ namespace BloodDonation
             }
             else
             {
-                Available = "Sleep";
+                Available = "Not Available";
             }
         }
     }

@@ -128,7 +128,7 @@ namespace BloodDonation
             }
             else
             {
-                Available = "Sleep";
+                Available = "Not Available";
             }
         }
     }
