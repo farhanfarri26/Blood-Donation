@@ -149,6 +149,7 @@ namespace BloodDonation
                         }
                         catch (Exception ex)
                         {
+                            LayoutCellNumber.IsVisible = true;
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                             string msg = ex.ToString();
@@ -159,7 +160,6 @@ namespace BloodDonation
                         }
                         finally
                         {
-                            //LayoutChangePassword.IsVisible = true;
                             WaitingLoader.IsRunning = false;
                             WaitingLoader.IsVisible = false;
                         }

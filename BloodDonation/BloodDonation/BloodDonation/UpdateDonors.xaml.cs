@@ -21,21 +21,12 @@ namespace BloodDonation
         private string AreaValue;
         private string BloodGroupValue;
         private string Available;
-        //private int id;
-        //private string date;
         private AddDonorClass addDonorClass;
 
         public UpdateRequests()
         {
             InitializeComponent();
         }
-
-        //public UpdateRequests(int id, string date)
-        //{
-        //    InitializeComponent();
-        //    this.id = id;
-        //    this.date = date;
-        //}
 
         public UpdateRequests(AddDonorClass addDonorClass)
         {
@@ -126,11 +117,15 @@ namespace BloodDonation
                             msg = "Request Timeout.";
                             await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
                                 "Retry");
+                            StackLayoutAddDonor.IsVisible = true;
+
                         }
                         finally
                         {
                             StackLayoutAddDonor.IsVisible = true;
                             WaitingLoader.IsVisible = false;
+                            WaitingLoader.IsRunning = false;
+
                         }
                     }
                 }

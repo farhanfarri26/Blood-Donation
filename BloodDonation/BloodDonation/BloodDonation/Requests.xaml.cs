@@ -128,6 +128,8 @@ namespace BloodDonation
                     msg = "Request Timeout.";
                     await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
                         "Retry");
+                    await Navigation.PopAsync();
+
                 }
                 finally
                 {

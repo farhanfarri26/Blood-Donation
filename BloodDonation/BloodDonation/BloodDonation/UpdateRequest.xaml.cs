@@ -123,11 +123,15 @@ namespace BloodDonation
                             msg = "Request Timeout.";
                             await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
                                 "Retry");
+                            StackLayoutAddRequest.IsVisible = true;
+
                         }
                         finally
                         {
                             StackLayoutAddRequest.IsVisible = true;
                             WaitingLoader.IsVisible = false;
+                            WaitingLoader.IsRunning = false;
+
                         }
                     }
                 }

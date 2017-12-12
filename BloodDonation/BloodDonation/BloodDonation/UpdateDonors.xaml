@@ -102,7 +102,7 @@
                             <ColumnDefinition  Width="0.5*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Label Text="Availabilty" TextColor="#d21d1d" Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="Are You Available ?" TextColor="#d21d1d" Grid.Row="0" Grid.Column="0"/>
                         <Switch x:Name="AvlSwitch" Grid.Row="0" Grid.Column="1" Toggled="AvlSwitch_Toggled"
                             HorizontalOptions="EndAndExpand"/>
                     </Grid>

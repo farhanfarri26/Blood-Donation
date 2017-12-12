@@ -125,6 +125,8 @@ namespace BloodDonation
                     msg = "Request Timeout.";
                     await DisplayAlert("Server Error", "Your Request Cant Be Proceed Due To " + msg + " Please Try Again",
                         "Retry");
+                    await Navigation.PopAsync();
+
                 }
                 finally
                 {
@@ -168,11 +170,6 @@ namespace BloodDonation
 
                     await CrossShare.Current.Share(new ShareMessage
                     {
-                        //Text = "My name is " + fullname.ToUpper() +
-                        //       " and my Blood Group is " + bloodgroup.ToUpper() +
-                        //       ". I am from " + area.ToUpper() + " " + city.ToUpper() +
-                        //       ". Contact me on this number " + cellnumber + "\n\n" +
-
                         Text = "-Donor Detail-" + "\n\n" +
                                "Name: '" + fullname.ToUpper() + "'\n" +
                                "Cell: '" + cellnumber.ToUpper() + "'\n" +

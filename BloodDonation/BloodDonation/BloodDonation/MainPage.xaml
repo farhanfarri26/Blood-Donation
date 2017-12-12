@@ -48,7 +48,7 @@
                 </Label>
 
                 <Label Text="Dont have an account ?" Style="{StaticResource CustomLabelStyle}"/>
-                <Button x:Name="BtnSignup" Text="Create an Account" Style="{StaticResource CustomButtonStyleBottomMargin}"
+                <Button x:Name="BtnSignup" Text="SignUp" Style="{StaticResource CustomButtonStyleBottomMargin}"
                         Clicked="BtnSignup_OnClicked"/>
 
             </StackLayout>
