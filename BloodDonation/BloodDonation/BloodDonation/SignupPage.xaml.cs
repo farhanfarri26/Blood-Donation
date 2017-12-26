@@ -157,7 +157,6 @@ namespace BloodDonation
                     else
                     {
                         await DisplayAlert("", " Your Cell Number is Verified ", "Next");
-                        HeaderImageSignup.IsVisible = false;
                         LayoutCodeSection.IsVisible = false;
                         ScrollViewDetails.IsVisible = true;
                     }

@@ -135,9 +135,6 @@ namespace BloodDonation
 
                         try
                         {
-                            LblNotFound.IsVisible = false;
-                            LblCellNumber.IsVisible = false;
-                            LblRegexNumber.IsVisible = false;
                             LayoutCellNumber.IsVisible = false;
                             WaitingLoader.IsRunning = true;
                             WaitingLoader.IsVisible = true;
@@ -196,6 +193,7 @@ namespace BloodDonation
                 if (String.IsNullOrEmpty(EntRecoveryCode.Text))
                 {
                     LblRecoveryCode.IsVisible = true;
+                    LblRecoveryCodeNotFound.IsVisible = false;
                 }
                 else
                 {
@@ -337,6 +335,7 @@ namespace BloodDonation
                     {
                         LblNewPassword.IsVisible = true;
                         LblConfirmPassword.IsVisible = true;
+                        LblCode.IsVisible = false;
                     }
                     else
                     {
@@ -354,6 +353,8 @@ namespace BloodDonation
 
                             if (EntCode.Text != datacheck[0].FutureUse)
                             {
+                                LblNewPassword.IsVisible = false;
+                                LblConfirmPassword.IsVisible = false;
                                 ChangePasswordLayer.IsVisible = true;
                                 LblCode.IsVisible = true;
                             }

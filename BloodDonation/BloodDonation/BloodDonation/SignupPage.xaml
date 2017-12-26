@@ -9,10 +9,10 @@
 
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-        <Image x:Name="HeaderImageSignup" Source="signuplogo.png"/>
-
         <StackLayout x:Name="LayoutCellNumber" IsVisible="True" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-            <StackLayout VerticalOptions="CenterAndExpand">
+            <StackLayout Margin="0,20,0,0" Orientation="Vertical">
+                <Image x:Name="HeaderCellNumberSignup" Source="signuplogo.png"/>
+
                 <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntCellNumber" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblInvalidCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
@@ -25,10 +25,10 @@
         </StackLayout>
 
         <ScrollView x:Name="ScrollViewDetails" IsVisible="False" VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-            <StackLayout x:Name="StackLayoutSignup" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
+            <StackLayout x:Name="StackLayoutSignup"  Margin="0,20,0,0" Orientation="Vertical" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"
                          Style="{StaticResource CustomStackLayoutEnteriesStyle}">
 
-                <Image Source="signuplogo.png"/>
+                <Image x:Name="HeaderDetailSignup" Source="signuplogo.png"/>
 
                 <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                 <Entry x:Name="EntFullName" Placeholder="Example( Muhammad Ali )" Style="{StaticResource CustomEntryStyle}"/>
@@ -123,9 +123,11 @@
         </ScrollView>
 
         <StackLayout x:Name="LayoutCodeSection" IsVisible="False" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
-            <StackLayout VerticalOptions="CenterAndExpand">
+            <StackLayout Margin="0,20,0,0" Orientation="Vertical">
+                <Image x:Name="HeaderCodeSignup" Source="signuplogo.png"/>
+
                 <Label Text="Verify Your Cell Number "  Style="{StaticResource CustomLabelEntryStyle}"/>
-                <Entry x:Name="EntVerificationCode" Placeholder="Enter your Code" Style="{StaticResource CustomEntryStyle}"/>
+                <Entry x:Name="EntVerificationCode" Placeholder="Enter your Code" Keyboard="Telephone" Style="{StaticResource CustomEntryStyle}"/>
                 <Label x:Name="LblVerificationCode" Text="Field is Empty !" Style="{StaticResource CustomUnderLabelStyle}"/>
                 <Label x:Name="LblCodeNotFound" Text="Code is incorrect !" Style="{StaticResource CustomUnderLabelStyle}"/>
 

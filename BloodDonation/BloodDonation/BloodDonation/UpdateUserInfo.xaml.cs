@@ -32,19 +32,15 @@ namespace BloodDonation
             var data = dB.GetDB().ToList();
 
             EntFullName.Text = data[0].FullName;
-            EntCellNumber.Text = data[0].CellNumber;
             EntEmail.Text = data[0].Email;
         }
 
         private async void BtnUpdateInfo_Clicked(object sender, EventArgs e)
         {
-            String phone = EntCellNumber.Text;
             var email = EntEmail.Text;
             var emailpattern = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-            String phonepattern = "^((\\+92-?)|0)?[0-9]{10}$";
 
-            if (string.IsNullOrWhiteSpace(EntFullName.Text) || string.IsNullOrWhiteSpace(EntCellNumber.Text)
-                || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
+            if (string.IsNullOrWhiteSpace(EntFullName.Text) || string.IsNullOrWhiteSpace(CityValue) || string.IsNullOrWhiteSpace(AreaValue)
                 || string.IsNullOrWhiteSpace(BloodGroupValue) || string.IsNullOrWhiteSpace(EntEmail.Text))
             {
                 await DisplayAlert("Empty", "Dear User \nPlease Fill all Entries.", "Ok");
@@ -54,11 +50,7 @@ namespace BloodDonation
                 HandleDB dB = new HandleDB();
                 var data = dB.GetDB().ToList();
 
-                if (!Regex.IsMatch(phone, phonepattern))
-                {
-                    LblCellNumber.IsVisible = true;
-                }
-                else if (!Regex.IsMatch(email, emailpattern))
+                if (!Regex.IsMatch(email, emailpattern))
                 {
                     LblEmail.IsVisible = true;
                 }
@@ -68,7 +60,7 @@ namespace BloodDonation
                     {
                         Id = data[0]._ID,
                         FullName = EntFullName.Text,
-                        CellNumber = EntCellNumber.Text,
+                        CellNumber = data[0].CellNumber,
                         City = CityValue,
                         Area = AreaValue,
                         BloodGroup = BloodGroupValue,
@@ -95,7 +87,7 @@ namespace BloodDonation
                         {
                             _ID = data[0]._ID,
                             FullName = EntFullName.Text,
-                            CellNumber = EntCellNumber.Text,
+                            CellNumber = data[0].CellNumber,
                             City = CityValue,
                             Area = AreaValue,
                             BloodGroup = BloodGroupValue,
