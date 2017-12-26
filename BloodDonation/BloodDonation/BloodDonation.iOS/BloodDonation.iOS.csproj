@@ -119,7 +119,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MimeKit.1.20.0\lib\Xamarin.iOS10\BouncyCastle.dll</HintPath>
+      <HintPath>..\..\packages\MimeKit.2.0.0\lib\xamarinios\BouncyCastle.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MailKit.2.0.0\lib\xamarinios\MailKit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Mobile, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Azure.Mobile.0.17.1\lib\Xamarin.iOS10\Microsoft.Azure.Mobile.dll</HintPath>
@@ -140,8 +143,8 @@
       <HintPath>..\..\packages\Microsoft.Azure.Mobile.0.17.1\lib\Xamarin.iOS10\Microsoft.Azure.Mobile.iOS.Bindings.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MimeKit, Version=1.20.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MimeKit.1.20.0\lib\Xamarin.iOS10\MimeKit.dll</HintPath>
+    <Reference Include="MimeKit, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MimeKit.2.0.0\lib\xamarinios\MimeKit.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

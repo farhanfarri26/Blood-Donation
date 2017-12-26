@@ -4,20 +4,4 @@
     <ResultingAbi>x86</ResultingAbi>
     <SdkVersion>23</SdkVersion>
   </Device>
-  <Device id="5203e9ad41bb8315">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
-  <Device id="67c3e010">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
-  <Device id="114b97df">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>19</SdkVersion>
-  </Device>
-  <Device id="2XJDU17930001605">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
 </Devices>

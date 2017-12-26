@@ -20,5 +20,6 @@ namespace BloodDonation.Models
         public string Email { get; set; }
         public string Password { get; set; }
         public string TodayDate { get; set; }
+        public string FutureUse { get; set; }
     }
 }

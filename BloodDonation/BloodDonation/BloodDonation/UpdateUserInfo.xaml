@@ -15,10 +15,6 @@
                     <Label Text="Full Name" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Entry x:Name="EntFullName" BindingContext="{x:Reference EntFullName}" Text="{Binding Path=Text}" Placeholder="Example( Muhammad Ali )" Style="{StaticResource CustomEntryStyle}"/>
 
-                    <Label Text="Cell Number" Style="{StaticResource CustomLabelEntryStyle}"/>
-                    <Entry x:Name="EntCellNumber" BindingContext="{x:Reference EntCellNumber}" Text="{Binding Path=Text}" Keyboard="Telephone" Placeholder="03XXXXXXXXX" Style="{StaticResource CustomEntryStyle}"/>
-                    <Label x:Name="LblCellNumber" Text="Invalid Number" Style="{StaticResource CustomUnderLabelStyle}"/>
-
                     <Label Text="City" Style="{StaticResource CustomLabelEntryStyle}"/>
                     <Picker x:Name="PkrSignupCity" Title="Choose City" SelectedIndexChanged="PkrSignupCity_OnSelectedIndexChanged"
                         Style="{StaticResource CustomEntryStyle}">

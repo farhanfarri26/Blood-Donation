@@ -44,7 +44,9 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Core.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.IO.Compression.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Net.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Net.Http.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Web.Services.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Xml.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\System.Runtime.dll

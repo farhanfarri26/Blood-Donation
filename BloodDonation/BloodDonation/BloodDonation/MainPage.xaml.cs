@@ -86,6 +86,7 @@ namespace BloodDonation
                                         Email = values[0].Email,
                                         Password = values[0].Password,
                                         TodayDate = values[0].TodayDate,
+                                        FutureUse = null,
                                     };
 
                                     //insert in localDB

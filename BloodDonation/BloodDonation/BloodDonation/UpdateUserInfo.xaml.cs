@@ -75,6 +75,7 @@ namespace BloodDonation
                         Email = EntEmail.Text,
                         Password = data[0].Password,
                         TodayDate = data[0].TodayDate,
+                        FutureUse = null,
                     };
 
                     try
@@ -89,7 +90,7 @@ namespace BloodDonation
                         httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                         var response = await httpClient.PutAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/BloodUsersApi/{0}", updateinfo.Id), httpContent);
 
-                        
+
                         LocalDB localDB = new LocalDB()
                         {
                             _ID = data[0]._ID,
@@ -137,7 +138,7 @@ namespace BloodDonation
                 }
             }
         }
-        
+
         private void PkrSignupCity_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             CityValue = PkrSignupCity.Items[PkrSignupCity.SelectedIndex];

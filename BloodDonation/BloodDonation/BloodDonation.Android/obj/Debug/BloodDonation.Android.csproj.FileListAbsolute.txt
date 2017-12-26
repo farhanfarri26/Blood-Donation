@@ -20,6 +20,7 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Plugin.Share.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.Platform.XamarinAndroid.dll
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.Platform.XamarinAndroidN.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Xamarin.Android.Support.Annotations.dll
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\Xamarin.Android.Support.Compat.dll
@@ -79,7 +80,6 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\adddonor.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\addrequest.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\area.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\bg.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\bloodbank.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\bloodbanklogo.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\blooddetails.png
@@ -113,6 +113,9 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-hdpi\splash.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-xhdpi\splash.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable-xxhdpi\splash.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\login.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\createaccount.png
+C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\bg.png
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\R.cs.flag
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\uploadflags.txt
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\BloodDonation.dll.mdb
@@ -127,13 +130,3 @@ C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite-net.dll.mdb
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\bin\Debug\SQLite.Net.Platform.XamarinAndroidN.dll
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\login.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\createaccount.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\createaccountclick.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\loginclick.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\leftbg.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\rightbg.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\loginbg.png
-C:\Users\Farhan Farri\Desktop\BloodDonation\BloodDonation\BloodDonation.Android\obj\Debug\res\drawable\centerbg.png

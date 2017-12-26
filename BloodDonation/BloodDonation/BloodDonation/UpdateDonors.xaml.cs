@@ -159,7 +159,8 @@ namespace BloodDonation
             }
             else
             {
-                Available = "Not Available";
+                Available = "Not Available" +
+                    "";
             }
         }
     }
