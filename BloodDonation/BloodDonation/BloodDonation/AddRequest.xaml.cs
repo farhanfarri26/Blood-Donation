@@ -94,8 +94,37 @@ namespace BloodDonation
 
                             if (response.StatusCode == HttpStatusCode.Created)
                             {
-                                await DisplayAlert("Dear " + data[0].FullName.ToUpper(), addRequestClass.FullName.ToUpper() + " added in Blood Requests from your account.", "Ok");
+                                var httpClientDonors = new HttpClient();
+                                var responseDonors = await httpClientDonors.GetAsync(String.Format("http://blooddonationlahoreapp.azurewebsites.net/api/DonorsApi?city={0}&&blood={1}", CityValue, BloodGroupValue));
+                                var resultDonors = responseDonors.Content.ReadAsStringAsync().Result;
+                                var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(resultDonors);
+
+                                await DisplayAlert("Please Wait ...", "We are sendig SMS to Donors having '" + BloodGroupValue + "' Blood Group. It may take couple of Seconds", "Ok");
+                                
+                                Array[] array = new Array[25];
+
+                                int i = 0;
+                                foreach (var v in name)
+                                {
+                                    array[i] = name[i].CellNumber.Substring(1).Insert(0, "92").Split(',');
+                                    i++;
+
+                                    if (i == 3)
+                                    {
+                                        //var httpClientMsg = new HttpClient();
+                                        //String message = "1234 is your Verification Code";
+                                        //await httpClientMsg.PostAsync(String.Format("http://sms4connect.com/api/sendsms.php/sendsms/url?id=92test3&pass=pakistan98&mask=SMS4CONNECT&to={0}&lang=English&msg={1}&type=xml", array, message), null);
+
+                                        break;
+                                    }
+                                };
+
+                                await DisplayAlert("Dear " + data[0].FullName.ToUpper(), addRequestClass.FullName.ToUpper() + " added in Blood Requests from your account and SMS Alerts has been sent to Donors .", "Ok");
                                 await Navigation.PopAsync();
+                            }
+                            else
+                            {
+                                await DisplayAlert("Dear " + data[0].FullName.ToUpper(), " Sorry, Your blood request could not be added.", "Ok");
                             }
 
                         }

@@ -43,8 +43,20 @@ namespace BloodDonationMCVAPI.Controllers.Api
                 return NotFound();
             }
 
-            return Ok(db.Donors.Where(x => x.BloodGroup == blood && x.City == city).OrderByDescending(m => m.Id));
+            return Ok(db.Donors.Where(x => x.BloodGroup == blood && x.City == city && x.FutureUse == "Available").OrderByDescending(m => m.Id));
         }
+
+        //GET: api/DonorsApi?blood=Value&&city=Value
+        //[ResponseType(typeof(Donors))]
+        //public IHttpActionResult GetDonors(string blood, string city)
+        //{
+        //    if (String.IsNullOrEmpty(blood) || String.IsNullOrEmpty(city))
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return Ok(db.Donors.Where(x => x.BloodGroup == blood && x.City == city).OrderByDescending(m => m.Id));
+        //}
 
 
         // GET: api/DonorsApi/5

@@ -67,7 +67,7 @@ namespace BloodDonation
                             BloodGroup = BloodGroupValue,
                             AddedBy = data[0].CellNumber,
                             TodayDate = dateValue.ToString(),
-                            FutureUse = Available
+                            FutureUse = "Available"
                         };
                         try
                         {
