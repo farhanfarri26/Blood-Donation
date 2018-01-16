@@ -269,7 +269,7 @@ namespace BloodDonation
                     string userformat = data[0].CellNumber;
                     var orgfarmat = userformat.Substring(1);
                     String message = code + " is your Recovery Code";
-                    await httpClientMsg.PostAsync(String.Format("http://sms4connect.com/api/sendsms.php/sendsms/url?id=92test3&pass=pakistan98&mask=SMS4CONNECT&to=92{0}&lang=English&msg={1}&type=xml", orgfarmat, message), null);
+                    await httpClientMsg.PostAsync(String.Format("http://sms4connect.com/api/sendsms.php/sendsms/url?id=educationuni&pass=sms4connect123&mask=UE-BloodApp&to=92{0}&lang=English&msg={1}&type=xml", orgfarmat, message), null);
 
                     SignupClass updateinfo = new SignupClass()
                     {

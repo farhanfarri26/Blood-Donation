@@ -93,8 +93,14 @@ namespace BloodDonation
                                     HandleDB dB = new HandleDB();
                                     dB.AddDB(localDB);
 
-                                    await DisplayAlert("Welcome Again", "Dear User!  Please use our services in positive way. \n\n Regards: \n Blood Donation Team", "Get Started");
                                     await Navigation.PushAsync(new Tabbed());
+                                    
+                                    await DisplayAlert("Whats New!", "1: Add Blood Request (Auto Generated message will sent to regarding donors) \n\n" +
+                                                                     "2: Add Donors \n\n" +
+                                                                     "3: Search for Blood Requests and Donors (All / Filtered) \n\n" +
+                                                                     "4: Find our Blood Banks \n\n" +
+                                                                     "5: Call our volunteers for your Queries"
+                                                                     , "Get Started");
                                 }
                             }
                         }

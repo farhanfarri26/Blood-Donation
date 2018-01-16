@@ -99,21 +99,24 @@ namespace BloodDonation
                                 var resultDonors = responseDonors.Content.ReadAsStringAsync().Result;
                                 var name = JsonConvert.DeserializeObject<List<AddDonorClass>>(resultDonors);
 
-                                await DisplayAlert("Please Wait ...", "We are sendig SMS to Donors having '" + BloodGroupValue + "' Blood Group. It may take couple of Seconds", "Ok");
-                                
-                                Array[] array = new Array[25];
-
+                                string numbers = string.Empty;
                                 int i = 0;
                                 foreach (var v in name)
                                 {
-                                    array[i] = name[i].CellNumber.Substring(1).Insert(0, "92").Split(',');
+                                    string cellnumber = name[i].CellNumber.Substring(1).Insert(0, "92");
+                                    cellnumber = cellnumber.Insert(cellnumber.Length, ",");
+                                    numbers = numbers.Insert(numbers.Length, cellnumber);
+
                                     i++;
 
-                                    if (i == 3)
+                                    if (i == 20 || name.Count == i)
                                     {
-                                        //var httpClientMsg = new HttpClient();
-                                        //String message = "1234 is your Verification Code";
-                                        //await httpClientMsg.PostAsync(String.Format("http://sms4connect.com/api/sendsms.php/sendsms/url?id=92test3&pass=pakistan98&mask=SMS4CONNECT&to={0}&lang=English&msg={1}&type=xml", array, message), null);
+                                        numbers = numbers.Remove(numbers.Length - 1);
+                                        var httpClientMsg = new HttpClient();
+
+                                        string message = string.Format("{0} Blood is required at {1} {2}. Contact at '{3}'. For more details download app now : https://www.mysite.com/mobile ", BloodGroupValue, HospitalValue, CityValue, EntCellNumber.Text);
+
+                                        await httpClientMsg.PostAsync(String.Format("http://sms4connect.com/api/sendsms.php/sendsms/url?id=educationuni&pass=sms4connect123&mask=UE-BloodApp&to={0}&lang=English&msg={1}&type=xml", numbers, message), null);
 
                                         break;
                                     }

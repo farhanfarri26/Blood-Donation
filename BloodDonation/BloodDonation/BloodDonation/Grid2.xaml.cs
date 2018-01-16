@@ -49,7 +49,9 @@ namespace BloodDonation
                 WaitingLoader.IsVisible = true;
                 await CrossShare.Current.Share(new ShareMessage
                 {
-                    Text = "Download Now \n Blood Donation Pakistan App \n Link:",
+                    Text = "Find Blood Donors, Add Blood Requests for free and Donate Blood. \n" +
+                           "Download App Now \n\n" +
+                           "Blood Donation PK:",
                     Title = "Share Mobile app",
                     Url = "https://www.mysite.com/mobile"
                 });
